@@ -1,0 +1,35 @@
+[
+    {
+        "/guestbook.php": {
+            "null": "submit", 
+            "name": "text"
+        }, 
+        "/users/register.php": {
+            "username": "text", 
+            "firstname": "text", 
+            "lastname": "text", 
+            "null": "submit", 
+            "password": "password", 
+            "againpass": "password"
+        }, 
+        "/passcheck.php": {
+            "null": "submit", 
+            "password": "password"
+        }, 
+        "/cart/action.php?action=delete": {}, 
+        "/pictures/upload.php": {
+            "MAX_FILE_SIZE": "hidden", 
+            "name": "text", 
+            "title": "text", 
+            "price": "text", 
+            "pic": "file", 
+            "tag": "text", 
+            "null": "submit"
+        }, 
+        "/users/login.php": {
+            "username": "text", 
+            "null": "submit", 
+            "password": "password"
+        }
+    }
+]

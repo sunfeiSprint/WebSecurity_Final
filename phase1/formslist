@@ -1,0 +1,146 @@
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/users/login.php" method="POST">
+      <tr><td>Username :</td><td> <input type="text" name="username"></td></tr>
+      <tr><td>Password :</td><td> <input type="password" name="password"></td></tr>
+      <tr><td><input type="submit" value="login"></td><td> <a href="/users/register.php">Register</a></td></tr>
+   </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/users/register.php" method="POST">
+  <tr><td>Username :</td><td> <input type="text" name="username"></td></tr>
+  <tr><td>First Name :</td><td> <input type="text" name="firstname"></td></tr>
+  <tr><td>Last Name :</td><td> <input type="text" name="lastname"></td></tr>
+  <tr><td>Password :</td><td> <input type="password" name="password"></td></tr>
+  <tr><td>Password again :</td><td> <input type="password" name="againpass"></td></tr>
+  <tr><td><input type="submit" value="Create Account!"></td><td></td></tr>
+</form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/guestbook.php" method="POST">
+   Name: <br>
+   <input type="text" name="name"><br>
+   Comment: <br>
+   <textarea id="comment-box" name="comment"></textarea> <br>
+   <input type="submit" value="Submit">
+</form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/cart/action.php?action=delete" method="POST">
+<h2> You don't have a cart! </h2>
+<p><a href="/pictures/recent.php">Go find some pictures!</a></p>
+</form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form enctype="multipart/form-data" action="/pictures/upload.php" method="POST">
+  <input type="hidden" name="MAX_FILE_SIZE" value="10485760">
+       <tr><td>Tag :</td><td><input type="text" name="tag" style=""></td></tr>
+       <tr><td>File Name :</td><td>  <input type="text" name="name"></td></tr>
+       <tr><td>Title :</td><td> <input type="text" name="title"></td></tr>
+       <tr><td>Price :</td><td>  <input type="text" name="price"></td></tr>
+       <tr><td>File :</td><td>  <input type="file" name="pic"></td></tr>
+       <tr><td><input type="submit" value="Upload File"></td><td></td></tr>       
+</form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/passcheck.php" method="POST">
+   Password to check: <br>
+   <input type="password" name="password"><br>
+   <input type="submit" value="Check!">
+</form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
+<form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value="">
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;">
+	  </form>
