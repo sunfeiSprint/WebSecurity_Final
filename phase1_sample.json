@@ -1,0 +1,23 @@
+[
+  {
+    "https://app4.com/admin/os.php":[
+      {
+        "method":"get",
+        "action":"https://app4.com/admin/os.php?op=del&os_id=1"
+      }
+    ],
+    "https://app6.com/zimplit/zimplit.php":[
+      {
+        "method":"post",
+        "action":"https://app6.com/zimplit/zimplit.php?action=changeuserpass",
+        "params":
+          {
+            "username": "text",
+            "password": "text",
+            "email": "email"
+          }
+
+      }
+    ]
+  }
+]
