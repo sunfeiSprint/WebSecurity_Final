@@ -1,0 +1,6 @@
+{
+	"login_url": "https://app1.com/users/login.php",
+	"domain": "https://app1.com",
+	"username": "admin@admin.com",
+	"password": "admin"
+}
