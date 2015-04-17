@@ -27,13 +27,13 @@ if "ERROR: Invalid username" in response.body:
 else: #login successful
     for url in data[0]:
         #pprint(url)
-        formDetails = data[0][url].pop(0)
+        formDetails = data[0][url]
         action = formDetails["action"]
-        if formDetails["method"] == "get":# form is a get form, it cannot contain a token, always vulnerable for CSRF
+        if formDetails["method"].lower() == "get":# form is a get form, it cannot contain a token, always vulnerable for CSRF
             pprint("get form "+formDetails["action"]  +" is vulnerable to CSRF")
             ###try to eliminate non-sensitive-data?###
 
-        elif formDetails["method"] == "post":# form is a post form, check for CSRF
+        elif formDetails["method"].lower() == "post":# form is a post form, check for CSRF
             csrfForm = Form(url,formDetails)
             #First, we send a valid request.
             valid_parameters = dict(csrfForm.fill_entries())

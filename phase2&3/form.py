@@ -29,9 +29,9 @@ class Form(object):
 
     def fill_entries(self,filter_type=None):
         action = self.formdata["action"]
-        method = self.formdata["method"]
+        method = self.formdata["method"].lower()
         if method =="post":
-            params = self.formdata["params"]
+            params = self.formdata["parameter"]
             for name in params.keys():
                 type = params[name]
                 if filter_type is None:
