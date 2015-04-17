@@ -51,7 +51,8 @@ class ExampleSpider(CrawlSpider):
         # i = CrawlerItem()
         # find all the link in the <a href> tag
         links = hxs.select('//a/@href').extract()
-        self.extract_forms(hxs)
+
+        self.extract_forms(hxs,response)
         
         # Yield a new request for each link we found
         # #this may lead to infinite crawling...
@@ -70,13 +71,17 @@ class ExampleSpider(CrawlSpider):
     def collect_item(self, item):
         return item
 
-    def extract_forms(self,hxs):
+    def extract_forms(self,hxs,response):
         forms = hxs.select('//form').extract()
         #formsaction = hxs.select('//form/@action').extract()
         #formsname = hxs.select('//form/@name').extract()
         #formmethod = hxs.select('//form/@method').extract()
         formsfile=open('formslist','a')
+        linksfile=open('linkslist','a')
         for form in forms:
+            linksfile.write(str(response)[5:-1])
+            linksfile.write('\n')
             formsfile.write(form)
             formsfile.write('\n')
         formsfile.close()
+        linksfile.close()

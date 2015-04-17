@@ -1,35 +1,158 @@
 [
     {
-        "/guestbook.php": {
+        "https://app1.com/": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/tos.php": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/calendar.php?date=1430038232": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/calendar.php?date=1430211032": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/users/login.php": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/calendar.php?date=1429606232": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/calendar.php?date=1429519832": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/calendar.php?date=1429347032": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/calendar.php?date=1429951832": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/calendar.php?date=1430124632": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/calendar.php?date=1430470232": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/calendar.php?date=1430556632": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/calendar.php?date=1429865432": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/users/sample.php?userid=1": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/guestbook.php": {
+            "action": "https://app1.com/guestbook.php", 
             "null": "submit", 
+            "method": "POST", 
             "name": "text"
         }, 
-        "/users/register.php": {
+        "https://app1.com/calendar.php?date=1429779032": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/users/register.php": {
             "username": "text", 
             "firstname": "text", 
             "lastname": "text", 
+            "action": "https://app1.com/users/register.php", 
             "null": "submit", 
             "password": "password", 
+            "method": "POST", 
             "againpass": "password"
         }, 
-        "/passcheck.php": {
-            "null": "submit", 
-            "password": "password"
+        "https://app1.com/calendar.php?date=1430383832": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
         }, 
-        "/cart/action.php?action=delete": {}, 
-        "/pictures/upload.php": {
-            "MAX_FILE_SIZE": "hidden", 
-            "name": "text", 
-            "title": "text", 
-            "price": "text", 
-            "pic": "file", 
-            "tag": "text", 
-            "null": "submit"
-        }, 
-        "/users/login.php": {
-            "username": "text", 
+        "https://app1.com/passcheck.php": {
+            "action": "https://app1.com/passcheck.php", 
             "null": "submit", 
-            "password": "password"
+            "password": "password", 
+            "method": "POST"
+        }, 
+        "https://app1.com/calendar.php": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/calendar.php?date=1430643032": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/calendar.php?date=1429692632": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/calendar.php?date=1429433432": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/calendar.php?date=1430297432": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
+        }, 
+        "https://app1.com/pictures/recent.php": {
+            "action": "https://app1.com/pictures/search.php", 
+            "query": "text", 
+            "method": "get", 
+            "null": "image"
         }
     }
 ]
