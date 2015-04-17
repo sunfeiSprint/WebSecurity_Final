@@ -51,7 +51,7 @@ class ExampleSpider(CrawlSpider):
         # i = CrawlerItem()
         # find all the link in the <a href> tag
         links = hxs.select('//a/@href').extract()
-
+        #forms = hxs.select('//form').extract()
         self.extract_forms(hxs,response)
         
         # Yield a new request for each link we found
@@ -72,13 +72,15 @@ class ExampleSpider(CrawlSpider):
         return item
 
     def extract_forms(self,hxs,response):
+        print response
         forms = hxs.select('//form').extract()
-        #formsaction = hxs.select('//form/@action').extract()
-        #formsname = hxs.select('//form/@name').extract()
-        #formmethod = hxs.select('//form/@method').extract()
+        formsaction = hxs.select('//form/@action').extract()
+        formsname = hxs.select('//form/@name').extract()
+        formmethod = hxs.select('//form/@method').extract()
         formsfile=open('formslist','a')
         linksfile=open('linkslist','a')
         for form in forms:
+            form = form.encode('utf-8').strip()
             linksfile.write(str(response)[5:-1])
             linksfile.write('\n')
             formsfile.write(form)

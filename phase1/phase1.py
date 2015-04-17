@@ -27,8 +27,10 @@ for linkform in linkforms:
 	formdict=dict([])
 	formdict['method']=formmethod
 	formdict['action']=''.join(parameter.domain)+formaction
+	parameterdict=dict([])
 	for inputitem in linkform[1].find_all('input'):
-		formdict[inputitem.get('name')]=inputitem.get('type')
+		parameterdict[inputitem.get('name')]=inputitem.get('type')
+	formdict['parameter']=parameterdict
 	jsonform[url]=formdict
 
 #print jsonform
