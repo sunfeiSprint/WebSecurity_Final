@@ -1,0 +1,32 @@
+[
+    {
+        "https://app1.com/guestbook.php": {
+            "action": "https://app1.com/guestbook.php", 
+            "parameter": {
+                "null": "submit", 
+                "name": "text"
+            }, 
+            "method": "POST"
+        }, 
+        "https://app1.com/users/register.php": {
+            "action": "https://app1.com/users/register.php", 
+            "parameter": {
+                "username": "text", 
+                "null": "submit", 
+                "firstname": "text", 
+                "lastname": "text", 
+                "password": "password", 
+                "againpass": "password"
+            }, 
+            "method": "POST"
+        }, 
+        "https://app1.com/passcheck.php": {
+            "action": "https://app1.com/passcheck.php", 
+            "parameter": {
+                "password": "password", 
+                "null": "submit"
+            }, 
+            "method": "POST"
+        }
+    }
+]

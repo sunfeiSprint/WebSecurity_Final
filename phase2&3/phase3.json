@@ -1,0 +1,33 @@
+[
+    {
+        "action": "https://app1.com/users/register.php", 
+        "url": "https://app1.com/users/register.php", 
+        "parameter": {
+            "username": "text", 
+            "null": "submit", 
+            "firstname": "text", 
+            "lastname": "text", 
+            "password": "password", 
+            "againpass": "password"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "action": "https://app1.com/guestbook.php", 
+        "url": "https://app1.com/guestbook.php", 
+        "parameter": {
+            "null": "submit", 
+            "name": "text"
+        }, 
+        "method": "GET"
+    }, 
+    {
+        "action": "https://app1.com/passcheck.php", 
+        "url": "https://app1.com/passcheck.php", 
+        "parameter": {
+            "password": "password", 
+            "null": "submit"
+        }, 
+        "method": "POST"
+    }
+]
