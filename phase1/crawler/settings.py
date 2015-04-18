@@ -12,5 +12,4 @@ BOT_VERSION = '1.0'
 SPIDER_MODULES = ['crawler.spiders']
 NEWSPIDER_MODULE = 'crawler.spiders'
 USER_AGENT = '%s/%s' % (BOT_NAME, BOT_VERSION)
-
 DEPTH_LIMIT= 5

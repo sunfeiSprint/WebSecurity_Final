@@ -1,1 +1,35 @@
-./crawler/spiders/parameter3.py
+/usr/local/lib/python2.7/dist-packages/scrapy/settings/deprecated.py:26: ScrapyDeprecationWarning: You are using the following settings which are deprecated or obsolete (ask scrapy-users@googlegroups.com for alternatives):
+    BOT_VERSION: no longer used (user agent defaults to Scrapy now)
+  warnings.warn(msg, ScrapyDeprecationWarning)
+Traceback (most recent call last):
+  File "/usr/local/bin/scrapy", line 11, in <module>
+    sys.exit(execute())
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/cmdline.py", line 143, in execute
+    _run_print_help(parser, _run_command, cmd, args, opts)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/cmdline.py", line 89, in _run_print_help
+    func(*a, **kw)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/cmdline.py", line 150, in _run_command
+    cmd.run(args, opts)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/commands/crawl.py", line 57, in run
+    crawler = self.crawler_process.create_crawler()
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/crawler.py", line 87, in create_crawler
+    self.crawlers[name] = Crawler(self.settings)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/crawler.py", line 25, in __init__
+    self.spiders = spman_cls.from_crawler(self)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermanager.py", line 35, in from_crawler
+    sm = cls.from_settings(crawler.settings)
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermanager.py", line 31, in from_settings
+    return cls(settings.getlist('SPIDER_MODULES'))
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/spidermanager.py", line 22, in __init__
+    for module in walk_modules(name):
+  File "/usr/local/lib/python2.7/dist-packages/scrapy/utils/misc.py", line 68, in walk_modules
+    submod = import_module(fullpath)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/user/Downloads/phase1/web/WebSecurity_Final/phase1/crawler/spiders/example.py", line 33
+    args,
+SyntaxError: non-keyword arg after keyword arg
+Traceback (most recent call last):
+  File "./phase1.py", line 6, in <module>
+    formsfile=open('formslist','r')
+IOError: [Errno 2] No such file or directory: 'formslist'

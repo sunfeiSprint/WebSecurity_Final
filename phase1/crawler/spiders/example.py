@@ -14,6 +14,8 @@ import os
 class ExampleSpider(CrawlSpider):
     name = 'example.com'
     start_urls = parameter.login_urls
+    startCrawlingURL = parameter.start_urls
+    allowed_dommains= parameter.domain
     login_user = parameter.username
     login_pass = parameter.password
     # 'log' and 'pwd' are names of the username and password fields
@@ -23,12 +25,19 @@ class ExampleSpider(CrawlSpider):
     def parse(self, response):
         if parameter.login==True:
             args, url, method = fill_login_form(response.url, response.body, self.login_user, self.login_pass)
-            return FormRequest(url, method=method, formdata=args, callback=self.after_login)
-        else:
+            #return FormRequest(url, method=method, formdata=args, callback=self.after_login)
+            #args={'username':'admin', 'password':'admin'}
             return FormRequest.from_response(
                 response,
-                formdata={'log': 'pw@example', 'pwd': 'password'},
+                method,
+                args,
                 callback=self.after_login
+            )
+        else:
+            #args, url, method = fill_login_form(response.url, response.body, self.login_user, self.login_pass)
+            return Request(
+                response.url,
+                callback=self.parse_page
             )
 
     def after_login(self, response):
@@ -40,7 +49,8 @@ class ExampleSpider(CrawlSpider):
         # continue scraping with authenticated session...
         else:
             self.log("Login succeed!", level=log.DEBUG)
-            return Request(url=self.start_urls[0],
+            #print response.body
+            return Request(url=self.startCrawlingURL[0],
                            callback=self.parse_page)
 
 
@@ -52,12 +62,14 @@ class ExampleSpider(CrawlSpider):
         hxs = HtmlXPathSelector(response)
         # i = CrawlerItem()
         # find all the link in the <a href> tag
-        links = hxs.select('//a/@href').extract()
+
+        links = hxs.xpath('//a/@href').extract()
         #forms = hxs.select('//form').extract()
         self.extract_forms(hxs,response)
         
         # Yield a new request for each link we found
         # #this may lead to infinite crawling...
+        #print response.headers['Location']
         for link in links:
             print "THIS IS A LINK" + link
             #only process external/full link
@@ -66,10 +78,12 @@ class ExampleSpider(CrawlSpider):
                     yield Request(url=link, callback=self.parse_page)
                 else:
                     continue
+            elif link[0]=='#':
+                yield Request(url=response.url+'/'+link[1:], callback=self.parse_page)
             else:
                 yield Request(url=parameter.domain[0]+'/'+link,callback=self.parse_page)
         item = LinkItem()
-        item["title"] = hxs.select('//title/text()').extract()[0]
+        item["title"] = hxs.xpath('//title/text()').extract()[0]
         item["url"] = response.url
         yield self.collect_item(item)
 
@@ -78,10 +92,10 @@ class ExampleSpider(CrawlSpider):
 
     def extract_forms(self,hxs,response):
         print response
-        forms = hxs.select('//form').extract()
-        formsaction = hxs.select('//form/@action').extract()
-        formsname = hxs.select('//form/@name').extract()
-        formmethod = hxs.select('//form/@method').extract()
+        forms = hxs.xpath('//form').extract()
+#        formsaction = hxs.select('//form/@action').extract()
+#        formsname = hxs.select('//form/@name').extract()
+#        formmethod = hxs.select('//form/@method').extract()
         formsfile=open('formslist','a')
         linksfile=open('linkslist','a')
         for form in forms:
