@@ -26,7 +26,8 @@ for linkform in linkforms:
 		continue
 	formdict=dict([])
 	formdict['method']=formmethod
-	formdict['action']=''.join(parameter.domain)+formaction
+	print parameter.domain[0],str(formaction)
+	formdict['action']=parameter.domain[0]+str(formaction)
 	parameterdict=dict([])
 	for inputitem in linkform[1].find_all('input'):
 		parameterdict[inputitem.get('name')]=inputitem.get('type')

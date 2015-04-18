@@ -21,13 +21,15 @@ class ExampleSpider(CrawlSpider):
     # one may use loginform lib https://github.com/scrapy/loginform to make it easier
     # when handling multiple credentials from multiple sites.
     def parse(self, response):
-        args, url, method = fill_login_form(response.url, response.body, self.login_user, self.login_pass)
-        return FormRequest(url, method=method, formdata=args, callback=self.after_login)
-#        return FormRequest.from_response(
-#            response,
-#            formdata={'log': 'pw@example', 'pwd': 'password'},
-#            callback=self.after_login
-#        )
+        if parameter.login==True:
+            args, url, method = fill_login_form(response.url, response.body, self.login_user, self.login_pass)
+            return FormRequest(url, method=method, formdata=args, callback=self.after_login)
+        else:
+            return FormRequest.from_response(
+                response,
+                formdata={'log': 'pw@example', 'pwd': 'password'},
+                callback=self.after_login
+            )
 
     def after_login(self, response):
         # check login succeed before going on
@@ -60,9 +62,12 @@ class ExampleSpider(CrawlSpider):
             print "THIS IS A LINK" + link
             #only process external/full link
             if link.find("http") > -1:
-                yield Request(url=link, callback=self.parse_page)
+                if link.find(parameter.domain[0])>-1:
+                    yield Request(url=link, callback=self.parse_page)
+                else:
+                    continue
             else:
-                yield Request(url=parameter.domain[0]+link,callback=self.parse_page)
+                yield Request(url=parameter.domain[0]+'/'+link,callback=self.parse_page)
         item = LinkItem()
         item["title"] = hxs.select('//title/text()').extract()[0]
         item["url"] = response.url

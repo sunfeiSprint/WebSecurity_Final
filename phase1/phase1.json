@@ -1,88 +1,565 @@
 [
     {
-        "https://app1.com/calendar.php": {
-            "action": "https://app1.com/pictures/search.php", 
+        "http://app10.com/detail.php?item_id=13": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
             "parameter": {
                 "query": "text", 
-                "null": "image"
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
             }, 
             "method": "get"
         }, 
-        "https://app1.com/": {
-            "action": "https://app1.com/pictures/search.php", 
+        "https://app10.com/profile.php": {
+            "action": "https://app10.comhttps://app10.com/search.php", 
             "parameter": {
                 "query": "text", 
-                "null": "image"
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
             }, 
             "method": "get"
         }, 
-        "https://app1.com/tos.php": {
-            "action": "https://app1.com/pictures/search.php", 
+        "http://app10.com/page.php?pid=9": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
             "parameter": {
                 "query": "text", 
-                "null": "image"
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
             }, 
             "method": "get"
         }, 
-        "https://app1.com/pictures/recent.php": {
-            "action": "https://app1.com/pictures/search.php", 
+        "http://app10.com/distro.php?": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
             "parameter": {
                 "query": "text", 
-                "null": "image"
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
             }, 
             "method": "get"
         }, 
-        "https://app1.com/users/sample.php?userid=1": {
-            "action": "https://app1.com/pictures/search.php", 
+        "http://app10.com/detail.php?item_id=24": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
             "parameter": {
                 "query": "text", 
-                "null": "image"
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
             }, 
             "method": "get"
         }, 
-        "https://app1.com/guestbook.php": {
-            "action": "https://app1.com/guestbook.php", 
-            "parameter": {
-                "null": "submit", 
-                "name": "text"
-            }, 
-            "method": "POST"
-        }, 
-        "https://app1.com/calendar.php?date=1429361652": {
-            "action": "https://app1.com/pictures/search.php", 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=7": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
             "parameter": {
                 "query": "text", 
-                "null": "image"
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
             }, 
             "method": "get"
         }, 
-        "https://app1.com/users/login.php": {
-            "action": "https://app1.com/pictures/search.php", 
+        "http://app10.com/index.php?": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
             "parameter": {
                 "query": "text", 
-                "null": "image"
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
             }, 
             "method": "get"
         }, 
-        "https://app1.com/users/register.php": {
-            "action": "https://app1.com/users/register.php", 
+        "http://app10.com/distro.php?distro_id=3": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
             "parameter": {
-                "username": "text", 
-                "firstname": "text", 
-                "lastname": "text", 
-                "null": "submit", 
-                "password": "password", 
-                "againpass": "password"
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
             }, 
-            "method": "POST"
+            "method": "get"
         }, 
-        "https://app1.com/passcheck.php": {
-            "action": "https://app1.com/passcheck.php", 
+        "http://app10.com/checkout.php?": {
+            "action": "https://app10.comcart.php", 
             "parameter": {
-                "null": "submit", 
-                "password": "password"
+                "cmd": "hidden", 
+                "AXSRF_token": "hidden"
             }, 
-            "method": "POST"
+            "method": "get"
+        }, 
+        "http://app10.com/distro.php?distro_id=1": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "https://app10.com/profile.php?mode=register": {
+            "action": "https://app10.comhttps://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "https://app10.com/profile.php?mode=lost": {
+            "action": "https://app10.comhttps://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "https://app10.com/profile.php?print_version=1": {
+            "action": "https://app10.comincludes/login_process.php", 
+            "parameter": {
+                "url": "hidden", 
+                "user_passwd": "password", 
+                "AXSRF_token": "hidden", 
+                "user_id": "text", 
+                "qvc": "text"
+            }, 
+            "method": "post"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=19": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=18": {
+            "action": "https://app10.comNone", 
+            "parameter": {
+                "cat_id": "hidden", 
+                "cmd": "hidden", 
+                "ajax": "hidden", 
+                "showall": "checkbox", 
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=3": {
+            "action": "https://app10.comNone", 
+            "parameter": {
+                "cat_id": "hidden", 
+                "cmd": "hidden", 
+                "ajax": "hidden", 
+                "showall": "checkbox", 
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=11": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=10": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=13": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=2": {
+            "action": "https://app10.comNone", 
+            "parameter": {
+                "cat_id": "hidden", 
+                "cmd": "hidden", 
+                "ajax": "hidden", 
+                "showall": "checkbox", 
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=15": {
+            "action": "https://app10.comNone", 
+            "parameter": {
+                "cat_id": "hidden", 
+                "cmd": "hidden", 
+                "ajax": "hidden", 
+                "showall": "checkbox", 
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=14": {
+            "action": "https://app10.comNone", 
+            "parameter": {
+                "cat_id": "hidden", 
+                "cmd": "hidden", 
+                "ajax": "hidden", 
+                "showall": "checkbox", 
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=17": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=16": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/tell.php?": {
+            "action": "https://app10.comhttp://app10.com/tell.php", 
+            "parameter": {
+                "name": "text", 
+                "friend_name": "text", 
+                "cmd": "hidden", 
+                "contact_us": "hidden", 
+                "friend_email": "text", 
+                "visual": "text", 
+                "item_id": "hidden", 
+                "AXSRF_token": "hidden", 
+                "email": "text"
+            }, 
+            "method": "post"
+        }, 
+        "http://app10.com/page.php?pid=8": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/detail.php?item_id=2": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/page.php?pid=3": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/page.php?pid=2": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "https://app10.com/profile.php?mode=lost&print_version=1": {
+            "action": "https://app10.comhttps://app10.com/includes/lost_process.php", 
+            "parameter": {
+                "AXSRF_token": "hidden", 
+                "user_id": "text", 
+                "qvc": "text"
+            }, 
+            "method": "post"
+        }, 
+        "http://app10.com/page.php?pid=7": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/page.php?pid=5": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/page.php?pid=4": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=9": {
+            "action": "https://app10.comNone", 
+            "parameter": {
+                "cat_id": "hidden", 
+                "cmd": "hidden", 
+                "ajax": "hidden", 
+                "showall": "checkbox", 
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=8": {
+            "action": "https://app10.comNone", 
+            "parameter": {
+                "cat_id": "hidden", 
+                "cmd": "hidden", 
+                "ajax": "hidden", 
+                "showall": "checkbox", 
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/newsletter.php?": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/detail.php?item_id=7": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/contact.php?": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=6": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=1": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/task.php?mod=qcomment&m=gbook&i=1&t=cy9NLS5Jys%2FPBgA%3D": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/distro.php?distro_id=2": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=24": {
+            "action": "https://app10.comNone", 
+            "parameter": {
+                "cat_id": "hidden", 
+                "cmd": "hidden", 
+                "ajax": "hidden", 
+                "showall": "checkbox", 
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=25": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=26": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=27": {
+            "action": "https://app10.comNone", 
+            "parameter": {
+                "cat_id": "hidden", 
+                "cmd": "hidden", 
+                "ajax": "hidden", 
+                "showall": "checkbox", 
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=20": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=21": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=22": {
+            "action": "https://app10.comNone", 
+            "parameter": {
+                "cat_id": "hidden", 
+                "cmd": "hidden", 
+                "ajax": "hidden", 
+                "showall": "checkbox", 
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/detail.php?item_id=4": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=12": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/distro.php?distro_id=0": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "https://app10.com/profile.php?mode=register&print_version=1": {
+            "action": "https://app10.comincludes/register_process.php", 
+            "parameter": {
+                "bill_state": "text", 
+                "user_id": "text", 
+                "phone": "text", 
+                "bill_address2": "text", 
+                "ship_city": "text", 
+                "ship_state": "text", 
+                "visual": "text", 
+                "ship_address2": "text", 
+                "user_passwd": "password", 
+                "bill_city": "text", 
+                "ship_address": "text", 
+                "nlt_sub": "checkbox", 
+                "bill_address": "text", 
+                "fullname": "text", 
+                "AXSRF_token": "hidden", 
+                "ship_zip": "text", 
+                "user_email": "email", 
+                "bill_zip": "text"
+            }, 
+            "method": "post"
+        }, 
+        "http://app10.com/sitemap.php?": {
+            "action": "https://app10.comhttp://app10.com/search.php", 
+            "parameter": {
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
+        }, 
+        "http://app10.com/search.php?mod_id=_shop&cmd=list&cat_id=23": {
+            "action": "https://app10.comNone", 
+            "parameter": {
+                "cat_id": "hidden", 
+                "cmd": "hidden", 
+                "ajax": "hidden", 
+                "showall": "checkbox", 
+                "query": "text", 
+                "mod_id": "hidden", 
+                "AXSRF_token": "hidden"
+            }, 
+            "method": "get"
         }
     }
 ]
