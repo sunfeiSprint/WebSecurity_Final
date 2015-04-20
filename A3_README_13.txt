@@ -28,4 +28,8 @@ However, during our trial and testing, we did find that due to some implementati
 
 The input of phase 4 is the output of phase 2 & 3, which is the file <file name> retrieved from <file dir>.
 
-The output directory of phase 4 is defined in the python scripts 'generate_exploit.py' and 'generate_expolit_check_response.py' through a variable called 'output_dir'. The default output directory is phase4/out relative to the project root path. All selenium exploit scripts will be generated under this directory.
+Both of the two scritps 'generate_exploit.py' and 'generate_exploit_check_response.py' take 3 arguments. To run either one, just use the following command (use one as example, same way to run the other):
+generate_exploit.py -c <config file path> -i <input file> -o <output dir>
+- config file path: required, the configuration file, mostly in config dir
+- input file: required, input file of phase 4, generated from previous phases
+- output dir: optional, the output dir of exploit scriipts, default is user phase4/out
