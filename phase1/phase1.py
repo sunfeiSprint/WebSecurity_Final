@@ -32,11 +32,11 @@ for linkform in linkforms:
 	formdict['action']=parameter.domain[0]+str(formaction)
 	parameterdict=dict([])
 	for inputitem in linkform[1].find_all('input'):
-		print inputitem
+		#print inputitem
 		parameterdict[inputitem.get('name')]=inputitem.get('type')
 	formdict['parameter']=parameterdict
 	jsonform.append(formdict)
-	print formdict
+	#print formdict
 
 #print jsonform
 with open("phase1.json",'w') as outfile:

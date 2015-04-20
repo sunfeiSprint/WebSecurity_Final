@@ -27,11 +27,11 @@ class ExampleSpider(CrawlSpider):
             args, url, method = fill_login_form(response.url, response.body, self.login_user, self.login_pass)
             #return FormRequest(url, method=method, formdata=args, callback=self.after_login)
             #args={'username':'admin', 'password':'admin'}
-            print args
+            #print args
             argsdict={}
             for i in args:
                 argsdict[i[0]]=i[1]
-            print argsdict
+            #print argsdict
             return FormRequest.from_response(
                 response,
                 formdata=argsdict,
@@ -54,7 +54,7 @@ class ExampleSpider(CrawlSpider):
         # continue scraping with authenticated session...
         else:
             self.log("Login succeed!", level=log.DEBUG)
-            print response.body
+            #print response.body
             return Request(url=self.startCrawlingURL[0],
                            callback=self.parse_page)
 
