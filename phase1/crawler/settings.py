@@ -8,7 +8,7 @@
 
 BOT_NAME = 'crawler'
 BOT_VERSION = '1.0'
-
+HTTPCACHE_ENABLED = True
 SPIDER_MODULES = ['crawler.spiders']
 NEWSPIDER_MODULE = 'crawler.spiders'
 USER_AGENT = '%s/%s' % (BOT_NAME, BOT_VERSION)
