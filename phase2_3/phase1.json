@@ -1,0 +1,38 @@
+[
+    {
+        "url": "https://app11.com/ajaxfilemanager.php", 
+        "action": "https://app11.com", 
+        "parameter": {
+            "original_path": "hidden", 
+            "num": "hidden", 
+            "name": "name"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app11.com/ajaxfilemanager.php", 
+        "action": "https://app11.com", 
+        "parameter": {
+            "file": "file"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app11.com/ajaxfilemanager.php", 
+        "action": "https://app11.com", 
+        "parameter": {
+            "currentFolderPath": "hidden", 
+            "new_folder": "text"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app11.com/ajaxfilemanager.php", 
+        "action": "https://app11.com", 
+        "parameter": {
+            "action_value": "hidden", 
+            "currentFolderPath": "hidden"
+        }, 
+        "method": "POST"
+    }
+]

@@ -1,0 +1,96 @@
+[
+    {
+        "https://app1.com/cart/review.php": {
+            "action": "https://app1.com/pictures/search.php", 
+            "parameter": {
+                "query": "text", 
+                "null": "image"
+            }, 
+            "method": "get"
+        }, 
+        "https://app1.com/calendar.php": {
+            "action": "https://app1.com/pictures/search.php", 
+            "parameter": {
+                "query": "text", 
+                "null": "image"
+            }, 
+            "method": "get"
+        }, 
+        "https://app1.com/tos.php": {
+            "action": "https://app1.com/pictures/search.php", 
+            "parameter": {
+                "query": "text", 
+                "null": "image"
+            }, 
+            "method": "get"
+        }, 
+        "https://app1.com/pictures/recent.php": {
+            "action": "https://app1.com/pictures/search.php", 
+            "parameter": {
+                "query": "text", 
+                "null": "image"
+            }, 
+            "method": "get"
+        }, 
+        "https://app1.com/": {
+            "action": "https://app1.com/pictures/search.php", 
+            "parameter": {
+                "query": "text", 
+                "null": "image"
+            }, 
+            "method": "get"
+        }, 
+        "https://app1.com/users/sample.php?userid=1": {
+            "action": "https://app1.com/pictures/search.php", 
+            "parameter": {
+                "query": "text", 
+                "null": "image"
+            }, 
+            "method": "get"
+        }, 
+        "https://app1.com/guestbook.php": {
+            "action": "https://app1.com/guestbook.php", 
+            "parameter": {
+                "null": "submit", 
+                "name": "text"
+            }, 
+            "method": "POST"
+        }, 
+        "https://app1.com/calendar.php?date=1429357370": {
+            "action": "https://app1.com/pictures/search.php", 
+            "parameter": {
+                "query": "text", 
+                "null": "image"
+            }, 
+            "method": "get"
+        }, 
+        "https://app1.com/users/login.php": {
+            "action": "https://app1.com/pictures/search.php", 
+            "parameter": {
+                "query": "text", 
+                "null": "image"
+            }, 
+            "method": "get"
+        }, 
+        "https://app1.com/users/register.php": {
+            "action": "https://app1.com/users/register.php", 
+            "parameter": {
+                "username": "text", 
+                "firstname": "text", 
+                "lastname": "text", 
+                "null": "submit", 
+                "password": "password", 
+                "againpass": "password"
+            }, 
+            "method": "POST"
+        }, 
+        "https://app1.com/passcheck.php": {
+            "action": "https://app1.com/passcheck.php", 
+            "parameter": {
+                "null": "submit", 
+                "password": "password"
+            }, 
+            "method": "POST"
+        }
+    }
+]
