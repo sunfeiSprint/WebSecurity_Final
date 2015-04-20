@@ -1,0 +1,9 @@
+X-Powered-By: PHP/5.5.9-1ubuntu4.6
+Set-Cookie: PHPSESSID=41t1kfc56ifugpigs76di6s8f3; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Server: Apache/2.4.7 (Ubuntu)
+Location: http://app10.com/index.php?
+Pragma: no-cache
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Date: Mon, 20 Apr 2015 04:43:41 GMT
+Content-Type: text/html

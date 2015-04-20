@@ -1,0 +1,10 @@
+X-Powered-By: PHP/5.5.9-1ubuntu4.6
+Set-Cookie: ZsessionLang=en; expires=Wed, 20-May-2015 03:14:06 GMT; Max-Age=2592000
+Set-Cookie: ZsessionId=27uhlgyp9tf9gxvc7enp
+Server: Apache/2.4.7 (Ubuntu)
+Location: zimplit.php?action=load&file=index.html
+Pragma: no-cache
+Cache-Control: no-store, no-cache, must-revalidate
+Cache-Control: post-check=0, pre-check=0
+Date: Mon, 20 Apr 2015 03:14:06 GMT
+Content-Type: text/html

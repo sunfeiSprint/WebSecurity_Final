@@ -1,0 +1,6 @@
+Accept-Language: en
+Accept-Encoding: gzip,deflate
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: crawler/1.0
+Referer: http://app10.com/detail.php?item_id=24
+Cookie: PHPSESSID=41t1kfc56ifugpigs76di6s8f3; ce3_history[0]=4

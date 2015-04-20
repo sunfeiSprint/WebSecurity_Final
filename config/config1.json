@@ -1,0 +1,8 @@
+{
+	"login_urls": "https://app1.com/users/login.php",
+	"start_urls": "https://app1.com/users/login.php",
+	"login": "True",
+	"domain": "https://app1.com",
+	"username": "scanner1",
+	"password": "scanner1"
+}

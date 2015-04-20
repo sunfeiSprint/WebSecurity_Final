@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut-icon" href="/images/favicon.ico" type="image/x-icon">
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="/themes/x2engine/css/ie.css" media="screen, projection">
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="/themes/x2engine/css/whatsNew.css" />
+<link rel="stylesheet" type="text/css" href="/js/multiselect/css/ui.multiselect.css" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="/themes/x2engine/css/x2chart.css" />
+<link rel="stylesheet" type="text/css" href="/js/jqplot/jquery.jqplot.css" />
+<link rel="stylesheet" type="text/css" href="/js/checklistDropdown/jquery.multiselect.css" />
+<link rel="stylesheet" type="text/css" href="/themes/x2engine/css/listview/styles.css" />
+<link rel="stylesheet" type="text/css" href="/assets/bebc0e9b/css/jquery.ias.css" />
+<link rel="stylesheet" type="text/css" href="/assets/cfd2a52c/jui/css/base/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="/css/normalize.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/themes/x2engine/css/screen.css?1377205885" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="/themes/x2engine/css/jquery-ui.css?1377205885" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="/themes/x2engine/css/dragtable.css?1377205885" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="/themes/x2engine/css/print.css?1377205885" media="print" />
+<link rel="stylesheet" type="text/css" href="/themes/x2engine/css/main.css?1377205885" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="/themes/x2engine/css/ui-elements.css?1377205885" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="/themes/x2engine/css/layout.css?1377205885" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="/themes/x2engine/css/details.css?1377205885" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="/themes/x2engine/css/x2forms.css?1377205885" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="/themes/x2engine/css/form.css?1377205885" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="/js/qtip/jquery.qtip.min.css?1377205885" media="screen, projection" />
+<link rel="stylesheet" type="text/css" href="/js/bgrins-spectrum-2c2010c/spectrum.css" />
+<style type="text/css" media="screen">
+/*<![CDATA[*/
+
+/*]]>*/
+</style>
+<style type="text/css" media="screen">
+/*<![CDATA[*/
+
+/*]]>*/
+</style>
+<script type="text/javascript" src="/assets/cfd2a52c/jquery.js"></script>
+<script type="text/javascript" src="/assets/cfd2a52c/jquery.cookie.js"></script>
+<script type="text/javascript" src="/assets/cfd2a52c/jquery.ba-bbq.js"></script>
+<script type="text/javascript" src="/assets/cfd2a52c/jui/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/assets/cfd2a52c/jquery.yii.js"></script>
+<script type="text/javascript" src="/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="/js/ckeditor/adapters/jquery.js"></script>
+<script type="text/javascript" src="/js/emailEditor.js"></script>
+<script type="text/javascript" src="/js/multiselect/js/ui.multiselect.js"></script>
+<script type="text/javascript" src="/js/jqplot/jquery.jqplot.js"></script>
+<script type="text/javascript" src="/js/jqplot/plugins/jqplot.categoryAxisRenderer.js"></script>
+<script type="text/javascript" src="/js/jqplot/plugins/jqplot.pointLabels.js"></script>
+<script type="text/javascript" src="/js/jqplot/plugins/jqplot.dateAxisRenderer.js"></script>
+<script type="text/javascript" src="/js/jqplot/plugins/jqplot.highlighter.js"></script>
+<script type="text/javascript" src="/js/jqplot/plugins/jqplot.enhancedLegendRenderer.js"></script>
+<script type="text/javascript" src="/js/checklistDropdown/jquery.multiselect.js"></script>
+<script type="text/javascript" src="/js/clockWidget.js"></script>
+<script type="text/javascript" src="/js/json2.js"></script>
+<script type="text/javascript" src="/js/layout.js"></script>
+<script type="text/javascript" src="/js/publisher.js"></script>
+<script type="text/javascript" src="/js/media.js"></script>
+<script type="text/javascript" src="/js/x2forms.js"></script>
+<script type="text/javascript" src="/js/tags.js"></script>
+<script type="text/javascript" src="/js/LGPL/jquery.formatCurrency-1.4.0.js?1377205885"></script>
+<script type="text/javascript" src="/js/modernizr.custom.66175.js"></script>
+<script type="text/javascript" src="/js/relationships.js"></script>
+<script type="text/javascript" src="/js/widgets.js"></script>
+<script type="text/javascript" src="/js/qtip/jquery.qtip.min.js?1377205885"></script>
+<script type="text/javascript" src="/js/actionFrames.js?1377205885"></script>
+<script type="text/javascript" src="/js/bgrins-spectrum-2c2010c/spectrum.js"></script>
+<script type="text/javascript" src="/js/backgroundFade.js"></script>
+<script type="text/javascript" src="/assets/806a89fb/jquery.maskMoney.js"></script>
+<script type="text/javascript" src="/js/jstorage.min.js?1377205885"></script>
+<script type="text/javascript" src="/js/notifications.js?1377205885"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+                    var	yii = {
+                        baseUrl: "",
+                        scriptUrl: "/index-test.php",
+                        themeBaseUrl: "/themes/x2engine",
+                        language: "",
+                        datePickerFormat: "M d, yy",
+                        timePickerFormat: "h:mm TT",
+                        profile: {"id":"3","fullName":"test test","username":"test","officePhone":null,"cellPhone":null,"emailAddress":"","notes":null,"status":"1","tagLine":null,"lastUpdated":null,"updatedBy":null,"avatar":null,"allowPost":"1","language":"en","timeZone":"US\/Pacific","resultsPerPage":"20","widgets":"1:0:1:1:1:1:1:1:1:1:1:1:1","widgetOrder":"OnlineUsers:TimeZone:GoogleMaps:ChatBox:TagCloud:ActionMenu:MessageBox:QuickContact:NoteBox:MediaBox:DocViewer:TopSites:HelpfulTips","widgetSettings":"{\"ChatBox\":{\"chatboxHeight\":300,\"chatmessageHeight\":50},\"NoteBox\":{\"noteboxHeight\":200,\"notemessageHeight\":50},\"DocViewer\":{\"docboxHeight\":200},\"TopSites\":{\"topsitesHeight\":200,\"urltitleHeight\":10},\"MediaBox\":{\"mediaBoxHeight\":150,\"hideUsers\":[]}}","activityFeedOrder":"0","theme":{"backgroundColor":null,"menuBgColor":null,"menuTextColor":null,"pageHeaderBgColor":null,"pageHeaderTextColor":null,"activityFeedWidgetBgColor":null,"activityFeedWidgetTextColor":null,"backgroundImg":null,"backgroundTiling":null,"pageOpacity":null,"themeName":null,"private":null,"owner":null,"loginSound":null,"notificationSound":null,"gridViewRowColorOdd":null,"gridViewRowColorEven":null},"notificationSound":"X2_Notification.mp3","loginSound":"","startPage":null,"showSocialMedia":"0","showDetailView":"1","gridviewSettings":"{\"services\":{\"id\":43,\"impact\":80,\"status\":233,\"assignedTo\":112,\"lastUpdated\":79,\"updatedBy\":111},\"bugreports\":{\"subject\":100,\"severity\":65,\"status\":65,\"type\":65,\"description\":180,\"assignedTo\":100}}","formSettings":null,"emailUseSignature":"user","emailSignature":null,"enableFullWidth":"1","showActions":null,"syncGoogleCalendarId":null,"syncGoogleCalendarAccessToken":null,"syncGoogleCalendarRefreshToken":null,"googleId":null,"userCalendarsVisible":"1","groupCalendarsVisible":"1","tagsShowAllUsers":"0","hideCasesWithStatus":null,"hiddenTags":null,"address":null,"defaultFeedFilters":null,"layout":"{\"left\":[],\"center\":{\"ActionHistoryChart\":{\"title\":\"Action History Chart\",\"minimize\":false},\"InlineTags\":{\"title\":\"Tags\",\"minimize\":false},\"WorkflowStageDetails\":{\"title\":\"Workflow\",\"minimize\":false},\"InlineRelationships\":{\"title\":\"Relationships\",\"minimize\":false}},\"right\":{\"ActionMenu\":{\"title\":\"My Actions\",\"minimize\":false},\"ChatBox\":{\"title\":\"Activity Feed\",\"minimize\":false},\"GoogleMaps\":{\"title\":\"Google Map\",\"minimize\":false},\"OnlineUsers\":{\"title\":\"Active Users\",\"minimize\":false},\"TagCloud\":{\"title\":\"Tag Cloud\",\"minimize\":false},\"TimeZone\":{\"title\":\"Time Zone\",\"minimize\":false},\"MessageBox\":{\"title\":\"Message Board\",\"minimize\":false},\"QuickContact\":{\"title\":\"Quick Contact\",\"minimize\":false},\"NoteBox\":{\"title\":\"Note Pad\",\"minimize\":false},\"MediaBox\":{\"title\":\"Files\",\"minimize\":false},\"DocViewer\":{\"title\":\"Doc Viewer\",\"minimize\":false},\"TopSites\":{\"title\":\"Top Sites\",\"minimize\":false},\"HelpfulTips\":{\"title\":\"Helpful Tips\",\"minimize\":false}},\"hidden\":[],\"hiddenRight\":[]}","minimizeFeed":"0","fullscreen":"0","fullFeedControls":"0","feedFilters":null,"hideBugsWithStatus":null,"actionFilters":null,"oldActions":"0","mediaWidgetDrive":"0","historyShowAll":"0","historyShowRels":"0","googleRefreshToken":null},
+                        notificationSoundPath: "/uploads/X2_Notification.mp3"
+                    },
+                    x2 = {};
+					x2.DEBUG = true;
+                    x2.notifUpdateInterval = 2000;
+                    
+					x2.isAndroid = false;
+				
+					x2.isIPad = false;
+				
+
+	x2.whatsNew = {};
+	x2.whatsNew.DEBUG = true;
+	x2.whatsNew.usersGroups = 'Anyone,test,admin';
+	x2.whatsNew.minimizeFeed = false;
+	x2.whatsNew.commentFlag = false;
+	x2.whatsNew.lastEventId = 0;
+	x2.whatsNew.lastTimestamp = 0;
+	x2.whatsNew.deletePostUrl = '/index-test.php/profile/deletePost';
+	x2.whatsNew.translations = {};
+x2.whatsNew.translations['Uncheck Filters'] = 'Uncheck Filters';
+x2.whatsNew.translations['Check Filters'] = 'Check Filters';
+x2.whatsNew.translations['Enter text here...'] = 'Enter text here...';
+x2.whatsNew.translations['Broadcast Event'] = 'Broadcast Event';
+x2.whatsNew.translations['Make Important'] = 'Make Important';
+x2.whatsNew.translations['Broadcast'] = 'Broadcast';
+x2.whatsNew.translations['broadcast error message 1'] = 'Select at least one user to broadcast to';
+x2.whatsNew.translations['broadcast error message 2'] = 'Select at least one broadcast method';
+x2.whatsNew.translations['Okay'] = 'Okay';
+x2.whatsNew.translations['Nevermind'] = 'Nevermind';
+x2.whatsNew.translations['Create'] = 'Create';
+x2.whatsNew.translations['Cancel'] = 'Cancel';
+
+
+	x2.eventsChart = {};
+	x2.eventsChart.params = {};
+	x2.eventsChart.params.chartType = 'eventsChart';
+	x2.eventsChart.params.suppressChartSettings = false;
+	x2.eventsChart.params.getChartDataActionName = 'getEventsBetween';
+	x2.eventsChart.params.translations = {};
+	x2.eventsChart.params.DEBUG = false;
+
+		x2.eventsChart.params.userNames = Object.keys ({"Anyone":"Anyone","test":"test test","admin":"web admin"});
+		x2.eventsChart.params.socialSubtypes = Object.keys ({"Social Post":"Social Post","Link":"Link","Announcement":"Announcement","Product Info":"Product Info","Competitive Info":"Competitive Info","Confidential":"Confidential"});
+		x2.eventsChart.params.visibilityTypes = Object.keys ({"1":"Public","0":"Private"});
+	x2.eventsChart.params.translations['Create'] = 'Create';
+x2.eventsChart.params.translations['Cancel'] = 'Cancel';
+x2.eventsChart.params.translations['Create Chart Setting'] = 'Create Chart Setting';
+x2.eventsChart.params.translations['Check all'] = 'Check all';
+x2.eventsChart.params.translations['Uncheck all'] = 'Uncheck all';
+x2.eventsChart.params.translations['metric(s) selected'] = 'metric(s) selected';
+x2.eventsChart.params.translations['metric1Label'] = 'metric(s) selected';
+x2.eventsChart.params.translations['user(s) selected'] = 'user(s) selected';
+x2.eventsChart.params.translations['event subtype(s) selected'] = 'event subtype(s) selected';
+x2.eventsChart.params.translations['visibility setting(s) selected'] = 'visibility setting(s) selected';
+x2.eventsChart.params.translations['January'] = 'January';
+x2.eventsChart.params.translations['February'] = 'February';
+x2.eventsChart.params.translations['March'] = 'March';
+x2.eventsChart.params.translations['April'] = 'April';
+x2.eventsChart.params.translations['May'] = 'May';
+x2.eventsChart.params.translations['June'] = 'June';
+x2.eventsChart.params.translations['July'] = 'July';
+x2.eventsChart.params.translations['August'] = 'August';
+x2.eventsChart.params.translations['September'] = 'September';
+x2.eventsChart.params.translations['October'] = 'October';
+x2.eventsChart.params.translations['November'] = 'November';
+x2.eventsChart.params.translations['December'] = 'December';
+x2.eventsChart.params.translations['Jan'] = 'Jan';
+x2.eventsChart.params.translations['Feb'] = 'Feb';
+x2.eventsChart.params.translations['Mar'] = 'Mar';
+x2.eventsChart.params.translations['Apr'] = 'Apr';
+x2.eventsChart.params.translations['Jun'] = 'Jun';
+x2.eventsChart.params.translations['Jul'] = 'Jul';
+x2.eventsChart.params.translations['Aug'] = 'Aug';
+x2.eventsChart.params.translations['Sep'] = 'Sep';
+x2.eventsChart.params.translations['Oct'] = 'Oct';
+x2.eventsChart.params.translations['Nov'] = 'Nov';
+x2.eventsChart.params.translations['Dec'] = 'Dec';
+x2.eventsChart.params.chartSettings = {};
+x2.eventsChart.params.actionParams = {};
+
+
+	x2.usersChart = {};
+	x2.usersChart.params = {};
+	x2.usersChart.params.chartType = 'usersChart';
+	x2.usersChart.params.suppressChartSettings = false;
+	x2.usersChart.params.getChartDataActionName = 'getEventsBetween';
+	x2.usersChart.params.translations = {};
+	x2.usersChart.params.DEBUG = false;
+
+		x2.usersChart.params.socialSubtypes = Object.keys ({"Social Post":"Social Post","Link":"Link","Announcement":"Announcement","Product Info":"Product Info","Competitive Info":"Competitive Info","Confidential":"Confidential"});
+		x2.usersChart.params.visibilityTypes = Object.keys ({"1":"Public","0":"Private"});
+		x2.usersChart.params.eventTypes = Object.keys ({"all":"All Events","feed":"Social Posts","comment":"Comment","record_create":"Records Created","record_deleted":"Records Deleted","action_reminder":"Action Reminders","action_complete":"Actions Completed","calendar_event":"Calendar Events","case_escalated":"Cases Escalated","email_opened":"Emails Opened","email_sent":"Emails Sent","notif":"Notifications","weblead_create":"Webleads Created","web_activity":"Web Activity","workflow_complete":"Workflow Complete","workflow_revert":"Workflow Reverted","workflow_start":"Workflow Started","doc_update":"Doc Updates","email_from":"Email Received","media":"Media","voip_call":"VOIP Call"});
+	x2.usersChart.params.translations['Create'] = 'Create';
+x2.usersChart.params.translations['Cancel'] = 'Cancel';
+x2.usersChart.params.translations['Create Chart Setting'] = 'Create Chart Setting';
+x2.usersChart.params.translations['Check all'] = 'Check all';
+x2.usersChart.params.translations['Uncheck all'] = 'Uncheck all';
+x2.usersChart.params.translations['metric(s) selected'] = 'metric(s) selected';
+x2.usersChart.params.translations['metric1Label'] = 'user(s) selected';
+x2.usersChart.params.translations['event type(s) selected'] = 'event type(s) selected';
+x2.usersChart.params.translations['event subtype(s) selected'] = 'event subtype(s) selected';
+x2.usersChart.params.translations['visibility setting(s) selected'] = 'visibility setting(s) selected';
+x2.usersChart.params.translations['January'] = 'January';
+x2.usersChart.params.translations['February'] = 'February';
+x2.usersChart.params.translations['March'] = 'March';
+x2.usersChart.params.translations['April'] = 'April';
+x2.usersChart.params.translations['May'] = 'May';
+x2.usersChart.params.translations['June'] = 'June';
+x2.usersChart.params.translations['July'] = 'July';
+x2.usersChart.params.translations['August'] = 'August';
+x2.usersChart.params.translations['September'] = 'September';
+x2.usersChart.params.translations['October'] = 'October';
+x2.usersChart.params.translations['November'] = 'November';
+x2.usersChart.params.translations['December'] = 'December';
+x2.usersChart.params.translations['Jan'] = 'Jan';
+x2.usersChart.params.translations['Feb'] = 'Feb';
+x2.usersChart.params.translations['Mar'] = 'Mar';
+x2.usersChart.params.translations['Apr'] = 'Apr';
+x2.usersChart.params.translations['Jun'] = 'Jun';
+x2.usersChart.params.translations['Jul'] = 'Jul';
+x2.usersChart.params.translations['Aug'] = 'Aug';
+x2.usersChart.params.translations['Sep'] = 'Sep';
+x2.usersChart.params.translations['Oct'] = 'Oct';
+x2.usersChart.params.translations['Nov'] = 'Nov';
+x2.usersChart.params.translations['Dec'] = 'Dec';
+x2.usersChart.params.chartSettings = {};
+x2.usersChart.params.actionParams = {};
+
+function toggleAttachmentForm() {			
+			if($('#attachment-form').is(':hidden')) {
+				$('.focus-mini-module').removeClass('focus-mini-module');
+				$('#attachment-form').find('.form').addClass('focus-mini-module');
+				$('html,body').animate({
+					scrollTop: ($('#attachment-form-top').offset().top - 100)
+				}, 300);
+			}
+			$('#attachment-form').animate({
+				opacity: 'toggle',
+				height: 'toggle'
+			}, 300);
+		}
+		
+		$(function() {
+			// give attachment module focus when clicked
+		    $('#attachment-form').click(function() {
+		    	if(!$('#attachment-form').find('.form').hasClass('focus-mini-module')) {
+		    		$('.focus-mini-module').removeClass('focus-mini-module');
+		    		$('#attachment-form').find('.form').addClass('focus-mini-module');
+		    	}
+		    });
+		});
+		
+
+var illegal_ext = ['exe','bat','dmg','js','jar','swf','php','pl','cgi','htaccess','py'];	// array with disallowed extensions
+
+function checkName(el, sbm) {
+	// - www.coursesweb.net
+	// get the file name and split it to separe the extension
+	var name = el.value;
+	var ar_name = name.split('.');
+
+	ar_ext = ar_name[ar_name.length - 1].toLowerCase();
+
+	// check the file extension
+	var re = 1;
+	for(i in illegal_ext) {
+		if(illegal_ext[i] == ar_ext) {
+			re = 0;
+			break;
+		}
+	}
+
+	// if re is 1, the extension isn't illegal
+	if(re==1) {
+		// enable submit
+		$(sbm).removeAttr('disabled');
+	}
+	else {
+		// delete the file name, disable Submit, Alert message
+		el.value = '';
+		$(sbm).attr('disabled','disabled');
+
+		var filenameError = "\"{X}\" is not an allowed filetype.";
+		alert(filenameError.replace('{X}',ar_ext));
+	}
+}
+
+
+function addTopContact(contactId) {
+	$.ajax({
+		url: '/index-test.php/users/addTopContact',
+		type: 'GET',
+		data: 'contactId='+contactId,
+		//data: 'contactId='+contactId+'&viewId='+viewId,
+		success: function(response) {
+			if(response!='')
+				$('#top-contacts-list').html(response);
+				$('#sidebar-left-box').height($('#sidebar-left').height());
+			}
+	});
+}
+function removeTopContact(contactId) {
+	$.ajax({
+		url: '/index-test.php/users/removeTopContact',
+		type: 'GET',
+		data: 'contactId='+contactId,
+		// data: 'contactId='+contactId+'&viewId='+viewId,
+		success: function(response) {
+			if(response!='')
+				$('#top-contacts-list').html(response);
+				$('#sidebar-left-box').height($('#sidebar-left').height());
+			}
+	});
+	//$('#contact'+id).remove();
+}
+
+			function toggleWidgetState(widget,state) {
+				if($('#widget_' + widget).hasClass('ui-sortable-helper') == false) {
+					$.ajax({
+						url: '/index-test.php/site/widgetState',
+						type: 'GET',
+						data: 'widget='+widget+'&state='+state,
+						success: function(response) {
+							if(response=='success') {
+								var link = $('#widget_'+widget+' .portlet-minimize a.portlet-minimize-button');
+								var newLink = ($(link).find('img').attr('class')=='expand-widget')? '<img src="/themes/x2engine/images/icons/Collapse_Widget.png" class=\'collapse-widget\' />' : '<img src="/themes/x2engine/images/icons/Expand_Widget.png" class=\'expand-widget\'/>';			// toggle link between [+] and [-]
+								link.html(newLink);
+
+								// slide widget open or closed
+								$('#widget_'+widget+' .portlet-content').toggle({
+									effect: 'blind',
+									duration: 200,
+									complete: function() {
+										// for google maps, trigger a resize event
+										if(widget === 'GoogleMaps' && $(this).is(':visible')) {
+											if (!x2.googleMapsWidget.instantiated) {
+												runGoogleMapsWidget ();
+											} else {
+												google.maps.event.trigger(window.map,'resize');
+											}
+										}
+									}
+								});
+							}
+						}
+					});
+				}
+
+			}
+		
+
+	$(document).ready(updateNotes());	//update on page load
+	function updateNotes(){
+		$.ajax({
+			type: 'POST',
+			url: '/index-test.php/site/getNotes?url=/index-test.php/site/whatsNew',
+			success:
+			function (data){
+				//alert('old: '+$('#note-box').html()+'<br><br>new: '+data);
+				//if ($('#note-box').html().length < data.length) {	//only update if theres new data
+				//alert('old: '+$('#note-box').html());
+					$('#note-box').html(data);
+					//$('#note-box').attr('scrollTop',$('#chat-box').attr('scrollHeight')); //scroll to bottom of window
+				//}
+			}
+		});
+	}
+	
+$(function() {
+	$('#note-container').resizable({
+		handles: 's',
+		minHeight: 75,
+		alsoResize: '#note-container-fix, #note-box, #note-box-container',
+		start: function(event, ui) {
+			$('#note-container').resizable('option', 'minHeight', parseInt($('#note-message-container').css('height'), 10) + 67);
+		},
+		stop: function(event, ui) {
+			// done resizing, save height to user profile for next time user visits page
+			$.post('/index-test.php/site/saveWidgetHeight', {Widget: 'NoteBox', Height: {noteboxHeight: parseInt($('#note-box').css('height')), notemessageHeight: parseInt($('#note-message').css('height'))}});
+		}
+	});
+	$('#note-message-container').resizable({
+		handles: 's',
+		minHeight: 30,
+		alsoResize: '#note-message, #note-container, #note-container-fix',
+		stop: function(event, ui) {
+			// done resizing, save height to user profile for next time user visits page
+			$.post('/index-test.php/site/saveWidgetHeight', {Widget: 'NoteBox', Height: {noteboxHeight: parseInt($('#note-box').css('height')), notemessageHeight: parseInt($('#note-message').css('height'))}});
+		}
+	});
+	$('#note-box-container').resizable({
+		handles: 's',
+		minHeight: 30,
+		alsoResize: '#note-box, #note-container, #note-container-fix',
+		stop: function(event, ui) {
+			// done resizing, save height to user profile for next time user visits page
+			$.post('/index-test.php/site/saveWidgetHeight', {Widget: 'NoteBox', Height: {noteboxHeight: parseInt($('#note-box').css('height')), notemessageHeight: parseInt($('#note-message').css('height'))}});
+		}
+	});
+});	
+
+
+
+$(function() {
+    
+    
+    $('#media-library-widget-wrapper').resizable({
+    	handles: 's',
+    	minHeight: 100,
+    	stop: function(event, ui) {
+    		// done resizing, save height to user profile for next time user visits page
+    		$.post('/index-test.php/site/saveWidgetHeight', {Widget: 'MediaBox', Height: {mediaBoxHeight: parseInt($('#media-library-widget-container').css('height'))} });
+    	}
+    });
+        $('.drive-link').draggable({revert: 'invalid', helper:'clone', revertDuration:200,iframeFix:true});
+});
+
+	$(document).ready(updateURLs());
+	function updateURLs(){
+		$.ajax({
+			type: 'POST',
+			url: '/index-test.php/site/getURLs?url=/index-test.php/site/whatsNew',
+			success:
+			function(data){
+				$('#sites-box').html(data);
+			}
+		});
+	}
+;
+
+
+$('#sites-container').resizable({
+	handles: 's',
+	minHeight: 75,
+	alsoResize: '#sites-container, #sites-box',
+	stop: function(event, ui){
+		$.post('/index-test.php/site/saveWidgetHeight',           {Widget: 'TopSites',
+			Height: {topsitesHeight: parseInt($('topsites-box').css('height'))}
+			});
+	}
+});
+
+
+			$(document).ready(function() {
+				$("#widget_TimeZone").find(".portlet-content").hide();
+			});
+(function($) {
+$.formatCurrency.regions["USD"] = {"symbol":"$","positiveFormat":"%s%n","negativeFormat":"(%s%n)","decimalSymbol":".","digitGroupSymbol":",","groupDigits":true};
+$.formatCurrency.regions["EUR"] = {"symbol":"\u20ac","positiveFormat":"%s%n","negativeFormat":"(%s%n)","decimalSymbol":".","digitGroupSymbol":",","groupDigits":true};
+$.formatCurrency.regions["GBP"] = {"symbol":"\u00a3","positiveFormat":"%s%n","negativeFormat":"(%s%n)","decimalSymbol":".","digitGroupSymbol":",","groupDigits":true};
+$.formatCurrency.regions["CAD"] = {"symbol":"CA$","positiveFormat":"%s%n","negativeFormat":"(%s%n)","decimalSymbol":".","digitGroupSymbol":",","groupDigits":true};
+$.formatCurrency.regions["JPY"] = {"symbol":"\u00a5","positiveFormat":"%s%n","negativeFormat":"(%s%n)","decimalSymbol":".","digitGroupSymbol":",","groupDigits":true};
+$.formatCurrency.regions["CNY"] = {"symbol":"CN\u00a5","positiveFormat":"%s%n","negativeFormat":"(%s%n)","decimalSymbol":".","digitGroupSymbol":",","groupDigits":true};
+$.formatCurrency.regions["CHF"] = {"symbol":null,"positiveFormat":"%s%n","negativeFormat":"(%s%n)","decimalSymbol":".","digitGroupSymbol":",","groupDigits":true};
+$.formatCurrency.regions["INR"] = {"symbol":"\u20b9","positiveFormat":"%s%n","negativeFormat":"(%s%n)","decimalSymbol":".","digitGroupSymbol":",","groupDigits":true};
+$.formatCurrency.regions["BRL"] = {"symbol":"R$","positiveFormat":"%s%n","negativeFormat":"(%s%n)","decimalSymbol":".","digitGroupSymbol":",","groupDigits":true};
+$.formatCurrency.regions["VND"] = {"symbol":"\u20ab","positiveFormat":"%s%n","negativeFormat":"(%s%n)","decimalSymbol":".","digitGroupSymbol":",","groupDigits":true};
+
+})(jQuery);
+
+window.enableFullWidth = true;
+window.fullscreen = false;
+
+/*]]>*/
+</script>
+<title>X2Engine - WhatsNew Site</title>
+
+</head>
+<body style="" class="">
+
+<div id="page-container">
+<div id="page">
+	<div id="header" class="defaultBg">
+		<div id="header-inner">
+			<div id="main-menu-bar">
+				<ul class="main-menu" id="main-menu">
+<li id="search-bar-title" class="special" title="Go to Activity Feed"><a href="/index-test.php/site/whatsNew"><img width="92" height="30" src="/uploads/logos/yourlogohere.png" alt="X2Engine" /></a></li>
+<li><a href="/index-test.php/actions/index">Actions</a></li>
+<li><a href="/index-test.php/contacts/index">Contacts</a></li>
+<li><a href="/index-test.php/accounts/index">Accounts</a></li>
+<li id="more-menu" class="dropdown"><span>More</span>
+<ul>
+<li><a href="/index-test.php/marketing/index">Marketing</a></li>
+<li><a href="/index-test.php/opportunities/index">Opportunities</a></li>
+<li><a href="/index-test.php/workflow/index">Workflow</a></li>
+<li><a href="/index-test.php/services/index">Service</a></li>
+<li><a href="/index-test.php/calendar/index">Calendar</a></li>
+<li><a href="/index-test.php/docs/index">Docs</a></li>
+<li><a href="/index-test.php/charts/index">Charts</a></li>
+<li><a href="/index-test.php/media/index">Media</a></li>
+<li><a href="/index-test.php/products/index">Products</a></li>
+<li><a href="/index-test.php/quotes/index">Quotes</a></li>
+<li><a href="/index-test.php/groups/index">Groups</a></li>
+<li><a href="/index-test.php/bugReports/index">Bug Reports</a></li>
+</ul>
+</li>
+</ul><ul class="main-menu" id="user-menu">
+<li class="active"><a href="/index-test.php/site/whatsNew">Activity</a></li>
+<li><a href="/index-test.php/profile/profiles">Users</a></li>
+<li id="search-bar" class="special"><span><form action="/index-test.php/search/search" method="get"><button class="x2-button black" type="submit"><span></span></button><input id="search-bar-box" onfocus="toggleText(this);" onblur="toggleText(this);" autocomplete="off" type="text" value="Search for contact, action, deal..." name="term" /></form></span></li>
+<li class="special"><span><a id="main-menu-notif" style="z-index:999;" href="#"><span>0</span></a></span></li>
+<li class="search-bar special"><span><a class="x2-button" id="fullscreen-button" href="#"><span>&nbsp;</span></a></span></li>
+<li class="search-bar special"><span><a id="widget-button" class="x2-button" title="hidden widgets" href="#"><div class="widget-icon"></div></a><ul id="widget-menu"></ul></span></li>
+<li id="profile-dropdown" class="dropdown"><span><img height="25" width="25" src="/uploads/default.png" alt="" />test</span>
+<ul>
+<li><a href="/index-test.php/profile/3">Profile</a></li>
+<li><a href="/index-test.php/site/viewNotifications">Notifications</a></li>
+<li><a href="/index-test.php/profile/settings">Preferences</a></li>
+<li><a href="/index-test.php/profile/manageCredentials">Manage Apps</a></li>
+<li><a href="/index-test.php/site/page?view=iconreference">Icon Reference</a></li>
+<li><a target="_blank" href="http://www.x2engine.com/reference_guide">Help</a></li>
+<li><a href="/index-test.php/site/bugReport">Report A Bug</a></li>
+<li class="divider"><span>---</span></li>
+<li><a href="#" id="yt9">Go Invisible</a></li>
+<li><a href="/index-test.php/site/logout">Logout</a></li>
+</ul>
+</li>
+</ul>				<div id="notif-box">
+					<div id="no-notifications">
+					You don't have any notifications.					</div><div id="notifications"></div><div id="notif-view-all" style="display:none;">
+					<a href="/index-test.php/site/viewNotifications">View all</a>					</div>
+				</div>
+				<div id="notif-box-shadow-correct"> <!-- IE fix, used to force repaint -->
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!--<div id="sidebar-left">-->
+	<div class="sidebar-left">
+	<!-- sidebar -->
+	<div class="portlet" id="filter-controls">
+<div class="portlet-decoration">
+<div class="portlet-title">Filter Controls</div>
+</div>
+<div class="portlet-content">
+<div class="x2-button-group"><a href="#" id="simple-filters" class="x2-button disabled-link" style="width:42px">Simple</a><a href="#" id="full-filters" class="x2-button" style="width:42px">Full</a></div>
+</div>
+</div><div id='full-controls'style='display:none;'><div class="" id="visibility-filter">
+<div class="portlet-decoration">
+<div class="portlet-title">Visibility<a title="visibility" class="activity-control-link" style="float:right;padding-right:5px;" href="#"><img src="/themes/x2engine/images/icons/Collapse_Widget.png" alt="" /></a></div>
+</div>
+<div class="portlet-content">
+<ul style="font-size: 0.8em; font-weight: bold; color: black;"><li>
+<input title="" class="visibility filter-checkbox" checked="checked" type="checkbox" value="1" name="Public" id="Public" /><label for="1" title="">Public</label></li>
+<li>
+<input title="" class="visibility filter-checkbox" checked="checked" type="checkbox" value="1" name="Private" id="Private" /><label for="0" title="">Private</label></li>
+</ul>
+</div>
+</div><div class="" id="user-filter">
+<div class="portlet-decoration">
+<div class="portlet-title">Relevant Users<a title="users" class="activity-control-link" style="float:right;padding-right:5px;" href="#"><img src="/themes/x2engine/images/icons/Collapse_Widget.png" alt="" /></a></div>
+</div>
+<div class="portlet-content">
+<ul style="font-size: 0.8em; font-weight: bold; color: black;"><li>
+<input title="" class="users filter-checkbox" checked="checked" type="checkbox" value="1" name="Anyone" id="Anyone" /><label for="Anyone" title="">Anyone</label></li>
+<li>
+<input title="" class="users filter-checkbox" checked="checked" type="checkbox" value="1" name="test" id="test" /><label for="test" title="">test test</label></li>
+<li>
+<input title="" class="users filter-checkbox" checked="checked" type="checkbox" value="1" name="admin" id="admin" /><label for="admin" title="">web admin</label></li>
+</ul>
+</div>
+</div><div class="" id="type-filter">
+<div class="portlet-decoration">
+<div class="portlet-title">Event Types<a title="eventTypes" class="activity-control-link" style="float:right;padding-right:5px;" href="#"><img src="/themes/x2engine/images/icons/Collapse_Widget.png" alt="" /></a></div>
+</div>
+<div class="portlet-content">
+<ul style="font-size: 0.8em; font-weight: bold; color: black;"></ul>
+</div>
+</div><div class="" id="user-filter">
+<div class="portlet-decoration">
+<div class="portlet-title">Social Subtypes<a title="subtypes" class="activity-control-link" style="float:right;padding-right:5px;" href="#"><img src="/themes/x2engine/images/icons/Collapse_Widget.png" alt="" /></a></div>
+</div>
+<div class="portlet-content">
+<ul style="font-size: 0.8em; font-weight: bold; color: black;"><li>
+<input title="" class="subtypes filter-checkbox" checked="checked" type="checkbox" value="1" name="Social Post" id="Social_Post" /><label for="Social Post" title="">Social Post</label></li>
+<li>
+<input title="" class="subtypes filter-checkbox" checked="checked" type="checkbox" value="1" name="Link" id="Link" /><label for="Link" title="">Link</label></li>
+<li>
+<input title="" class="subtypes filter-checkbox" checked="checked" type="checkbox" value="1" name="Announcement" id="Announcement" /><label for="Announcement" title="">Announcement</label></li>
+<li>
+<input title="" class="subtypes filter-checkbox" checked="checked" type="checkbox" value="1" name="Product Info" id="Product_Info" /><label for="Product Info" title="">Product Info</label></li>
+<li>
+<input title="" class="subtypes filter-checkbox" checked="checked" type="checkbox" value="1" name="Competitive Info" id="Competitive_Info" /><label for="Competitive Info" title="">Competitive Info</label></li>
+<li>
+<input title="" class="subtypes filter-checkbox" checked="checked" type="checkbox" value="1" name="Confidential" id="Confidential" /><label for="Confidential" title="">Confidential</label></li>
+</ul>
+</div>
+</div><div class="" id="user-filter">
+<div class="portlet-decoration">
+<div class="portlet-title">Options<a title="options" class="activity-control-link" style="float:right;padding-right:5px;" href="#"><img src="/themes/x2engine/images/icons/Collapse_Widget.png" alt="" /></a></div>
+</div>
+<div class="portlet-content">
+<ul style="font-size: 0.8em; font-weight: bold; color: black;"><li>
+<input title="" class="default-filter-checkbox" id="filter-default" type="checkbox" value="1" name="setDefault" /><label for="setDefault" title="">Set Default</label></li>
+</ul>
+<br /><div id='full-controls-button-container'><a id="toggle-filters-link" class="x2-button" href="#">Uncheck Filters</a><a class="x2-button" id="apply-feed-filters" href="#">Apply Filters</a></div></div>
+</div></div><div id='simple-controls'><div class="portlet" id="type-filter">
+<div class="portlet-decoration">
+<div class="portlet-title">Event Types</div>
+</div>
+<div class="portlet-content">
+<a class="x2-button filter-control-button" id="all-button" style="width:107px;" href="#">All</a><br></div>
+</div></div></div><div class='sidebar-left'><div class="portlet" id="top-contacts">
+<div class="portlet-decoration">
+<div class="portlet-title">Top Contacts</div>
+</div>
+<div class="portlet-content">
+<ul id="top-contacts-list">
+</ul></div>
+</div><div class="portlet" id="recent-items">
+<div class="portlet-decoration">
+<div class="portlet-title">Recently Viewed</div>
+</div>
+<div class="portlet-content">
+<ul>
+</ul></div>
+</div>	</div>
+<!--</div>-->
+<!--</div>-->
+<div id="flexible-content">
+	<div id="sidebar-right">
+		<style>
+
+    #gear-img-container {
+       height: 18px; 
+    }
+
+    /* 
+    override spectrum color picker css 
+    */
+    #feed-widget-gear-menu .sp-replacer {
+        padding: 0px !important;
+    }
+    #feed-widget-gear-menu .sp-dd {
+        height: 13px !important;
+    }
+    #feed-widget-gear-menu .sp-preview
+    {
+        width:20px !important;
+        height: 17px !important;
+        margin-right: 5px !important;
+    }
+
+    #sidebar-right .selected {
+        color:white;
+        background:black;
+    }
+    #sidebar-right .hover {
+        background:grey;
+    }
+    #sidebar-right hr {
+        margin: 0px;
+        padding: 0;
+    }
+    #sidebar-right colorPicker > span {
+        padding: 0px 0px 0px 0px !important;
+    }
+    #widget_ChatBox input{
+        padding: 1px 1px 1px 1px !important;
+        float: none;
+        border: 1px solid #aaa;
+        -moz-border-radius: 3px;
+        -o-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        $("#topDown").hover(function(){
+            if(!$(this).hasClass('selected')){
+                $(this).toggleClass('hover');
+            }
+        });
+        $("#bottomUp").hover(function(){
+            if(!$(this).hasClass('selected')){
+                $(this).toggleClass('hover');
+            }
+        });
+        $("#media-selector").hover(function(){
+            if(!$(this).hasClass('selected')){
+                $(this).toggleClass('hover');
+            }
+        });
+        $("#drive-selector").hover(function(){
+            if(!$(this).hasClass('selected')){
+                $(this).toggleClass('hover');
+            }
+        });
+        $("#topDown").click(function(){
+            if($(this).hasClass('selected')) return;
+            else {
+                $.ajax({url:yii.baseUrl+"/index.php/site/activityFeedOrder"});
+                yii.profile['activityFeedOrder']=1;
+                $(this).addClass('selected');
+                $(this).removeClass('hover');
+                var chatbox = $('#chat-box');
+                chatbox.children().each(function(i,child){chatbox.prepend(child)});
+                chatbox.prop('scrollTop',0);
+                $("#bottomUp").removeClass('selected');
+            }
+        });
+        $("#bottomUp").click(function(){
+            if($(this).hasClass('selected')) return;
+            else {
+                $.ajax({url:yii.baseUrl+"/index.php/site/activityFeedOrder"});
+                yii.profile['activityFeedOrder']=0;
+                $(this).addClass('selected');
+                $(this).removeClass('hover');
+                var chatbox = $('#chat-box');
+                var scroll=chatbox.prop('scrollHeight');
+                chatbox.children().each(function(i,child){chatbox.prepend(child)});
+                chatbox.prop('scrollTop',scroll);
+                $("#topDown").removeClass('selected');
+            }
+        });
+        $("#media-selector").click(function(){
+            if($(this).hasClass('selected')) return;
+            else {
+                $.ajax({url:yii.baseUrl+"/index.php/site/mediaWidgetToggle"});
+                yii.profile['mediaWidgetDrive']=0;
+                $(this).addClass('selected');
+                $(this).removeClass('hover');
+                $("#media-widget-gear-menu").removeClass('open');
+                $("#drive-selector").removeClass('selected');
+                $('#drive-table').hide();
+                $('#x2-media-list').show();
+            }
+        });
+        $("#drive-selector").click(function(){
+            if($(this).hasClass('selected')) return;
+            else {
+                $.ajax({url:yii.baseUrl+"/index.php/site/mediaWidgetToggle"});
+                yii.profile['mediaWidgetDrive']=1;
+                $(this).addClass('selected');
+                $(this).removeClass('hover');
+                $("#media-widget-gear-menu").removeClass('open');
+                $("#media-selector").removeClass('selected');
+                $('#drive-table').show();
+                $('#x2-media-list').hide();
+            }
+        });
+        $("#drive-refresh").click(function(e){
+            e.preventDefault();
+            $.ajax({
+                'url':'/index-test.php/media/refreshDriveCache',
+                'success':function(data){
+                    $('#drive-table').html(data);
+                }
+            });
+            $("#media-widget-gear-menu").removeClass('open');
+        });
+
+        function saveWidgetBgColor () {
+            if ($(this).data ('ignoreChange')) {
+                return;
+            }
+            var color = $(this).val();
+            $.ajax({
+                url: yii.baseUrl + '/index.php/site/activityFeedWidgetBgColor',
+                data: 'color='+ color,
+                success:function(){
+                    if(color == '') {
+                        $('#chat-box').css('background-color', '#fff');
+                    } else {
+                        $('#chat-box').css('background-color', '#' + color);
+                    }
+                    //$('#chat-box').css("color", convertTextColor(color, 'standardText'));
+                    // Check for a dark color
+                    /*if(convertTextColor(color, 'linkText') == '#fff000'){
+                    $('#chat-box a').removeClass();
+                    $('#chat-box a').addClass('dark_background');
+                }
+                // Light color
+                else {
+                    $('#chat-box a').removeClass();
+                    $('#chat-box a').addClass("light_background");
+                }
+                // Set color correctly if transparent is selected
+                if(color == ""){
+                    $('#chat-box').css("color", "rgb(51, 51, 51)");
+                    $('#chat-box a').removeClass();
+                    $('#chat-box a').addClass("light_background");
+                }*/
+                }
+            });
+        }
+
+        setupSpectrum ($('#widgets-activity-feed-widget-bg-color'), true);
+
+        $('#widgets-activity-feed-widget-bg-color').change(saveWidgetBgColor);
+
+
+    });
+
+    // @param $colorString a string representing a hex number
+    // @param $testType standardText or linkText
+    function convertTextColor( colorString, textType){
+        // Split the string to red, green and blue components
+        // Convert hex strings into ints
+        var red   = parseInt(colorString.substring(1,3), 16);
+        var green = parseInt(colorString.substring(3,5), 16);
+        var blue  = parseInt(colorString.substring(5,7), 16);
+
+        if(textType == 'standardText') {
+            if((((red*299)+(green*587)+(blue*114))/1000) >= 128) {
+                return 'black';
+            }
+            else {
+                return 'white';
+            }
+        }
+        else if (textType == 'linkText') {
+            if((((red < 100) || (green < 100)) && blue > 80) || ((red < 80) && (green < 80) && (blue < 80))) {
+                return '#fff000';  // Yellow links
+            }
+            else return '#0645AD'; // Blue link color
+        }
+        else if (textType == 'visitedLinkText') {
+            if((((red < 100) || (green < 100)) && blue > 80) || ((red < 80) && (green < 80) && (blue < 80))) {
+                return '#ede100';  // Yellow links
+            }
+            else return '#0B0080'; // Blue link color
+        }
+        else if (textType == 'activeLinkText') {
+            if((((red < 100) || (green < 100)) && blue > 80) || ((red < 80) && (green < 80) && (blue < 80))) {
+                return '#fff000';  // Yellow links
+            }
+            else return '#0645AD'; // Blue link color
+        }
+        else if (textType == 'hoverLinkText') {
+            if((((red < 100) || (green < 100)) && blue > 80) || ((red < 80) && (green < 80) && (blue < 80))) {
+                return '#fff761';  // Yellow links
+            }
+            else return '#3366BB'; // Blue link color
+        }
+    }
+</script>
+<style>
+    .dark_background:link { color: #fff000 !important; }
+    .dark_background:active { color: #fff000 !important; }
+    .dark_background:hover { color: #F0E030 !important; }
+    .dark_background:visited { color: #ede100 !important; }
+
+    .light_background:link { color: #0645AD !important; }
+    .light_background:active { color: #0645AD !important; }
+    .light_background:hover { color: #3366BB !important; }
+    .light_background:visited { color: #0B0080 !important; }
+</style>
+<div id="yw2">
+                    <script>
+                        $("#bottomUp").addClass('selected');
+                    </script>
+                                        <script>
+                        $("#media-selector").addClass('selected');
+                    </script>
+                    <div class="portlet" id="widget_OnlineUsers">
+<div class="portlet-decoration">
+<div class="portlet-title"><div id="widget-dropdown" class="dropdown">Active Users<div class="portlet-minimize" onclick="toggleWidgetState('OnlineUsers',0); return false;"><a class="portlet-minimize-button" href="#"><img class="collapse-widget" src="/themes/x2engine/images/icons/Collapse_Widget.png" alt="" /></a> <a onclick="$(&#039;#widget_OnlineUsers&#039;).hideWidgetRight(); return false;" href="#"><img src="/themes/x2engine/images/icons/Close_Widget.png" alt="" /></a></div></div></div>
+</div>
+<div class="portlet-content">
+<div id="onlineUsers">
+<span class='user'><a href="https://app9.com/index-test.php/profile/3">test test</a></span> <span class='user'><a href="https://app9.com/index-test.php/profile/1">web admin</a></span> </div></div>
+</div>                    <script>
+                        $("#bottomUp").addClass('selected');
+                    </script>
+                                        <script>
+                        $("#media-selector").addClass('selected');
+                    </script>
+                    <div class="portlet" id="widget_TimeZone">
+<div class="portlet-decoration">
+<div class="portlet-title"><div id="widget-dropdown" class="dropdown">Time Zone<div class="portlet-minimize" onclick="toggleWidgetState('TimeZone',1); return false;"><a class="portlet-minimize-button" href="#"><img class="expand-widget" src="/themes/x2engine/images/icons/Expand_Widget.png" alt="" /></a> <a onclick="$(&#039;#widget_TimeZone&#039;).hideWidgetRight(); return false;" href="#"><img src="/themes/x2engine/images/icons/Close_Widget.png" alt="" /></a></div></div></div>
+</div>
+<div class="portlet-content">
+<span id="tzClock2"></span></div>
+</div>                    <script>
+                        $("#bottomUp").addClass('selected');
+                    </script>
+                                        <script>
+                        $("#media-selector").addClass('selected');
+                    </script>
+                    <div  style="display;none;" id="widget_GoogleMaps"></div>                    <script>
+                        $("#bottomUp").addClass('selected');
+                    </script>
+                                        <script>
+                        $("#media-selector").addClass('selected');
+                    </script>
+                    <div  style="display;none;" id="widget_ChatBox"></div>                    <script>
+                        $("#bottomUp").addClass('selected');
+                    </script>
+                                        <script>
+                        $("#media-selector").addClass('selected');
+                    </script>
+                    <div class="portlet" id="widget_TagCloud">
+<div class="portlet-decoration">
+<div class="portlet-title"><div id="widget-dropdown" class="dropdown">Tag Cloud<div class="portlet-minimize" onclick="toggleWidgetState('TagCloud',0); return false;"><a class="portlet-minimize-button" href="#"><img class="collapse-widget" src="/themes/x2engine/images/icons/Collapse_Widget.png" alt="" /></a> <a onclick="$(&#039;#widget_TagCloud&#039;).hideWidgetRight(); return false;" href="#"><img src="/themes/x2engine/images/icons/Close_Widget.png" alt="" /></a></div></div></div>
+</div>
+<div class="portlet-content">
+<span style="float:left"><a href="#" id="yt3">Just Me</a> | <a href="#" id="yt4">All Users</a><br /></span><span style="float:right"><span id="tag-hint" style="color:#06c">[?]</span></span> <br><br>
+<div id="myTags" >
+</div>
+
+<div id="allTags"  style="display:none;">
+</div>
+<script>
+    $('.hide').mouseenter(function(e){
+        e.preventDefault();
+        var tag=$(this).attr('tag-name');
+        var elem=$(this);
+        var content='<span style="position:absolute;right:1px;top:1px;;background-color:#F0F0F0;" class="hide-link-span"><a href="#" class="hide-link" style="color:#06C;">[x]</a></span>';
+        $(content).hide().delay(1500).appendTo($(this)).fadeIn(500);
+        $('.hide-link').click(function(e){
+           e.preventDefault();
+           $.ajax({
+              url:'/index-test.php/profile/hideTag'+'?tag='+tag,
+              success:function(){
+                  $(elem).closest('.tag').fadeOut(500);
+              }
+           });
+        });
+    }).mouseleave(function(){
+        $('.hide-link-span').remove();
+    });
+    $('#tag-hint').qtip({
+       position:{'my':'top right','at':'bottom left'},
+       content:'Pressing the X button on a tag will hide it from this widget. Hidden tags can be restored from your Preferences page.'
+    });
+</script></div>
+</div>                    <script>
+                        $("#bottomUp").addClass('selected');
+                    </script>
+                                        <script>
+                        $("#media-selector").addClass('selected');
+                    </script>
+                    <div class="portlet" id="widget_ActionMenu">
+<div class="portlet-decoration">
+<div class="portlet-title"><div id="widget-dropdown" class="dropdown">My Actions<div class="portlet-minimize" onclick="toggleWidgetState('ActionMenu',0); return false;"><a class="portlet-minimize-button" href="#"><img class="collapse-widget" src="/themes/x2engine/images/icons/Collapse_Widget.png" alt="" /></a> <a onclick="$(&#039;#widget_ActionMenu&#039;).hideWidgetRight(); return false;" href="#"><img src="/themes/x2engine/images/icons/Close_Widget.png" alt="" /></a></div></div></div>
+</div>
+<div class="portlet-content">
+<ul>
+	<li><strong>0</strong> Total Actions</li>
+	<li><strong>0</strong> Unfinished Actions</li>
+	<li><strong>0</strong> Overdue Actions</li>
+	<li><strong>0</strong> Completed Actions</li>
+</ul></div>
+</div>                    <script>
+                        $("#bottomUp").addClass('selected');
+                    </script>
+                                        <script>
+                        $("#media-selector").addClass('selected');
+                    </script>
+                    <div class="portlet" id="widget_MessageBox">
+<div class="portlet-decoration">
+<div class="portlet-title"><div id="widget-dropdown" class="dropdown">Message Board<div class="portlet-minimize" onclick="toggleWidgetState('MessageBox',0); return false;"><a class="portlet-minimize-button" href="#"><img class="collapse-widget" src="/themes/x2engine/images/icons/Collapse_Widget.png" alt="" /></a> <a onclick="$(&#039;#widget_MessageBox&#039;).hideWidgetRight(); return false;" href="#"><img src="/themes/x2engine/images/icons/Close_Widget.png" alt="" /></a></div></div></div>
+</div>
+<div class="portlet-content">
+<div id="motd-box">Please enter a message of the day!</div>
+<div id="motd-form" style="display:none;">
+<form action="/index-test.php/site/whatsNew" method="post"><textarea cols="16" onclick="clearText(this)" name="message" id="message"></textarea><input class="x2-button" type="submit" name="yt5" value="Submit" id="yt5" /></form></div></div>
+</div>                    <script>
+                        $("#bottomUp").addClass('selected');
+                    </script>
+                                        <script>
+                        $("#media-selector").addClass('selected');
+                    </script>
+                    <div class="portlet" id="widget_QuickContact">
+<div class="portlet-decoration">
+<div class="portlet-title"><div id="widget-dropdown" class="dropdown">Quick Contact<div class="portlet-minimize" onclick="toggleWidgetState('QuickContact',0); return false;"><a class="portlet-minimize-button" href="#"><img class="collapse-widget" src="/themes/x2engine/images/icons/Collapse_Widget.png" alt="" /></a> <a onclick="$(&#039;#widget_QuickContact&#039;).hideWidgetRight(); return false;" href="#"><img src="/themes/x2engine/images/icons/Close_Widget.png" alt="" /></a></div></div></div>
+</div>
+<div class="portlet-content">
+<form id="quick-contact-form" action="/index-test.php/site/whatsNew" method="POST"><div class="form thin">
+	<div class="row inlineLabel">
+		<input maxlength="40" tabindex="100" style="color:#aaa;width:68px;" title="First Name" name="Contacts[firstName]" id="Contacts_firstName" type="text" value="First Name" />		
+		<input maxlength="40" tabindex="101" style="color:#aaa;width:68px;" title="Last Name" name="Contacts[lastName]" id="Contacts_lastName" type="text" value="Last Name" />		
+		<input maxlength="40" tabindex="102" style="color:#aaa;width:150px;" title="Phone" name="Contacts[phone]" id="Contacts_phone" type="text" value="Phone" />		
+		<input maxlength="100" tabindex="103" style="color:#aaa;width:150px;" title="Email" name="Contacts[email]" id="Contacts_email" type="text" value="Email" />			</div>
+</div>
+<input class="x2-button" type="submit" name="yt6" value="Create" id="yt6" /></form></div>
+</div>                    <script>
+                        $("#bottomUp").addClass('selected');
+                    </script>
+                                        <script>
+                        $("#media-selector").addClass('selected');
+                    </script>
+                    <div class="portlet" id="widget_NoteBox">
+<div class="portlet-decoration">
+<div class="portlet-title"><div id="widget-dropdown" class="dropdown">Note Pad<div class="portlet-minimize" onclick="toggleWidgetState('NoteBox',0); return false;"><a class="portlet-minimize-button" href="#"><img class="collapse-widget" src="/themes/x2engine/images/icons/Collapse_Widget.png" alt="" /></a> <a onclick="$(&#039;#widget_NoteBox&#039;).hideWidgetRight(); return false;" href="#"><img src="/themes/x2engine/images/icons/Close_Widget.png" alt="" /></a></div></div></div>
+</div>
+<div class="portlet-content">
+<div id="note-container-fix" style="height: 300px">
+<div id="note-container" style="height: 295px">
+
+<div id="note-box-container" style="height: 200px; margin-bottom: 5px">
+	<div id="note-box" style="height: 200px">Feel free to enter some notes!<br /><br /></div>
+</div>
+
+
+<form action="/index-test.php/site/whatsNew" method="post">
+<div id="note-message-container" style="height: 56px">
+	<textarea style="height: 50px;" name="note-message" id="note-message"></textarea></div>
+
+<input class="x2-button" type="submit" name="yt7" value="Add Note" id="yt7" /></form></div></div></div>
+</div>                    <script>
+                        $("#bottomUp").addClass('selected');
+                    </script>
+                                        <script>
+                        $("#media-selector").addClass('selected');
+                    </script>
+                    <div class="portlet" id="widget_MediaBox">
+<div class="portlet-decoration">
+<div class="portlet-title"><div id="widget-dropdown" class="dropdown">Files<div class="portlet-minimize" onclick="toggleWidgetState('MediaBox',0); return false;"><a class="portlet-minimize-button" href="#"><img class="collapse-widget" src="/themes/x2engine/images/icons/Collapse_Widget.png" alt="" /></a> <a onclick="$(&#039;#widget_MediaBox&#039;).hideWidgetRight(); return false;" href="#"><img src="/themes/x2engine/images/icons/Close_Widget.png" alt="" /></a></div></div></div>
+</div>
+<div class="portlet-content">
+
+
+<div id="media-library-widget-wrapper" style="width:99%">
+    <div id="media-library-widget-container">
+        <div id='x2-media-list' style=''>        <strong>test test</strong>
+        <a id="test-media-showhide" class="media-library-showhide" href="#">[&ndash;]</a><br>
+
+                
+
+        <div id="test-media" class="user-media-list">
+                        <br>
+            <br>
+        </div>
+
+        
+                                                                                                        </div>
+        <div id='drive-table' style='display:none;'>                </div>
+        <script>
+                $(document).on('click','.toggle-file-system',function(e){
+                    e.preventDefault();
+                    var id=$(this).attr('data-id');
+                    if($('#'+id).is(':hidden')){
+                        $.ajax({
+                            'url':'/index-test.php/media/recursiveDriveFiles',
+                            'data':{'folderId':id},
+                            'success':function(data){
+                                $('#'+id).html(data);
+                                $('#'+id).show();
+                                $('a.drive-link').draggable({revert: 'invalid', helper:'clone', revertDuration:200, appendTo:'body',iframeFix:true});
+                            }
+                        });
+                    }else{
+                        $('#'+id).html('').hide();
+                    }
+                });
+
+        </script>
+        <style>
+            .drive-link{
+                text-decoration:none;
+                color:#222;
+                font-weight:bold;
+                display:block;
+                margin-left:25px;
+            }
+            .drive-item{
+                vertical-align:middle;
+                display:block;
+            }
+            .drive-wrapper{
+                border-bottom-style:solid;
+                border-width:1px;
+                border-color:#ccc;
+                padding:5px;
+                margin-left:-500px;
+                padding-left:510px;
+                vertical-align:middle;
+            }
+            .drive {
+                padding-left:20px;
+            }
+            .drive-table{
+
+            }
+            .drive-icon{
+                float:left;
+            }
+        </style>
+    </div>
+</div>
+
+</div>
+</div>                    <script>
+                        $("#bottomUp").addClass('selected');
+                    </script>
+                                        <script>
+                        $("#media-selector").addClass('selected');
+                    </script>
+                    <div class="portlet" id="widget_DocViewer">
+<div class="portlet-decoration">
+<div class="portlet-title"><div id="widget-dropdown" class="dropdown">Doc Viewer<div class="portlet-minimize" onclick="toggleWidgetState('DocViewer',0); return false;"><a class="portlet-minimize-button" href="#"><img class="collapse-widget" src="/themes/x2engine/images/icons/Collapse_Widget.png" alt="" /></a> <a onclick="$(&#039;#widget_DocViewer&#039;).hideWidgetRight(); return false;" href="#"><img src="/themes/x2engine/images/icons/Close_Widget.png" alt="" /></a></div></div></div>
+</div>
+<div class="portlet-content">
+
+<div id="docview-container-outer" style="height: 263px">
+	<div id="docview-container" style="height: 258px">
+		<div id="docview-box-outer" style="height: 202px; margin-bottom: 5px;">
+			<div id="docview-box" style="height: 200px"></div>
+		</div>
+		<form id="docview-input">
+			<label>Enter Title</label>
+			<input id="docview-title" type="text">
+		</form>
+	</div>
+</div>
+
+</div>
+</div>                    <script>
+                        $("#bottomUp").addClass('selected');
+                    </script>
+                                        <script>
+                        $("#media-selector").addClass('selected');
+                    </script>
+                    <div class="portlet" id="widget_TopSites">
+<div class="portlet-decoration">
+<div class="portlet-title"><div id="widget-dropdown" class="dropdown">Top Sites<div class="portlet-minimize" onclick="toggleWidgetState('TopSites',0); return false;"><a class="portlet-minimize-button" href="#"><img class="collapse-widget" src="/themes/x2engine/images/icons/Collapse_Widget.png" alt="" /></a> <a onclick="$(&#039;#widget_TopSites&#039;).hideWidgetRight(); return false;" href="#"><img src="/themes/x2engine/images/icons/Close_Widget.png" alt="" /></a></div></div></div>
+</div>
+<div class="portlet-content">
+<div id="sites-container-fix" style="height:250px">
+<div id="sites-container" style="height:255px">
+<div id="top-sites-container" style="height:200px; margin-bottom: 20px;">
+<div id="sites-box" style="height:200px">
+<table><tr><th>Title</th><th>Link</th></tr><tr><td>Example</td><td><a href=".">Link</a></td></tr></table></div>
+<form action="/index-test.php/site/whatsNew" method="post"><div id='site-url-container' style="height: 40px; margin-bottom:35px;">
+	Title:<input style="height: 10px;" type="text" value="" name="url-title" id="url-title" />	<br/>
+	Link:<input style="height: 10px;" type="text" value="" name="url-url" id="url-url" /></div>
+<input class="x2-button" id="submit-button" type="submit" name="yt8" value="Add Site" /></form></div></div></div>
+</div>
+</div>                    <script>
+                        $("#bottomUp").addClass('selected');
+                    </script>
+                                        <script>
+                        $("#media-selector").addClass('selected');
+                    </script>
+                    <div class="portlet" id="widget_HelpfulTips">
+<div class="portlet-decoration">
+<div class="portlet-title"><div id="widget-dropdown" class="dropdown">Helpful Tips<div class="portlet-minimize" onclick="toggleWidgetState('HelpfulTips',0); return false;"><a class="portlet-minimize-button" href="#"><img class="collapse-widget" src="/themes/x2engine/images/icons/Collapse_Widget.png" alt="" /></a> <a onclick="$(&#039;#widget_HelpfulTips&#039;).hideWidgetRight(); return false;" href="#"><img src="/themes/x2engine/images/icons/Close_Widget.png" alt="" /></a></div></div></div>
+</div>
+<div class="portlet-content">
+<head>
+    <style>
+        tip-title {
+            text-align: center;
+            font-weight: bold;
+        }
+        tip {
+            text-align: center;
+        }
+        #tip-content{
+            margin-right:22px;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="tip-refresh" title="Refresh Tip"></span>
+    <div id="tip-content">
+        <tip-title>
+            <div id="tip-title">
+                Layout Tip            </div>
+        </tip-title>
+        <tip>
+            <div id="tip">
+                You can drag and drop widgets on the right sidebar to re-arrange their order.            </div>
+        </tip>
+    </div>
+    <script>
+        $(".tip-refresh").click(function() {
+            $.ajax({
+                url:yii.baseUrl+"/index.php/site/getTip",
+                success:function(data){
+                    data=JSON.parse(data);
+                    $('#tip-content').fadeOut(400,function(){
+                        $('#tip-title').text(data['module'] + " Tip");
+                        $('#tip').text(data['tip']);
+                        $('#tip-content').fadeIn();
+                    });
+                }
+            });
+        });
+    </script>
+<script type="text/javascript" src="/js/whatsNew.js"></script>
+<script type="text/javascript" src="/js/spectrumSetup.js"></script>
+<script type="text/javascript" src="/js/X2Chart.js"></script>
+<script type="text/javascript" src="/js/X2ActionHistoryChart.js"></script>
+<script type="text/javascript" src="/js/X2EventsChart.js"></script>
+<script type="text/javascript" src="/js/X2UsersChart.js"></script>
+<script type="text/javascript" src="/themes/x2engine/css/listview/jquery.yiilistview.js"></script>
+<script type="text/javascript" src="/assets/bebc0e9b/js/jquery.ias.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+$(window).load(function(){var a=$("#powered-by-x2engine");if(!a.length||a.attr("src")!=yii.baseUrl+"/images/powered_by_x2engine.png"){$("a").removeAttr("href");alert("Please put the logo back")}});
+jQuery('#sticky-feed').yiiListView({'ajaxUpdate':['sticky-feed'],'ajaxVar':'ajax','pagerClass':'pager','loadingClass':'list-view-loading','sorterClass':'sorter','enableHistory':false});
+jQuery.ias({'container':'#activity-feed .items','item':'.view.top-level','pagination':'#activity-feed .pager','next':'#activity-feed .next:not(.hidden) a','loader':' Loading...','onRenderComplete':function(){
+							if(x2.whatsNew.minimizeFeed){
+								minimizePosts();
+							}
+							if(x2.whatsNew.commentFlag){
+								$(".comment-link").click();
+							}
+							$.each($(".comment-count"),function(){
+								if($(this).attr("val")>0){
+									$(this).parent().click();
+								}
+							});
+						}});
+jQuery('#activity-feed').yiiListView({'ajaxUpdate':['activity-feed'],'ajaxVar':'ajax','pagerClass':'pager','loadingClass':'list-view-loading','sorterClass':'sorter','enableHistory':false});
+
+				$("#apply-feed-filters").click(function(e){
+					e.preventDefault();
+					var visibility=new Array();
+					$.each($(".visibility.filter-checkbox"),function(){
+						if(typeof $(this).attr("checked")=="undefined"){
+							visibility.push($(this).attr("name"));
+						}
+					});
+
+					var users=new Array();
+					$.each($(".users.filter-checkbox"),function(){
+						if(typeof $(this).attr("checked")=="undefined"){
+							users.push($(this).attr("name"));
+						}
+					});
+
+					var eventTypes=new Array();
+					$.each($(".event-type.filter-checkbox"),function(){
+						if(typeof $(this).attr("checked")=="undefined"){
+							eventTypes.push($(this).attr("name"));
+						}
+					});
+
+					var subtypes=new Array();
+					$.each($(".subtypes.filter-checkbox"),function(){
+						if(typeof $(this).attr("checked")=="undefined"){
+							subtypes.push($(this).attr("name"));
+						}
+					});
+
+					var defaultCheckbox=$("#filter-default");
+					var defaultFilters=false;
+					if($(defaultCheckbox).attr("checked")=="checked"){
+						defaultFilters=true;
+					}
+					var str=window.location+"";
+					pieces=str.split("?");
+					var str2=pieces[0];
+					pieces2=str2.split("#");
+					window.location=pieces2[0]+"?filters=true&visibility="+visibility+"&users="+users+"&types="+eventTypes+"&subtypes="+subtypes+"&default="+defaultFilters;
+				});
+                $("#full-filters").click(function(e){
+					e.preventDefault();
+                    $("#simple-controls").hide();
+                    $("#full-controls").show();
+                    $.ajax({
+                        url:"toggleFeedControls"
+                    });
+                    $(this).addClass("disabled-link");
+                    $(this).prev().removeClass("disabled-link");
+                });
+                $("#simple-filters").click(function(e){
+					e.preventDefault();
+                    $("#full-controls").hide();
+                    $("#simple-controls").show();
+                    $.ajax({
+                        url:"toggleFeedControls"
+                    });
+                    $(this).addClass("disabled-link");
+                    $(this).next().removeClass("disabled-link");
+                });
+                $(".filter-control-button").click(function(e){
+                    e.preventDefault();
+                    var link=this;
+                    var visibility=new Array();
+                    var users=new Array();
+                    var eventTypes=new Array();
+                    var subtypes=new Array();
+                    var defaultFilters=new Array();
+                    var linkId=$(link).attr("id");
+                    if(linkId!="all-button"){
+                        $.each($(".filter-control-button"),function(){
+                            var id=$(this).attr("id");
+                            if(id!=$(link).attr("id")){
+                                pieces=id.split("-");
+                                item=pieces[0];
+                                eventTypes.push(item);
+                            }
+                        });
+                    }
+                    var str=window.location+"";
+					pieces=str.split("?");
+					var str2=pieces[0];
+					pieces2=str2.split("#");
+					window.location=pieces2[0]+"?filters=true&visibility="+visibility+"&users="+users+"&types="+eventTypes+"&subtypes="+subtypes+"&default="+defaultFilters;
+                });
+                $.each($(".hidden-filter"),function(){
+                    $(this).find(".portlet-content").hide();
+                });
+                $(".activity-control-link").click(function(e){
+                    e.preventDefault();
+                    var link=this;
+                    $.ajax({
+                        url:"toggleFeedFilters",
+                        data:{filter:$(this).attr("title")},
+                        success:function(data){
+                            if(data==1){
+                                $(link).html("<img src='"+yii.themeBaseUrl+"/images/icons/Collapse_Widget.png' />");
+                                $(link).parents(".portlet-decoration").next().slideDown();
+                            }else if(data==0){
+                                $(link).html("<img src='"+yii.themeBaseUrl+"/images/icons/Expand_Widget.png' />");
+                                $(link).parents(".portlet-decoration").next().slideUp();
+                            }
+                        }
+                    });
+                });
+			
+jQuery('#yw2').sortable({'opacity':0.6,'handle':'.portlet-decoration','distance':20,'delay':150,'revert':50,'update':function(){
+					$.ajax({
+							type: 'POST',
+							url: '/index-test.php/site/widgetOrder',
+							data: $(this).sortable('serialize')
+					});
+				}});
+jQuery('body').on('click','#yt3',function(){jQuery.ajax({'success':function(response) { $("#myTags").show(); $("#allTags").hide(); } ,'url':'/index-test.php/site/toggleShowTags?tags=justMe','cache':false});return false;});
+jQuery('body').on('click','#yt4',function(){jQuery.ajax({'success':function() { $("#allTags").show(); $("#myTags").hide(); },'url':'/index-test.php/site/toggleShowTags?tags=allUsers','cache':false});return false;});
+jQuery('body').on('click','#yt5',function(){$('#motd-form').hide(); $('#motd-link').show();jQuery.ajax({'type':'POST','url':'/index-test.php/site/motd','cache':false,'data':jQuery(this).parents("form").serialize(),'success':function(html){jQuery("#motd-box").html(html)}});return false;});
+jQuery('body').on('click','#yt6',function(){jQuery.ajax({'success':function(response) {
+			if(response!='') {
+				alert('Contact Saved');
+				$('#quick-contact-form').html(response);
+			}
+		},'type':'POST','url':'/index-test.php/contacts/quickContact','cache':false,'data':jQuery(this).parents("form").serialize()});return false;});
+jQuery('body').on('click','#yt7',function(){jQuery.ajax({'success':function(response) {
+			updateNotes();
+			$('#note-message').val('');
+		},'type':'POST','url':'/index-test.php/site/addPersonalNote','cache':false,'data':jQuery(this).parents("form").serialize()});return false;});
+jQuery('body').on('click','#test-media-showhide',function(){jQuery.ajax({'success':function(response) { toggleUserMedia($("#test-media"), $('#test-media-showhide'), response); },'type':'GET','url':'/index-test.php/media/toggleUserMediaVisible?user=test','cache':false,'data':jQuery(this).parents("form").serialize()});return false;});
+$('#docview-title').autocomplete(
+	{'minLength':'1',
+	 'source':'/index-test.php/docs/getItems',
+	 'select':function( event, ui ) {
+		$(this).val(ui.item.value);
+		$('#docview-box').load('/index-test.php/docs/getItem?id=' + ui.item.id);
+		return false; 
+	 }
+	});
+
+$('#docview-container').resizable({
+	handles: 's',
+	minHeight: 75,
+	alsoResize: '#docview-container-outer, #docview-box, #docview-box-outer',
+	stop: function(event, ui) {
+		// done resizing, save height to user profile for next time user visits page
+		$.post('/index-test.php/site/saveWidgetHeight', 
+			{Widget: 'DocViewer', 
+			 Height: { docboxHeight: parseInt($('#docview-box').css('height')) }
+			});
+	}
+});
+$('#docview-box-outer').resizable({
+	handles: 's',
+	minHeight: 30,
+	alsoResize: '#docview-box, #docview-container, #docview-container-outer',
+	stop: function(event, ui) {
+		// done resizing, save height to user profile for next time user visits page
+		$.post('/index-test.php/site/saveWidgetHeight', 
+			{Widget: 'DocViewer', 
+			 Height: { docboxHeight: parseInt($('#docview-box').css('height')) }
+			});
+	}
+});
+$(document).on('submit','#docview-input',function(e){
+    e.preventDefault();
+});
+jQuery('body').on('click','#submit-button',function(){jQuery.ajax({'success':function(response){
+			updateURLs();
+			$('#url-title').val('');
+			$('#url-url').val('');
+		},'type':'POST','url':'/index-test.php/site/addSite','cache':false,'data':jQuery(this).parents("form").serialize()});return false;});
+
+    $.datepicker.setDefaults( $.datepicker.regional[ '' ] );
+
+jQuery('body').on('click','#yt9',function(){if(confirm('Are you sure you want to toggle your session status?')) {jQuery.yii.submitForm(this,'/index-test.php/site/toggleVisibility?visible=&redirect=%2Findex-test.php%2Fsite%2FwhatsNew',{});return false;} else return false;});
+});
+/*]]>*/
+</script>
+</body></div>
+</div></div>	</div>
+	<div id="content-container">
+		<div id="content">
+			<!-- content -->
+			
+<div id='page-title-container'>
+	<div class="page-title icon activity-feed">
+		<h2>Activity Feed</h2>
+		<div id="menu-links" class="title-bar">
+			<a id="toggle-all-comments" class="x2-button right" href="#">Toggle Comments</a><a id="my-groups-filter" class="x2-button right" href="#">My Groups</a><a id="just-me-filter" class="x2-button right" href="#">Just Me</a><a id="restore-posts" style="display:none;" class="x2-button right" href="#">Restore Posts</a><a id="min-posts" class="x2-button right" href="#">Minimize Posts</a><a id="show-chart" class="x2-button right" href="#">Show Chart</a><a id="hide-chart" class="x2-button right" style="display:none;" href="#">Hide Chart</a>		</div>
+	</div>
+</div>
+
+<div id='activity-feed-chart-container' style='display: none;'>
+
+	<select id='chart-type-selector'>
+		<option value='eventsChart'>
+			Events Chart		</option>
+		<option value='usersChart'>
+			User Events Chart		</option>
+	</select>
+	
+	
+<div id="eventsChart-chart-container" class="chart-container form" 
+ style='display: none;'>
+
+		<div class="chart-filters-container" style="display: none;">
+		<select id="eventsChart-users-chart-filter" 
+		 class="users-chart-filter left" multiple="multiple">
+							<option value='Anyone'>
+				Anyone				</option>
+							<option value='test'>
+				test test				</option>
+							<option value='admin'>
+				web admin				</option>
+					</select>
+		<select id="eventsChart-social-subtypes-chart-filter" 
+		 class="social-subtypes-chart-filter left" multiple="multiple">
+							<option value='Social Post'>
+				Social Post				</option>
+							<option value='Link'>
+				Link				</option>
+							<option value='Announcement'>
+				Announcement				</option>
+							<option value='Product Info'>
+				Product Info				</option>
+							<option value='Competitive Info'>
+				Competitive Info				</option>
+							<option value='Confidential'>
+				Confidential				</option>
+					</select>
+		<select id="eventsChart-visibility-chart-filter" 
+		 class="visibility-chart-filter left" multiple="multiple">
+							<option value='1'>
+				Public				</option>
+							<option value='0'>
+				Private				</option>
+					</select>
+	</div>
+	
+	<div class="row top-button-row">
+
+		<select id="eventsChart-first-metric" class="first-metric left"
+		 multiple="multiple">
+
+					<option value='any'>
+			All Events			</option>
+					<option value='notif'>
+			Notifications			</option>
+					<option value='feed'>
+			Feed Events			</option>
+					<option value='comment'>
+			Comments			</option>
+					<option value='record_create'>
+			Records Created			</option>
+					<option value='record_deleted'>
+			Records Deleted			</option>
+					<option value='weblead_create'>
+			Webleads Created			</option>
+					<option value='workflow_start'>
+			Workflow Started			</option>
+					<option value='workflow_complete'>
+			Workflow Complete			</option>
+					<option value='workflow_revert'>
+			Workflow Reverted			</option>
+					<option value='email_sent'>
+			Emails Sent			</option>
+					<option value='email_opened'>
+			Emails Opened			</option>
+					<option value='web_activity'>
+			Web Activity			</option>
+					<option value='case_escalated'>
+			Cases Escalated			</option>
+					<option value='calendar_event'>
+			Calendar Events			</option>
+					<option value='action_reminder'>
+			Action Reminders			</option>
+					<option value='action_complete'>
+			Actions Completed			</option>
+					<option value='doc_update'>
+			Doc Updates			</option>
+					<option value='email_from'>
+			Email Received			</option>
+					<option value='voip_calls'>
+			VOIP Calls			</option>
+					<option value='media'>
+			Media			</option>
+				</select>
+
+					<button id="eventsChart-show-chart-filters-button" 
+			 class="show-chart-filters-button x2-button x2-small-button left">
+				Show Filters			</button>
+			<button id="eventsChart-hide-chart-filters-button" 
+			 class="show-chart-filters-button x2-button x2-small-button left"
+			 style='display: none;'>
+				Hide Filters			</button>
+		
+		<div id="eventsChart-bin-size-button-set" 
+		 class="bin-size-button-set x2-button-group right">
+			<a href="#" id="eventsChart-hour-bin-size" class="hour-bin-size x2-button">
+				Per Hour			</a>
+			<a href="#" id="eventsChart-day-bin-size" class="day-bin-size disabled-link x2-button">
+				Per Day			</a>
+			<a href="#" id="eventsChart-week-bin-size" class="week-bin-size x2-button">
+				Per Week			</a>
+			<a href="#" id="eventsChart-month-bin-size" class="month-bin-size x2-button">
+				Per Month			</a>
+		</div>
+	</div>
+
+	<div class="row datepicker-row">
+		<div class="left">
+		<input id="eventsChart-chart-datepicker-from" class="chart-datepicker-from">
+		</input>
+		-
+		<input id="eventsChart-chart-datepicker-to" class="chart-datepicker-to">
+		</input>
+		</div>
+
+		
+		<button id="eventsChart-create-setting-button" 
+		 class="create-setting-button right x2-button x2-small-button">
+			Create Chart Setting		</button>
+		<a href="#" id="eventsChart-delete-setting-button" 
+		 class="delete-setting-button right x2-hint" style='display: none;'
+		 title='Delete predefined chart setting'>
+			[x]
+		</a>
+		<select id="eventsChart-predefined-settings" class="predefined-settings right">
+			<option value="" id="eventsChart-custom-settings-option" 
+			 class="custom-settings-option">
+				Custom			</option>
+					</select>
+
+		
+			</div>
+
+
+	<div id="eventsChart-chart" class="chart jqplot-target">
+	</div>
+
+	<table id="eventsChart-chart-legend" class="chart-legend">
+		<tbody>
+		</tbody>
+	</table>
+
+	<div id="eventsChart-chart-tooltip" class="chart-tooltip" style='display: none;'>
+	</div>
+
+
+</div>
+
+
+<div id="eventsChart-create-chart-setting-dialog" class="create-chart-setting-dialog">
+	<div class='chart-setting-name-input-container'>
+		<span class='left'> Setting Name: </span>
+		<input id="eventsChart-chart-setting-name" class="chart-setting-name"> </input>
+	</div>
+	<br/>
+</div>
+
+
+<script>
+	$(document).on ('ready', function () {
+		// instantiate chart object
+				x2.eventsChart.chart = new X2EventsChart (
+			x2.eventsChart.params);
+				$(document).trigger ('eventsChartReady');
+	});
+</script>
+
+
+	
+	
+<div id="usersChart-chart-container" class="chart-container form" 
+ style='display: none;'>
+
+		<div class="chart-filters-container" style="display: none;">
+		<select id="usersChart-events-chart-filter" 
+		 class="events-chart-filter left" multiple="multiple">
+							<option value='all'>
+				All Events				</option>
+							<option value='feed'>
+				Social Posts				</option>
+							<option value='comment'>
+				Comment				</option>
+							<option value='record_create'>
+				Records Created				</option>
+							<option value='record_deleted'>
+				Records Deleted				</option>
+							<option value='action_reminder'>
+				Action Reminders				</option>
+							<option value='action_complete'>
+				Actions Completed				</option>
+							<option value='calendar_event'>
+				Calendar Events				</option>
+							<option value='case_escalated'>
+				Cases Escalated				</option>
+							<option value='email_opened'>
+				Emails Opened				</option>
+							<option value='email_sent'>
+				Emails Sent				</option>
+							<option value='notif'>
+				Notifications				</option>
+							<option value='weblead_create'>
+				Webleads Created				</option>
+							<option value='web_activity'>
+				Web Activity				</option>
+							<option value='workflow_complete'>
+				Workflow Complete				</option>
+							<option value='workflow_revert'>
+				Workflow Reverted				</option>
+							<option value='workflow_start'>
+				Workflow Started				</option>
+							<option value='doc_update'>
+				Doc Updates				</option>
+							<option value='email_from'>
+				Email Received				</option>
+							<option value='media'>
+				Media				</option>
+							<option value='voip_call'>
+				VOIP Call				</option>
+					</select>
+		<select id="usersChart-social-subtypes-chart-filter" 
+		 class="social-subtypes-chart-filter left" multiple="multiple">
+							<option value='Social Post'>
+				Social Post				</option>
+							<option value='Link'>
+				Link				</option>
+							<option value='Announcement'>
+				Announcement				</option>
+							<option value='Product Info'>
+				Product Info				</option>
+							<option value='Competitive Info'>
+				Competitive Info				</option>
+							<option value='Confidential'>
+				Confidential				</option>
+					</select>
+		<select id="usersChart-visibility-chart-filter" 
+		 class="visibility-chart-filter left" multiple="multiple">
+							<option value='1'>
+				Public				</option>
+							<option value='0'>
+				Private				</option>
+					</select>
+	</div>
+	
+	<div class="row top-button-row">
+
+		<select id="usersChart-first-metric" class="first-metric left"
+		 multiple="multiple">
+
+					<option value='admin'>
+			web admin			</option>
+					<option value='test'>
+			test test			</option>
+				</select>
+
+					<button id="usersChart-show-chart-filters-button" 
+			 class="show-chart-filters-button x2-button x2-small-button left">
+				Show Filters			</button>
+			<button id="usersChart-hide-chart-filters-button" 
+			 class="show-chart-filters-button x2-button x2-small-button left"
+			 style='display: none;'>
+				Hide Filters			</button>
+		
+		<div id="usersChart-bin-size-button-set" 
+		 class="bin-size-button-set x2-button-group right">
+			<a href="#" id="usersChart-hour-bin-size" class="hour-bin-size x2-button">
+				Per Hour			</a>
+			<a href="#" id="usersChart-day-bin-size" class="day-bin-size disabled-link x2-button">
+				Per Day			</a>
+			<a href="#" id="usersChart-week-bin-size" class="week-bin-size x2-button">
+				Per Week			</a>
+			<a href="#" id="usersChart-month-bin-size" class="month-bin-size x2-button">
+				Per Month			</a>
+		</div>
+	</div>
+
+	<div class="row datepicker-row">
+		<div class="left">
+		<input id="usersChart-chart-datepicker-from" class="chart-datepicker-from">
+		</input>
+		-
+		<input id="usersChart-chart-datepicker-to" class="chart-datepicker-to">
+		</input>
+		</div>
+
+		
+		<button id="usersChart-create-setting-button" 
+		 class="create-setting-button right x2-button x2-small-button">
+			Create Chart Setting		</button>
+		<a href="#" id="usersChart-delete-setting-button" 
+		 class="delete-setting-button right x2-hint" style='display: none;'
+		 title='Delete predefined chart setting'>
+			[x]
+		</a>
+		<select id="usersChart-predefined-settings" class="predefined-settings right">
+			<option value="" id="usersChart-custom-settings-option" 
+			 class="custom-settings-option">
+				Custom			</option>
+					</select>
+
+		
+			</div>
+
+
+	<div id="usersChart-chart" class="chart jqplot-target">
+	</div>
+
+	<table id="usersChart-chart-legend" class="chart-legend">
+		<tbody>
+		</tbody>
+	</table>
+
+	<div id="usersChart-chart-tooltip" class="chart-tooltip" style='display: none;'>
+	</div>
+
+
+</div>
+
+
+<div id="usersChart-create-chart-setting-dialog" class="create-chart-setting-dialog">
+	<div class='chart-setting-name-input-container'>
+		<span class='left'> Setting Name: </span>
+		<input id="usersChart-chart-setting-name" class="chart-setting-name"> </input>
+	</div>
+	<br/>
+</div>
+
+
+<script>
+	$(document).on ('ready', function () {
+		// instantiate chart object
+				x2.usersChart.chart = new X2UsersChart (
+			x2.usersChart.params);
+				$(document).trigger ('usersChartReady');
+	});
+</script>
+
+
+</div>
+
+
+
+<div class="form" id="post-form" style="clear:both">
+		<form id="feed-form" action="/index-test.php/site/whatsNew" method="post">	<div class="float-row" style='overflow:visible;'>
+		<textarea style="width:99%;height:25px;color:#aaa;display:block;clear:both;" name="Events[text]" id="Events_text"></textarea><div id='post-buttons' style='display:none;'><select name="Events[associationId]" id="Events_associationId">
+<option value="" selected="selected">Anyone</option>
+<option value="3">test test</option>
+<option value="1">web admin</option>
+</select><select name="Events[visibility]" id="Events_visibility">
+<option value="1" selected="selected">Public</option>
+<option value="0">Private</option>
+</select><select name="Events[subtype]" id="Events_subtype">
+<option value="Social Post">Social Post</option>
+<option value="Link">Link</option>
+<option value="Announcement">Announcement</option>
+<option value="Product Info">Product Info</option>
+<option value="Competitive Info">Competitive Info</option>
+<option value="Confidential">Confidential</option>
+</select><input class="x2-button" id="save-button" type="submit" name="yt0" value="Post" /><input class="x2-button" onclick="$(&#039;#attachments&#039;).slideToggle();" id="toggle-attachment-menu-button" name="yt1" type="button" value="Attach A File/Photo" /></div>	</div>
+	</form></div>
+
+<div id="attachments" style="display:none;">
+<div id="attachment-form-top"></div>
+<div id="attachment-form">
+    <div class="form">
+        <b>Attach a File</b><br />
+        <form enctype="multipart/form-data" id="attachment-form-form" action="/index-test.php/site/upload" method="post"><div class='row'><input type="hidden" value="feed" name="associationType" id="associationType" /><input type="hidden" value="3" name="associationId" id="associationId" /><input type="hidden" value="" name="attachmentText" id="attachmentText" /><select name="private" id="private">
+<option value="0">Public</option>
+<option value="1">Private</option>
+</select><input id="upload" onchange="checkName(this, &#039;#submitAttach&#039;)" type="file" value="" name="upload" /><input id="submitAttach" disabled="disabled" class="x2-button" style="display:inline" type="submit" name="yt2" value="Submit" /></div></form>    </div>
+</div>
+</div>
+
+<div id="sticky-feed" class="list-view">
+<ul id="yw0" class="yiiPager"></ul> <div class="items">
+<span class="empty">No results found.</span></div><div class="keys" style="display:none" title="/index-test.php/site/whatsNew"></div>
+</div><div id="activity-feed" class="list-view">
+<ul id="yw1" class="yiiPager"></ul> <div class="items">
+<span class="empty">No results found.</span></div><div class="keys" style="display:none" title="/index-test.php/site/whatsNew"></div>
+</div><div id="make-important-dialog" style="display: none;">
+	<div class='dialog-explanation'>
+		Leave colors blank for defaults.	</div>
+	<div>
+		<label for="broadcastColor">What color should the event be?</label>		<div class='row'>
+			<input type="text" value="" name="broadcastColor" id="broadcastColor" />		</div>
+	</div>
+	<div>
+		<label for="fontColor">What color should the font be?</label>			<div class='row'>
+		<input type="text" value="" name="fontColor" id="fontColor" />		</div>
+	</div>
+	<div>
+		<label for="linkColor">What color should the links be?</label>		<div class='row'>
+			<input type="text" value="" name="linkColor" id="linkColor" />		</div>
+	</div>
+</div>
+<div id="broadcast-dialog">
+	<div class='dialog-explanation'>
+		Select a group of users to send this event to via email or notification.	</div>
+    <select id='broadcast-dialog-user-select' class='multiselect' multiple='multiple' size='6'>
+				<option value="1"> web admin </option>
+				<option value="3"> test test </option>
+			</select>
+	<div>
+		<label for="email-users">Do you want to email selected users?</label>		<input type="checkbox" value="1" name="email-users" id="email-users" />	</div>
+	<div id='notify-users-checkbox-container'>
+		<label for="notify-users">Do you want to notify selected users?</label>		<input type="checkbox" value="1" name="notify-users" id="notify-users" />	</div>
+</div>
+<style>
+
+</style>
+
+		</div>
+	</div>
+</div>
+	<!--
+	<div style="font-family:monospace, 'Courier New';">
+		</div>
+	-->
+</div>
+</div>
+		<div id="footer">
+	<b>X2CRM 3.4.1	Open Source Edition</b> | 
+	<a href="/index-test.php/x2touch">X2Touch</a> | 
+	<a href="/index-test.php/site/page?view=about">About</a> | 
+	
+	<a href="http://www.x2engine.com/">Powered by X2Engine</a>. <br>Copyright &copy; 2011-2015 X2Engine Inc.
+			Released as free software without warranties under the <a href="/LICENSE.txt" title="GNU Affero General Public License version 3">GNU Affero GPL v3</a>.
+		<br>
+	<a href="http://www.x2engine.com/"><img id="powered-by-x2engine" src="/images/powered_by_x2engine.png" alt="" /></a>	<div id="response-time">
+	123ms 9mb</div>
+	
+</div>
+<a id="page-fader" class="x2-button"><span></span></a>
+<div id="dialog" title="Completion Notes? (Optional)" style="display:none;" class="text-area-wrapper">
+	<textarea id="completion-notes" style="height:110px;"></textarea>
+</div>
+</body>
+<audio id="notificationSound"></audio>
+<audio id='loginSound'></audio>
+</html>

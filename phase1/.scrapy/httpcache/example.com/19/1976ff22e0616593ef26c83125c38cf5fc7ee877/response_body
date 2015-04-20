@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+    <head>
+        
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+<title>Jewelry - Watches  - test site</title>
+<meta name="title" content="Jewelry - Watches  - test site" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Expires" content="Fri, Jan 01 1970 00:00:00 GMT" />
+
+<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- favicon -->
+<link rel="shortcut icon" href="https://app7.com/oc-content/themes/bender/favicon/favicon-48.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://app7.com/oc-content/themes/bender/favicon/favicon-144.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://app7.com/oc-content/themes/bender/favicon/favicon-114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://app7.com/oc-content/themes/bender/favicon/favicon-72.png">
+<link rel="apple-touch-icon-precomposed" href="https://app7.com/oc-content/themes/bender/favicon/favicon-57.png">
+<!-- /favicon -->
+
+<link href="https://app7.com/oc-content/themes/bender/js/jquery-ui/jquery-ui-1.10.2.custom.min.css?15738" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+    var bender = window.bender || {};
+    bender.base_url = 'https://app7.com/index.php';
+    bender.langs = {"delete":"Delete","cancel":"Cancel"};
+    bender.fancybox_prev = 'Previous image';
+    bender.fancybox_next = 'Next image';
+    bender.fancybox_closeBtn = 'Close';
+</script>
+<link href="https://app7.com/oc-content/themes/bender/css/main.css?90583" rel="stylesheet" type="text/css" />
+<meta name="generator" content="Osclass 3.4.1" /><meta name="robots" content="noindex, nofollow, noarchive" />
+<meta name="googlebot" content="noindex, nofollow, noarchive" />
+<link href="https://app7.com/oc-content/themes/bender/js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+<link href="https://app7.com/oc-content/themes/bender/css/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="https://app7.com/oc-includes/osclass/assets/js/fineuploader/fineuploader.css" rel="stylesheet" type="text/css" />
+<link href="https://app7.com/oc-content/themes/bender/css/ajax-uploader.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://app7.com/oc-includes/osclass/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://app7.com/oc-content/themes/bender/js/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="https://app7.com/oc-includes/osclass/assets/js/date.js"></script>
+<script type="text/javascript" src="https://app7.com/oc-includes/osclass/assets/js/fineuploader/jquery.fineuploader.min.js"></script>
+<script type="text/javascript" src="https://app7.com/oc-includes/osclass/assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://app7.com/oc-content/themes/bender/js/global.js"></script>
+    </head>
+<body class="has-searchbox search">
+<div id="header">
+    <div class="wrapper">
+        <div id="logo">
+            <a href="https://app7.com/">test site</a>            <span id="description"></span>
+        </div>
+        <ul class="nav">
+                                                    <li><a id="login_open" href="https://app7.com/index.php?page=login">Login</a></li>
+                                    <li><a href="https://app7.com/index.php?page=register&action=register">Register for a free account</a></li>
+                                                                <li class="publish"><a href="https://app7.com/index.php?page=item&action=item_add">Publish your ad for free</a></li>
+                    </ul>
+    </div>
+    </div>
+<div class="wrapper wrapper-flash">
+            <div class="breadcrumb">
+            <ul class="breadcrumb">
+<li class="first-child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" ><a href="https://app7.com/" itemprop="url"><span itemprop="title">test site</span></a></li>
+
+<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb" > &raquo; <a href="https://app7.com/index.php?page=search&amp;sCategory=1" itemprop="url"><span itemprop="title">For sale</span></a></li>
+
+<li class="last-child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" > &raquo; <span itemprop="title">Jewelry - Watches</span></li>
+</ul>
+            <div class="clear"></div>
+        </div>
+        </div>
+<div class="wrapper" id="content">
+    <div id="sidebar">
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".sub_button").click(function(){
+        $.post('https://app7.com/index.php', {email:$("#alert_email").val(), userid:$("#alert_userId").val(), alert:$("#alert").val(), page:"ajax", action:"alerts"},
+            function(data){
+                if(data==1) { alert('You have sucessfully subscribed to the alert'); }
+                else if(data==-1) { alert('Invalid email address'); }
+                else { alert('There was a problem with the alert');
+                };
+        });
+        return false;
+    });
+
+    var sQuery = 'Enter your e-mail';
+
+    if($('input[name=alert_email]').val() == sQuery) {
+        $('input[name=alert_email]').css('color', 'gray');
+    }
+    $('input[name=alert_email]').click(function(){
+        if($('input[name=alert_email]').val() == sQuery) {
+            $('input[name=alert_email]').val('');
+            $('input[name=alert_email]').css('color', '');
+        }
+    });
+    $('input[name=alert_email]').blur(function(){
+        if($('input[name=alert_email]').val() == '') {
+            $('input[name=alert_email]').val(sQuery);
+            $('input[name=alert_email]').css('color', 'gray');
+        }
+    });
+    $('input[name=alert_email]').keypress(function(){
+        $('input[name=alert_email]').css('background','');
+    })
+});
+</script>
+
+<div class="alert_form">
+    <h3>
+        <strong>Subscribe to this search</strong>
+    </h3>
+    <form action="https://app7.com/index.php" method="post" name="sub_alert" id="sub_alert" class="nocsrf">
+            <input id="page" type="hidden" name="page" value="search" />            <input id="alert" type="hidden" name="alert" value="eyJwcmljZV9taW4iOjAsInByaWNlX21heCI6MCwiYUNhdGVnb3JpZXMiOlsiMjQiXSwiY2l0eV9hcmVhcyI6W10sImNpdGllcyI6W10sInJlZ2lvbnMiOltdLCJjb3VudHJpZXMiOltdLCJ3aXRoUGF0dGVybiI6ZmFsc2UsInNQYXR0ZXJuIjpudWxsLCJ0YWJsZXMiOltdLCJ0YWJsZXNfam9pbiI6W10sIm5vX2NhdGNoZWRfdGFibGVzIjpbXSwibm9fY2F0Y2hlZF9jb25kaXRpb25zIjpbXSwidXNlcl9pZHMiOm51bGwsIm9yZGVyX2NvbHVtbiI6ImR0X3B1Yl9kYXRlIiwib3JkZXJfZGlyZWN0aW9uIjoiZGVzYyIsImxpbWl0X2luaXQiOjAsInJlc3VsdHNfcGVyX3BhZ2UiOiIxMiJ9" />
+                            <input id="alert_userId" type="hidden" name="alert_userId" value="0" />                <input id="alert_email" type="text" name="alert_email" value="Enter your e-mail" />
+                        <button type="submit" class="sub_button" >Subscribe now!</button>
+    </form>
+</div><div class="filters">
+    <form action="https://app7.com/index.php" method="get" class="nocsrf">
+        <input type="hidden" name="page" value="search"/>
+        <input type="hidden" name="sOrder" value="dt_pub_date" />
+        <input type="hidden" name="iOrderType" value="desc" />
+                <fieldset class="first">
+            <h3>Your search</h3>
+            <div class="row">
+                <input class="input-text" type="text" name="sPattern"  id="query" value="" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <h3>City</h3>
+            <div class="row">
+                <input class="input-text" type="text" id="sCity" name="sCity" value="" />
+            </div>
+        </fieldset>
+                <fieldset>
+            <h3>Show only</h3>
+            <div class="row">
+                <input type="checkbox" name="bPic" id="withPicture" value="1"  />
+                <label for="withPicture">listings with pictures</label>
+            </div>
+        </fieldset>
+                        <fieldset>
+            <div class="row price-slice">
+                <h3>Price</h3>
+                <span>Min.</span>
+                <input class="input-text" type="text" id="priceMin" name="sPriceMin" value="" size="6" maxlength="6" />
+                <span>Max.</span>
+                <input class="input-text" type="text" id="priceMax" name="sPriceMax" value="" size="6" maxlength="6" />
+            </div>
+        </fieldset>
+                <div class="plugin-hooks">
+                    </div>
+                    <input type="hidden" name="sCategory[]" value="24"/>
+                <div class="actions">
+            <button type="submit">Apply</button>
+        </div>
+    </form>
+    <fieldset>
+        <div class="row ">
+            <h3>Refine category</h3>
+                <ul class="category">
+                <li><a href="https://app7.com/index.php?page=search">All categories</a></li>
+                    <li>
+                <a id="cat_1" href="https://app7.com/index.php?page=search&amp;sCategory=1">
+                For sale                </a>
+                    <ul >
+                    <li>
+                <a id="cat_24" href="https://app7.com/index.php?page=search&amp;sCategory=24">
+                <strong>Jewelry - Watches</strong>                </a>
+                            </li>
+            </ul>
+            </li>
+                    </ul>
+        </div>
+    </fieldset>
+</div>
+</div>    <div id="main">
+             <div class="list-header">
+        <div class="resp-wrapper">
+                        <h1>Jewelry - Watches </h1>
+
+                            <p class="empty" >There are no results matching ""</p>
+                      </div>
+     </div>
+             </div><!-- content -->
+</div>
+<div id="responsive-trigger"></div>
+<!-- footer -->
+<div class="clear"></div>
+<div id="footer">
+    <div class="wrapper">
+        <ul class="resp-toogle">
+                                        <li><a href="https://app7.com/index.php?page=login">Login</a></li>
+                                    <li>
+                        <a href="https://app7.com/index.php?page=register&action=register">Register for a free account</a>
+                    </li>
+                                                                <li class="publish">
+                <a href="https://app7.com/index.php?page=item&action=item_add&catId=24">Publish your ad for free</a>
+            </li>
+                    </ul>
+        <ul>
+                    <li>
+                <a href="https://app7.com/index.php?page=contact">Contact</a>
+            </li>
+        </ul>
+        <div>This website is proudly using the <a title="Osclass web" href="http://osclass.org/">classifieds scripts</a> software <strong>Osclass</strong></div>            </div>
+</div>
+    <script type="text/javascript">
+    $(function() {
+                    function log( message ) {
+                        $( "<div/>" ).text( message ).prependTo( "#log" );
+                        $( "#log" ).attr( "scrollTop", 0 );
+                    }
+
+                    $( "#sCity" ).autocomplete({
+                        source: "https://app7.com/index.php?page=ajax&action=location",
+                        minLength: 2,
+                        select: function( event, ui ) {
+                            $("#sRegion").attr("value", ui.item.region);
+                            log( ui.item ?
+                                "Selected: " + ui.item.value + " aka " + ui.item.id :
+                                "Nothing selected, input was " + this.value );
+                        }
+                    });
+                });
+    </script>
+    </body></html>
