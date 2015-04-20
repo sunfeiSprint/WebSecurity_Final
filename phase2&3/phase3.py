@@ -43,25 +43,38 @@ with open('phase1_final.json') as data_file:
             formDetails = data[0][url]
             action = formDetails["action"]
             if checkStringContainKey(action,negKeywords)==False:#check the Negative keywords to filter out non-sensitive data
-                if formDetails["method"].lower() == "get":# form is a get form, it cannot contain a token, always vulnerable for CSRF
-                    ''#pprint("get form "+formDetails["action"]  +" is vulnerable to CSRF")
-                    ###try to eliminate non-sensitive-data?###
+                if formDetails["method"].lower() == "get":# form is a get form, it cannot 
+                    pprint("get")
+                    #we send a request with randomly filled in token
+                    csrfForm = Form(url,formDetails)
+                    pprint(csrfForm)
+                    valid_parameters = dict(csrfForm.fill_entries())
+                    pprint(valid_parameters)
+
+                    try:
+                        r = client.get(action,params=urlencode(valid_parameters))
+                        if r != None:
+                            if r.status_code == 200:
+                                formDetails["url"] = url 
+                                jsonform.append(formDetails)
+                                #pprint("post form "+csrfForm.formdata["action"] +  " is vulnerable to CSRF")
+                        continue
+                    except :
+                        pprint("anti-csrf")
 
                 elif formDetails["method"].lower() == "post":# form is a post form, check for CSRF
                     csrfForm = Form(url,formDetails)
-                    #First, we send a valid request.
+                    #we send a request with randomly filled in token
                     valid_parameters = dict(csrfForm.fill_entries())
-                    ##pprint(valid_parameters)
-                    r = client.post(action,valid_parameters)
-
-                    # Now, we suppress everything that looks like a token.
-                    broken_parameters = dict(csrfForm.fill_entries("hidden"))
-                    r = client.post(action,broken_parameters)
-                    #content,code = csrfForm.send(action,broken_parameters,"post")
-                    if r.status_code == 200:
-                        formDetails["url"] = url 
-                        jsonform.append(formDetails)
-                        #pprint("post form "+csrfForm.formdata["action"] +  " is vulnerable to CSRF")
+                    try:
+                        r = client.post(action,valid_parameters)
+                        if r != None:#sometimes the request can not be processed
+                            if r.status_code == 200:#  reponse 200 means the CSRF is successful
+                                formDetails["url"] = url 
+                                jsonform.append(formDetails)
+                        continue
+                    except :
+                        pprint("anti-csrf")
 
 with open("phase3.json",'w') as outfile:
     json.dump(jsonform,outfile,indent=4)
