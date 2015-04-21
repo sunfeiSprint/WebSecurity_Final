@@ -1,9 +1,0 @@
-{
-	"login_urls": "https://app5.com/www/index.php",
-	"start_urls": "https://app5.com/www/index.php",
-	"login": "True",
-	"domain": "https://app5.com",
-	"username": "professor",
-	"password": "professor"
-}
-
