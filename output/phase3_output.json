@@ -15,15 +15,6 @@
   }, 
   {
     "url": "https://app1.com/cart/review.php", 
-    "action": "https://app1.com//cart/action.php?action=delete", 
-    "parameter": {
-      "null": "", 
-      "pics[]": "true"
-    }, 
-    "method": "POST"
-  }, 
-  {
-    "url": "https://app1.com/cart/review.php", 
     "action": "https://app1.com//cart/action.php?action=addcoupon", 
     "parameter": {
       "null": "", 
@@ -36,6 +27,15 @@
     "action": "https://app1.com//cart/action.php?action=purchase", 
     "parameter": {
       "null": ""
+    }, 
+    "method": "POST"
+  }, 
+  {
+    "url": "https://app1.com/cart/review.php", 
+    "action": "https://app1.com//cart/action.php?action=delete", 
+    "parameter": {
+      "null": "", 
+      "pics[]": "true"
     }, 
     "method": "POST"
   }, 

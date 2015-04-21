@@ -39,5 +39,5 @@ for linkform in linkforms:
 	#print formdict
 
 #print jsonform
-with open("phase1.json",'w') as outfile:
+with open("../output/phase1_output.json",'w') as outfile:
 	json.dump(jsonform,outfile,indent=4)

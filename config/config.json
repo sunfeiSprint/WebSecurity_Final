@@ -1,6 +1,6 @@
 {
-	"login_urls": "https://app1.com/users/login.php",
-	"start_urls": "https://app1.com/users/home.php",
+	"login_url": "https://app1.com/users/login.php",
+	"start_url": "https://app1.com/users/home.php",
 	"login": "True",
 	"domain": "https://app1.com",
 	"username": "scanner1",

@@ -108,6 +108,7 @@ class ExampleSpider(CrawlSpider):
                 else:
                     continue
             elif len(link)>0 and link[0]=='#':
+                direct=response.url.split('/')
                 if  (len(link)>1 and link[1]=='/') or len(link)==1:
                     print response.url+link[1:]
                     yield Request(url=response.url+link[1:], callback=self.parse)
@@ -116,8 +117,12 @@ class ExampleSpider(CrawlSpider):
                     yield Request(url=response.url+'/'+link[1:], callback=self.parse)
             else:
                 if (len(link)>0 and link[0]!='/') or len(link)==0:
-                    print parameter.domain[0]+'/'+link
-                    yield Request(url=parameter.domain[0]+'/'+link,callback=self.parse)
+                    direct=response.url.split('/')
+                    path=''
+                    for i in range(len(direct)-1):
+                        path=path+direct[i]+'/'
+                    print path+link
+                    yield Request(url=path+link,callback=self.parse)
                 else:
                     print parameter.domain[0]+link 
                     yield Request(url=parameter.domain[0]+link,callback=self.parse)
