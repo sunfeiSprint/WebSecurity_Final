@@ -57,14 +57,15 @@ with open('phase1.json') as data_file:
                         r = client.get(action,params=urlencode(valid_parameters))
                         if r != None:
                             if r.status_code == 200:
-                                #formDetails["url"] = url 
+                                #formDetails["url"] = url
+                                formdetals["parameter"] = valid_parameters
                                 jsonform.append(formDetails)
                                 #pprint("post form "+csrfForm.formdata["action"] +  " is vulnerable to CSRF")
                         continue
                     except :
                         pprint("anti-csrf")
-
                 elif formDetails["method"].lower() == "post":# form is a post form, check for CSRF
+                    pprint("post")
                     csrfForm = Form(url,formDetails)
                     #we send a request with randomly filled in token
                     valid_parameters = dict(csrfForm.fill_entries())
@@ -72,7 +73,7 @@ with open('phase1.json') as data_file:
                         r = client.post(action,valid_parameters)
                         if r != None:#sometimes the request can not be processed
                             if r.status_code == 200:#  reponse 200 means the CSRF is successful
-                                #formDetails["url"] = url 
+                                formdetals["parameter"] = valid_parameters
                                 jsonform.append(formDetails)
                         continue
                     except :
