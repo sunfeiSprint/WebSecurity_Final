@@ -10,7 +10,9 @@ import parameter
 from loginform import fill_login_form
 from bs4 import  BeautifulSoup
 import os
-
+import Cookie
+from scrapy.contrib.linkextractors import LinkExtractor
+#from scrapy.http.cookies import CookieJar
 class ExampleSpider(CrawlSpider):
     name = 'example.com'
     start_urls = parameter.login_urls
@@ -18,49 +20,65 @@ class ExampleSpider(CrawlSpider):
     allowed_dommains= parameter.domain
     login_user = parameter.username
     login_pass = parameter.password
+    cookie= Cookie.SimpleCookie()
+    #rules = (Rule(LinkExtractor(deny=('logout\.php', ))),)
     # 'log' and 'pwd' are names of the username and password fields
     # depends on each website, you'll have to change those fields properly
     # one may use loginform lib https://github.com/scrapy/loginform to make it easier
     # when handling multiple credentials from multiple sites.
-    def parse(self, response):
+    def start_requests(self):
         if parameter.login==True:
+            return [Request(url=self.start_urls[0],method='get', dont_filter=True,callback=self.login)]
+    def login(self,response):  
             args, url, method = fill_login_form(response.url, response.body, self.login_user, self.login_pass)
-            #return FormRequest(url, method=method, formdata=args, callback=self.after_login)
-            #args={'username':'admin', 'password':'admin'}
-            #print args
+            print args,url,method
+            print args
             argsdict={}
             for i in args:
                 argsdict[i[0]]=i[1]
-            #print argsdict
-            return FormRequest.from_response(
-                response,
-                formdata=argsdict,
-                dont_filter=True,
-                callback=self.after_login
-            )
-        else:
-            #args, url, method = fill_login_form(response.url, response.body, self.login_user, self.login_pass)
-            return Request(
-                response.url,
-                callback=self.parse_page
-            )
+            print argsdict
+            #args={'username':'scanner1', 'password':'scanner1'}
+            return FormRequest(url,formdata=args, dont_filter=True,callback=self.after_login)
+            #print args
+            #print response.request
+            #print response.request
+            #return FormRequest.from_response(
+            #    response,
+            #    formdata=argsdict,
+            #    dont_filter=True,
+            #    callback=self.after_login
+            #)
+        #else:
+        #    return Request(
+        #        response.url,
+        #        callback=self.parse_page
+        #    )
 
     def after_login(self, response):
         # check login succeed before going on
-        if "ERROR: Invalid username" in response.body:
-            self.log("Login failed", level=log.ERROR)
+        #print response.body
+        if "No match"  in response.body:
+            self.log("Login fail", level=log.ERROR)
             return
+
 
         # continue scraping with authenticated session...
         else:
             self.log("Login succeed!", level=log.DEBUG)
             #print response.body
-            return Request(url=self.startCrawlingURL[0],
-                           callback=self.parse_page)
+            return Request(url=response.url,dont_filter=True)
+            
+            #return Request(url="https://app1.com/cart/review.php",
+            #               callback=self.parse)
 
     # example of crawling all other urls in the site with the same
     # authenticated session.
-    def parse_page(self, response):
+    '''def parse(self,response):
+        print "aaaaa"
+        print response.url'''
+
+  
+    def parse(self, response):
         """ Scrape useful stuff from page, and spawn new requests
         """
         hxs = HtmlXPathSelector(response)
@@ -70,28 +88,33 @@ class ExampleSpider(CrawlSpider):
         links = hxs.xpath('//a/@href').extract()
         #forms = hxs.select('//form').extract()
         self.extract_forms(hxs,response)
-        
         # Yield a new request for each link we found
         # #this may lead to infinite crawling...
         #print response.headers['Location']
         for link in links:
-            print "THIS IS A LINK" + link
-            #only process external/full link
+
+            if link.find("logout") >-1 :
+                continue
             if link.find("http") > -1:
                 if link.find(parameter.domain[0])>-1:
-                    yield Request(url=link, callback=self.parse_page)
+                    print link
+                    yield Request(url=link ,dont_filter=True,callback=self.parse)
                 else:
                     continue
             elif len(link)>0 and link[0]=='#':
                 if  (len(link)>1 and link[1]=='/') or len(link)==1:
-                    yield Request(url=response.url+link[1:], callback=self.parse_page)
+                    print response.url+link[1:]
+                    yield Request(url=response.url+link[1:],dont_filter=True, callback=self.parse)
                 else:
-                    yield Request(url=response.url+'/'+link[1:], callback=self.parse_page)
+                    print response.url+'/'+link[1:]
+                    yield Request(url=response.url+'/'+link[1:],dont_filter=True, callback=self.parse)
             else:
                 if (len(link)>0 and link[0]!='/') or len(link)==0:
-                    yield Request(url=parameter.domain[0]+'/'+link,callback=self.parse_page)
-                else: 
-                    yield Request(url=parameter.domain[0]+link,callback=self.parse_page)
+                    print parameter.domain[0]+'/'+link
+                    yield Request(url=parameter.domain[0]+'/'+link,dont_filter=True,callback=self.parse)
+                else:
+                    print parameter.domain[0]+link 
+                    yield Request(url=parameter.domain[0]+link,dont_filter=True,callback=self.parse)
         item = LinkItem()
         #if len(hxs.xpath('//title/text()').extract())>0:
         item["title"] = hxs.xpath('//title/text()').extract()[0]

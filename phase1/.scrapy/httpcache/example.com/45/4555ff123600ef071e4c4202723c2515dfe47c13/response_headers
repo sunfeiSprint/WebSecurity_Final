@@ -1,8 +1,0 @@
-X-Powered-By: PHP/5.5.9-1ubuntu4.6
-Expires: Thu, 19 Nov 1981 08:52:00 GMT
-Server: Apache/2.4.7 (Ubuntu)
-Location: http://app10.com/detail.php?item_id=24
-Pragma: no-cache
-Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-Date: Mon, 20 Apr 2015 04:45:34 GMT
-Content-Type: text/html

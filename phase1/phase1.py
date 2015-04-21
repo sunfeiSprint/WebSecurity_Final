@@ -29,7 +29,7 @@ for linkform in linkforms:
 	formdict=dict([])
 	formdict['url']=url
 	formdict['method']=formmethod
-	formdict['action']=parameter.domain[0]+str(formaction)
+	formdict['action']=parameter.domain[0]+'/'+str(formaction)
 	parameterdict=dict([])
 	for inputitem in linkform[1].find_all('input'):
 		#print inputitem

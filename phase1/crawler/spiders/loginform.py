@@ -65,7 +65,7 @@ def submit_value(form):
 
     #print form.xpath('//input')
     for x in form.xpath('//input'):
-        if x.type == "submit" and x.name:
+        if x.type == "submit" and x.name and x.name!='sendpass':
             return [(x.name, x.value)]
     else:
         return []
@@ -78,6 +78,7 @@ def fill_login_form(url, body, username, password):
     userfield, passfield = _pick_fields(form)
     form.fields[userfield] = username
     form.fields[passfield] = password
+    print submit_value(form)
     form_values = form.form_values() + submit_value(form)
     return form_values, form.action or form.base_url, form.method
 
