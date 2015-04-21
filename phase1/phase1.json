@@ -1,814 +1,469 @@
 [
     {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=1", 
-        "action": "https://app4.com//query.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&projects=3&open=1&order=priority_name&sort=desc", 
-        "action": "https://app4.com/bug.php", 
+        "url": "https://app1.com/pictures/purchased.php", 
+        "action": "https://app1.com//pictures/search.php", 
         "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&assignedto=1&open=0", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=query&form=advanced", 
-        "action": "https://app4.com/query.php", 
-        "parameter": {
-            "description": null, 
-            "end_date": "text", 
-            "title": null, 
-            "url": null, 
-            "savedqueryname": "text", 
-            "closed_start_date": "text", 
-            "emailfield1[]": "checkbox", 
-            "closed_end_date": "text", 
-            "savedqueryoverride": "hidden", 
-            "unassigned": "checkbox", 
-            "form": "hidden", 
-            "null": "submit", 
-            "op": "hidden", 
-            "start_date": "text", 
-            "email1": null
+            "query": "text", 
+            "null": "image"
         }, 
         "method": "get"
     }, 
     {
-        "url": "https://app4.com/query.php?op=mybugs&assignedto=1&open=0", 
-        "action": "https://app4.com//query.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&assignedto=1&open=1", 
-        "action": "https://app4.com/bug.php", 
+        "url": "https://app1.com/pictures/view.php?picid=7", 
+        "action": "https://app1.com//pictures/search.php", 
         "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=7", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/bug.php?op=add", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&assignedto=1&open=0", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=7", 
-        "action": "https://app4.com//query.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&assignedto=1&open=1", 
-        "action": "https://app4.com//query.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=3", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=query", 
-        "action": "https://app4.com/query.php", 
-        "parameter": {
-            "null": "submit", 
-            "op": "hidden"
+            "query": "text", 
+            "null": "image"
         }, 
         "method": "get"
     }, 
     {
-        "url": "https://app4.com/user.php", 
-        "action": "https://app4.com//user.php", 
+        "url": "https://app1.com/passcheck.php", 
+        "action": "https://app1.com//pictures/search.php", 
         "parameter": {
-            "do": "hidden", 
-            "column_list[]": "checkbox", 
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/pictures/view.php?picid=15", 
+        "action": "https://app1.com//comments/preview_comment.php", 
+        "parameter": {
+            "null": "submit", 
+            "picid": "hidden"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/users/view.php?userid=1", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/cart/confirm.php", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/pictures/upload.php", 
+        "action": "https://app1.com//pictures/upload.php", 
+        "parameter": {
+            "MAX_FILE_SIZE": "hidden", 
+            "name": "text", 
+            "title": "text", 
+            "price": "text", 
+            "pic": "file", 
+            "tag": "text", 
             "null": "submit"
         }, 
-        "method": "post"
+        "method": "POST"
     }, 
     {
-        "url": "https://app4.com/query.php?op=doquery&projects=1&open=1&order=priority_name&sort=desc", 
-        "action": "https://app4.com//query.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&projects=1&open=1&order=priority_name&sort=desc", 
-        "action": "https://app4.com/bug.php", 
+        "url": "https://app1.com/pictures/view.php?picid=13", 
+        "action": "https://app1.com//pictures/search.php", 
         "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&bookmarked=1&open=0", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&reportedby=1&open=0", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=5", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=1", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&bookmarked=1&open=1", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/bug.php?op=add&project=2", 
-        "action": "https://app4.com//bug.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/user.php", 
-        "action": "https://app4.com//user.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&reportedby=1&open=0", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=6", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=query&form=advanced", 
-        "action": "https://app4.com//query.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&reportedby=1&open=0", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/bug.php?op=add&project=1", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "title": "text", 
-            "url": "text", 
-            "submit": "submit", 
-            "project": "hidden", 
-            "attachment": "file", 
-            "bugid": "hidden", 
-            "at_description": "text", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/bug.php?op=add&project=2", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&bookmarked=1&open=0", 
-        "action": "https://app4.com//query.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&bookmarked=1&open=1", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&bookmarked=1&open=0", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/bug.php?op=add&project=1", 
-        "action": "https://app4.com//bug.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&projects=2&open=1&order=priority_name&sort=desc", 
-        "action": "https://app4.com//query.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&assignedto=1&open=0", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&reportedby=1&open=1", 
-        "action": "https://app4.com//query.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&projects=2&open=1&order=priority_name&sort=desc", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&bookmarked=1&open=1", 
-        "action": "https://app4.com//query.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&bookmarked=1&open=1", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/user.php", 
-        "action": "https://app4.com//user.php", 
-        "parameter": {
-            "do": "hidden", 
-            "preferences[]": "checkbox", 
-            "null": "submit", 
-            "def_results": "text"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/bug.php?op=add&project=2", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "title": "text", 
-            "url": "text", 
-            "submit": "submit", 
-            "project": "hidden", 
-            "attachment": "file", 
-            "bugid": "hidden", 
-            "at_description": "text", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&reportedby=1&open=0", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&bookmarked=1&open=0", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&reportedby=1&open=0", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=3", 
-        "action": "https://app4.com//query.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=1", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&assignedto=1&open=1", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&reportedby=1&open=1", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=3", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=7", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/report.php", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&assignedto=1&open=0", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/index.php", 
-        "action": "https://app4.com//index.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=query", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=query", 
-        "action": "https://app4.com//query.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/bug.php?op=add&project=3", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&bookmarked=1&open=0", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=4", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/bug.php?op=add&project=3", 
-        "action": "https://app4.com//bug.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&assignedto=1&open=1", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&reportedby=1&open=1", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&projects=3&open=1&order=priority_name&sort=desc", 
-        "action": "https://app4.com//query.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&bookmarked=1&open=1", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&assignedto=1&open=0", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/bug.php?op=add&project=1", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&assignedto=1&open=1", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=6", 
-        "action": "https://app4.com//query.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&reportedby=1&open=1", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/report.php", 
-        "action": "https://app4.com//report.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=6", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=5", 
-        "action": "https://app4.com//query.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=mybugs&bookmarked=1&open=0", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/bug.php?op=add", 
-        "action": "https://app4.com//bug.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=query&form=advanced", 
-        "action": "https://app4.com/query.php", 
-        "parameter": {
-            "null": "submit", 
-            "form": "hidden", 
-            "op": "hidden"
+            "query": "text", 
+            "null": "image"
         }, 
         "method": "get"
     }, 
     {
-        "url": "https://app4.com/query.php?op=query", 
-        "action": "https://app4.com/query.php", 
-        "parameter": {
-            "savedqueryname": "text", 
-            "savedqueryoverride": "hidden", 
-            "null": "submit", 
-            "op": "hidden"
-        }, 
-        "method": "get"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&projects=1&open=1&order=priority_name&sort=desc", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=4", 
-        "action": "https://app4.com//query.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=1", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=query&form=advanced", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
-        }, 
-        "method": null
-    }, 
-    {
-        "url": "https://app4.com/user.php", 
-        "action": "https://app4.com//user.php", 
-        "parameter": {
-            "do": "hidden", 
-            "pass1": "password", 
-            "pass2": "password", 
-            "null": "submit"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=4", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/report.php", 
-        "action": "https://app4.com//report.php", 
+        "url": "https://app1.com/cart/confirm.php", 
+        "action": "https://app1.com//cart/action.php?action=purchase", 
         "parameter": {
             "null": "submit"
         }, 
-        "method": null
+        "method": "POST"
     }, 
     {
-        "url": "https://app4.com/query.php?op=mybugs&reportedby=1&open=1", 
-        "action": "https://app4.com/bug.php", 
+        "url": "https://app1.com/pictures/view.php?picid=14", 
+        "action": "https://app1.com//pictures/search.php", 
         "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
+            "query": "text", 
+            "null": "image"
         }, 
-        "method": "post"
+        "method": "get"
     }, 
     {
-        "url": "https://app4.com/query.php?op=doquery&projects=3&open=1&order=priority_name&sort=desc", 
-        "action": "https://app4.com/bug.php", 
+        "url": "https://app1.com/users/register.php", 
+        "action": "https://app1.com//pictures/search.php", 
         "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
+            "query": "text", 
+            "null": "image"
         }, 
-        "method": null
+        "method": "get"
     }, 
     {
-        "url": "https://app4.com/query.php?op=mybugs&bookmarked=1&open=1", 
-        "action": "https://app4.com/bug.php", 
+        "url": "https://app1.com/pictures/view.php?picid=15", 
+        "action": "https://app1.com//pictures/search.php", 
         "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
+            "query": "text", 
+            "null": "image"
         }, 
-        "method": "post"
+        "method": "get"
     }, 
     {
-        "url": "https://app4.com/query.php?op=mybugs&reportedby=1&open=0", 
-        "action": "https://app4.com//query.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/index.php", 
-        "action": "https://app4.com/bug.php", 
+        "url": "https://app1.com/pictures/recent.php", 
+        "action": "https://app1.com//pictures/search.php", 
         "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
+            "query": "text", 
+            "null": "image"
         }, 
-        "method": null
+        "method": "get"
     }, 
     {
-        "url": "https://app4.com/bug.php?op=add&project=3", 
-        "action": "https://app4.com/bug.php", 
+        "url": "https://app1.com/users/sample.php?userid=1", 
+        "action": "https://app1.com//pictures/search.php", 
         "parameter": {
-            "title": "text", 
-            "url": "text", 
-            "submit": "submit", 
-            "project": "hidden", 
-            "attachment": "file", 
-            "bugid": "hidden", 
-            "at_description": "text", 
-            "op": "hidden"
+            "query": "text", 
+            "null": "image"
         }, 
-        "method": "post"
+        "method": "get"
     }, 
     {
-        "url": "https://app4.com/query.php?op=doquery&projects=2&open=1&order=priority_name&sort=desc", 
-        "action": "https://app4.com/bug.php", 
+        "url": "https://app1.com/cart/review.php", 
+        "action": "https://app1.com//cart/action.php?action=addcoupon", 
         "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
+            "null": "submit", 
+            "couponcode": "text"
         }, 
-        "method": null
+        "method": "POST"
     }, 
     {
-        "url": "https://app4.com/admin/project.php", 
-        "action": "https://app4.com/../bug.php", 
+        "url": "https://app1.com/tos.php", 
+        "action": "https://app1.com//pictures/search.php", 
         "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
+            "query": "text", 
+            "null": "image"
         }, 
-        "method": null
+        "method": "get"
     }, 
     {
-        "url": "https://app4.com/query.php?op=mybugs&assignedto=1&open=1", 
-        "action": "https://app4.com/bug.php", 
+        "url": "https://app1.com/passcheck.php", 
+        "action": "https://app1.com//passcheck.php", 
         "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
+            "null": "submit", 
+            "password": "password"
         }, 
-        "method": "post"
+        "method": "POST"
     }, 
     {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=5", 
-        "action": "https://app4.com/bug.php", 
+        "url": "https://app1.com/pictures/upload.php", 
+        "action": "https://app1.com//pictures/search.php", 
         "parameter": {
-            "last_modified_date": "hidden", 
-            "op": "hidden"
+            "query": "text", 
+            "null": "image"
         }, 
-        "method": "post"
+        "method": "get"
     }, 
     {
-        "url": "https://app4.com/query.php?op=mybugs&reportedby=1&open=1", 
-        "action": "https://app4.com/bug.php", 
+        "url": "https://app1.com/", 
+        "action": "https://app1.com//pictures/search.php", 
         "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
+            "query": "text", 
+            "null": "image"
         }, 
-        "method": null
+        "method": "get"
     }, 
     {
-        "url": "https://app4.com/user.php", 
-        "action": "https://app4.com/bug.php", 
+        "url": "https://app1.com/pictures/view.php?picid=12", 
+        "action": "https://app1.com//pictures/search.php", 
         "parameter": {
-            "bugid": "text", 
-            "op": "hidden"
+            "query": "text", 
+            "null": "image"
         }, 
-        "method": null
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/pictures/view.php?picid=14", 
+        "action": "https://app1.com//comments/preview_comment.php", 
+        "parameter": {
+            "null": "submit", 
+            "picid": "hidden"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/users/home.php", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/pictures/view.php?picid=11", 
+        "action": "https://app1.com//comments/preview_comment.php", 
+        "parameter": {
+            "null": "submit", 
+            "picid": "hidden"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/users/similar.php", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/pictures/view.php?picid=11", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/pictures/view.php?picid=7", 
+        "action": "https://app1.com//comments/preview_comment.php", 
+        "parameter": {
+            "null": "submit", 
+            "picid": "hidden"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/users/view.php?userid=11", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/users/register.php", 
+        "action": "https://app1.com//users/register.php", 
+        "parameter": {
+            "username": "text", 
+            "firstname": "text", 
+            "lastname": "text", 
+            "null": "submit", 
+            "password": "password", 
+            "againpass": "password"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/calendar.php?date=1429865496", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/calendar.php", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/calendar.php?date=1430124696", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/pictures/view.php?picid=12", 
+        "action": "https://app1.com//comments/preview_comment.php", 
+        "parameter": {
+            "null": "submit", 
+            "picid": "hidden"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/calendar.php?date=1429951896", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/pictures/view.php?picid=8", 
+        "action": "https://app1.com//comments/preview_comment.php", 
+        "parameter": {
+            "null": "submit", 
+            "picid": "hidden"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/guestbook.php", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/pictures/view.php?picid=10", 
+        "action": "https://app1.com//comments/preview_comment.php", 
+        "parameter": {
+            "null": "submit", 
+            "picid": "hidden"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/cart/review.php", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/pictures/view.php?picid=9", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/users/view.php?userid=4", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/users/view.php?userid=9", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/users/view.php?userid=2", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/cart/review.php", 
+        "action": "https://app1.com//cart/action.php?action=delete", 
+        "parameter": {
+            "null": "submit", 
+            "pics[]": "checkbox"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/pictures/view.php?picid=10", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/users/view.php?userid=10", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/calendar.php?date=1429692696", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/pictures/view.php?picid=9", 
+        "action": "https://app1.com//comments/preview_comment.php", 
+        "parameter": {
+            "null": "submit", 
+            "picid": "hidden"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/guestbook.php", 
+        "action": "https://app1.com//guestbook.php", 
+        "parameter": {
+            "null": "submit", 
+            "name": "text"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/pictures/view.php?picid=13", 
+        "action": "https://app1.com//comments/preview_comment.php", 
+        "parameter": {
+            "null": "submit", 
+            "picid": "hidden"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/calendar.php?date=1430038296", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/pictures/view.php?picid=8", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/calendar.php?date=1429779096", 
+        "action": "https://app1.com//pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
     }
 ]

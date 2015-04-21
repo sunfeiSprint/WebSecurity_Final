@@ -14,6 +14,7 @@ import Cookie
 from scrapy.contrib.linkextractors import LinkExtractor
 #from scrapy.http.cookies import CookieJar
 class ExampleSpider(CrawlSpider):
+    handle_httpstatus_list = [404]
     name = 'example.com'
     start_urls = parameter.login_urls
     startCrawlingURL = parameter.start_urls
@@ -81,6 +82,7 @@ class ExampleSpider(CrawlSpider):
     def parse(self, response):
         """ Scrape useful stuff from page, and spawn new requests
         """
+        
         hxs = HtmlXPathSelector(response)
         # i = CrawlerItem()
         # find all the link in the <a href> tag
@@ -88,33 +90,37 @@ class ExampleSpider(CrawlSpider):
         links = hxs.xpath('//a/@href').extract()
         #forms = hxs.select('//form').extract()
         self.extract_forms(hxs,response)
+        for link in links:
+            print link
         # Yield a new request for each link we found
         # #this may lead to infinite crawling...
         #print response.headers['Location']
         for link in links:
-
+            #print "THIS IS A LINK" + link
+            #only process external/full link
+#            cookie.load(response.headers['Set-Cookie'])
             if link.find("logout") >-1 :
                 continue
             if link.find("http") > -1:
                 if link.find(parameter.domain[0])>-1:
                     print link
-                    yield Request(url=link ,dont_filter=True,callback=self.parse)
+                    yield Request(url=link ,callback=self.parse)
                 else:
                     continue
             elif len(link)>0 and link[0]=='#':
                 if  (len(link)>1 and link[1]=='/') or len(link)==1:
                     print response.url+link[1:]
-                    yield Request(url=response.url+link[1:],dont_filter=True, callback=self.parse)
+                    yield Request(url=response.url+link[1:], callback=self.parse)
                 else:
                     print response.url+'/'+link[1:]
-                    yield Request(url=response.url+'/'+link[1:],dont_filter=True, callback=self.parse)
+                    yield Request(url=response.url+'/'+link[1:], callback=self.parse)
             else:
                 if (len(link)>0 and link[0]!='/') or len(link)==0:
                     print parameter.domain[0]+'/'+link
-                    yield Request(url=parameter.domain[0]+'/'+link,dont_filter=True,callback=self.parse)
+                    yield Request(url=parameter.domain[0]+'/'+link,callback=self.parse)
                 else:
                     print parameter.domain[0]+link 
-                    yield Request(url=parameter.domain[0]+link,dont_filter=True,callback=self.parse)
+                    yield Request(url=parameter.domain[0]+link,callback=self.parse)
         item = LinkItem()
         #if len(hxs.xpath('//title/text()').extract())>0:
         item["title"] = hxs.xpath('//title/text()').extract()[0]
