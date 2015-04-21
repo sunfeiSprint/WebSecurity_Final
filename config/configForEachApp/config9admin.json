@@ -1,6 +1,6 @@
 {
-	"login_urls": "https://app9.com/index-test.php/site/login",
-	"start_urls": "https://app9.com/index-test.php/site/whatsNew",
+	"login_url": "https://app9.com/index-test.php/site/login",
+	"start_url": "https://app9.com/index-test.php/site/whatsNew",
 	"login": "True",
 	"domain": "https://app9.com",
 	"username": "admin",

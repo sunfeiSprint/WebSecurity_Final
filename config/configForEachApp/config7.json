@@ -1,6 +1,6 @@
 {
-	"login_urls": "https://app7.com/index.php?page=login",
-	"start_urls": "https://app7.com/index.php",
+	"login_url": "https://app7.com/index.php?page=login",
+	"start_url": "https://app7.com/index.php",
 	"login": "True",
 	"domain": "https://app7.com",
 	"username": "test@test.com",
