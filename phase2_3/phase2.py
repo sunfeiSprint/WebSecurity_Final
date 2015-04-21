@@ -24,5 +24,5 @@ payload = {"text": "abcdefgh",
                                 "hidden": "Secret.",
                                 "submit": ""}
 
-with open("phase2_sample.json", "w") as outfile:
+with open("../output/phase2_output.json", "w") as outfile:
     json.dump({'payloads':payload}, outfile, indent=2)

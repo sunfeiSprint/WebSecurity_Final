@@ -18,12 +18,11 @@ def checkStringContainKey(testString,keyWords):
     return False
 
 #pprint(checkStringContainKey(testString,negKeywords))
-
-with open('phase1.json') as data_file:
+pprint("reading output from phase1")
+with open('../output/phase1_output.json') as data_file:
     data = json.load(data_file)
 
-    #pprint(data)
-
+    pprint("start processing phase3")
     client = requests.Session()
     start_urls = parameter.login_urls
     login_user = parameter.username
@@ -45,27 +44,22 @@ with open('phase1.json') as data_file:
             url = formDetails["url"]
             action = formDetails["action"]
             if checkStringContainKey(action,negKeywords)==False:#check the Negative keywords to filter out non-sensitive data
-                if formDetails["method"].lower() == "get":# form is a get form, it cannot 
-                    pprint("get")
-                    #we send a request with randomly filled in token
+                if formDetails["method"].lower() == "get":# form is a get form, it cannot                 
                     csrfForm = Form(url,formDetails)
-                    pprint(csrfForm)
                     valid_parameters = dict(csrfForm.fill_entries())
-                    pprint(valid_parameters)
 
                     try:
                         r = client.get(action,params=urlencode(valid_parameters))
                         if r != None:
                             if r.status_code == 200:
                                 #formDetails["url"] = url
-                                formdetals["parameter"] = valid_parameters
+                                formDetails["parameter"] = valid_parameters
                                 jsonform.append(formDetails)
                                 #pprint("post form "+csrfForm.formdata["action"] +  " is vulnerable to CSRF")
                         continue
                     except :
-                        pprint("anti-csrf")
+                        ''
                 elif formDetails["method"].lower() == "post":# form is a post form, check for CSRF
-                    pprint("post")
                     csrfForm = Form(url,formDetails)
                     #we send a request with randomly filled in token
                     valid_parameters = dict(csrfForm.fill_entries())
@@ -73,11 +67,10 @@ with open('phase1.json') as data_file:
                         r = client.post(action,valid_parameters)
                         if r != None:#sometimes the request can not be processed
                             if r.status_code == 200:#  reponse 200 means the CSRF is successful
-                                formdetals["parameter"] = valid_parameters
+                                formDetails["parameter"] = valid_parameters
                                 jsonform.append(formDetails)
                         continue
                     except :
-                        pprint("anti-csrf")
-
-with open("phase3.json",'w') as outfile:
-    json.dump(jsonform,outfile,indent=4)
+                        ''
+with open("../output/phase3_output.json",'w') as outfile:
+    json.dump(jsonform,outfile,indent=2)

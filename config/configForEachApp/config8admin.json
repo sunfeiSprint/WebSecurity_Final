@@ -1,0 +1,8 @@
+{
+	"login_urls": "https://app8.com/upload/admin/",
+	"start_urls": "https://app8.com/upload/admin/",
+	"login": "True",
+	"domain": "https://app8.com",
+	"username": "admin",
+	"password": "admin"
+}

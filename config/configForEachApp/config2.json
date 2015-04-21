@@ -1,0 +1,8 @@
+{
+	"login_urls": "https://app2.com/login/index.php",
+	"start_urls": "https://app2.com",
+	"login": "True",
+	"domain": "https://app2.com",
+	"username": "admin",
+	"password": "AdminAdmin1!"
+}

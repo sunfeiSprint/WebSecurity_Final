@@ -1,0 +1,23 @@
+{
+  "payloads": {
+    "week": "1996-W16", 
+    "search": "query", 
+    "checkbox": "true", 
+    "tel": "012345678", 
+    "month": "1996-12", 
+    "text": "abcdefgh", 
+    "number": "123456", 
+    "submit": "", 
+    "datetime": "1990-12-31T23:59:60Z", 
+    "url": "http://localhost/", 
+    "range": "1.23", 
+    "radio": "1", 
+    "time": "13:37:00", 
+    "date": "1996-12-19", 
+    "hidden": "Secret.", 
+    "password": "abcd1234", 
+    "email": "ex@amp.le", 
+    "color": "#FFFFFF", 
+    "datetime-local": "1985-04-12T23:20:50.52"
+  }
+}
