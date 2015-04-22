@@ -1,51 +1,44 @@
 [
   {
-    "url": "https://app1.com/cart/review.php", 
-    "action": "https://app1.com/cart/action.php?action=delete", 
+    "url": "https://app4.com/query.php?op=doquery&status%5B%5D=6", 
+    "action": "https://app4.com/query.php", 
     "parameter": {
-      "null": "", 
-      "pics[]": "true"
+      "username": "abcdefgh", 
+      "password": "abcd1234", 
+      "dologin": "1", 
+      "sendpass": ""
     }, 
-    "method": "POST"
+    "method": "post"
   }, 
   {
-    "url": "https://app1.com/pictures/upload.php", 
-    "action": "https://app1.com/pictures/upload.php", 
+    "url": "https://app4.com/query.php?op=doquery&status%5B%5D=3", 
+    "action": "https://app4.com/bug.php", 
     "parameter": {
-      "MAX_FILE_SIZE": "", 
-      "name": "abcdefgh", 
-      "title": "abcdefgh", 
-      "price": "abcdefgh", 
-      "pic": "asdfaf", 
-      "tag": "abcdefgh", 
-      "null": ""
+      "last_modified_date": "1429691499", 
+      "op": "mass_update"
     }, 
-    "method": "POST"
+    "method": "post"
   }, 
   {
-    "url": "https://app1.com/cart/review.php", 
-    "action": "https://app1.com/cart/action.php?action=addcoupon", 
+    "url": "https://app4.com/index.php", 
+    "action": "https://app4.com/index.php", 
     "parameter": {
-      "null": "", 
-      "couponcode": "abcdefgh"
+      "username": "abcdefgh", 
+      "password": "abcd1234", 
+      "dologin": "1", 
+      "sendpass": ""
     }, 
-    "method": "POST"
+    "method": "post"
   }, 
   {
-    "url": "https://app1.com/cart/confirm.php", 
-    "action": "https://app1.com/cart/action.php?action=purchase", 
+    "url": "https://app4.com/newaccount.php", 
+    "action": "https://app4.com/newaccount.php", 
     "parameter": {
-      "null": ""
+      "lastname": "abcdefgh", 
+      "createaccount": "1", 
+      "email": "abcdefgh", 
+      "firstname": "abcdefgh"
     }, 
-    "method": "POST"
-  }, 
-  {
-    "url": "https://app1.com/guestbook.php", 
-    "action": "https://app1.com/guestbook.php", 
-    "parameter": {
-      "null": "", 
-      "name": "abcdefgh"
-    }, 
-    "method": "POST"
+    "method": "post"
   }
 ]

@@ -31,10 +31,14 @@ with open('../output/phase1_output.json') as data_file:
     response = client.get(start_urls[0],verify=False)
     args, url, method = fill_login_form(response.url, response.content, login_user, login_pass)
 
+    pprint(args)
+    pprint(url)
+    pprint(method) 
+
     loginResponse = client.post(url, data=args, headers=dict(Referer=start_urls))
     pprint(loginResponse)
     jsonform = []
-    if "ERROR: Invalid username" in response.content:
+    if "Invalid" in response.content:
         pprint("Login failed")
     else: 
         pprint("login successful")
@@ -54,23 +58,25 @@ with open('../output/phase1_output.json') as data_file:
                             if r.status_code == 200:
                                 #formDetails["url"] = url
                                 formDetails["parameter"] = valid_parameters
-                                jsonform.append(formDetails)
+                                if len(valid_parameters) != 0:
+                                    jsonform.append(formDetails)
                                 #pprint("post form "+csrfForm.formdata["action"] +  " is vulnerable to CSRF")
                         continue
                     except :
                         ''
                 elif formDetails["method"].lower() == "post":# form is a post form, check for CSRF
                     csrfForm = Form(url,formDetails)
-
                     #we send a request with randomly filled in token
                     valid_parameters = dict(csrfForm.fill_entries())
+
                     try:
                         r = client.post(action,valid_parameters)
                         if r != None:#sometimes the request can not be processed
-                            #pprint(r.status_code)
+                            pprint(r.status_code)
                             if r.status_code == 200:#  reponse 200 means the CSRF is successful
                                 formDetails["parameter"] = valid_parameters
-                                jsonform.append(formDetails)
+                                if len(valid_parameters) != 0:
+                                    jsonform.append(formDetails)
                         continue
                     except :
                         ''

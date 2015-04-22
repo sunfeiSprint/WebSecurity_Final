@@ -1,82 +1,55 @@
 [
     {
-        "url": "https://app1.com/pictures/purchased.php", 
-        "action": "https://app1.com/pictures/search.php", 
+        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=6", 
+        "action": "https://app4.com/query.php", 
         "parameter": {
-            "query": "text", 
-            "null": "image"
+            "username": "text", 
+            "null": "submit", 
+            "password": "password", 
+            "dologin": "hidden_*_1", 
+            "sendpass": "submit"
+        }, 
+        "method": "post"
+    }, 
+    {
+        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=3", 
+        "action": "https://app4.com/bug.php", 
+        "parameter": {
+            "last_modified_date": "hidden_*_1429691499", 
+            "op": "hidden_*_mass_update"
+        }, 
+        "method": "post"
+    }, 
+    {
+        "url": "https://app4.com/index.php", 
+        "action": "https://app4.com/index.php", 
+        "parameter": {
+            "username": "text", 
+            "null": "submit", 
+            "password": "password", 
+            "dologin": "hidden_*_1", 
+            "sendpass": "submit"
+        }, 
+        "method": "post"
+    }, 
+    {
+        "url": "https://app4.com/report.php", 
+        "action": "https://app4.com/report.php", 
+        "parameter": {
+            "null": "submit"
         }, 
         "method": "get"
     }, 
     {
-        "url": "https://app1.com/pictures/view.php?picid=15", 
-        "action": "https://app1.com/comments/preview_comment.php", 
+        "url": "https://app4.com/newaccount.php", 
+        "action": "https://app4.com/newaccount.php", 
         "parameter": {
-            "null": "submit", 
-            "picid": "hidden_*_15"
-        }, 
-        "method": "POST"
-    }, 
-    {
-        "url": "https://app1.com/cart/review.php", 
-        "action": "https://app1.com/cart/action.php?action=delete", 
-        "parameter": {
-            "null": "submit", 
-            "pics[]": "checkbox"
-        }, 
-        "method": "POST"
-    }, 
-    {
-        "url": "https://app1.com/pictures/upload.php", 
-        "action": "https://app1.com/pictures/upload.php", 
-        "parameter": {
-            "MAX_FILE_SIZE": "hidden_*_10485760", 
-            "name": "text", 
-            "title": "text", 
-            "price": "text", 
-            "pic": "file", 
-            "tag": "text", 
-            "null": "submit"
-        }, 
-        "method": "POST"
-    }, 
-    {
-        "url": "https://app1.com/cart/review.php", 
-        "action": "https://app1.com/cart/action.php?action=addcoupon", 
-        "parameter": {
-            "null": "submit", 
-            "couponcode": "text"
-        }, 
-        "method": "POST"
-    }, 
-    {
-        "url": "https://app1.com/cart/confirm.php", 
-        "action": "https://app1.com/cart/action.php?action=purchase", 
-        "parameter": {
-            "null": "submit"
-        }, 
-        "method": "POST"
-    }, 
-    {
-        "url": "https://app1.com/users/register.php", 
-        "action": "https://app1.com/users/register.php", 
-        "parameter": {
-            "username": "text", 
-            "firstname": "text", 
             "lastname": "text", 
-            "null": "submit", 
-            "password": "password", 
-            "againpass": "password"
+            "createaccount": "hidden_*_1", 
+            "email": "text", 
+            "firstname": "text", 
+            "null": "submit"
         }, 
-        "method": "POST"
-    }, 
-    {
-        "url": "https://app1.com/guestbook.php", 
-        "action": "https://app1.com/guestbook.php", 
-        "parameter": {
-            "null": "submit", 
-            "name": "text"
-        }, 
-        "method": "POST"
+        "method": "post"
     }
 ]

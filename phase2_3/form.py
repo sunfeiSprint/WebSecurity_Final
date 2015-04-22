@@ -35,21 +35,29 @@ class Form(object):
         if method =="post":
             params = self.formdata["parameter"]
             for name in params.keys():
-                type = params[name]
-                if filter_type is None:
-                    if type != "":
-                        if  type in self.type_dictionary.keys():
-                            value = self.type_dictionary[type]
-                        else:
-                            value =''
+                if name != "null":
+                    type = params[name]
+                    if filter_type is None:
+                        if type != "":
+    			     if type.startswith("hidden_*_"):
+                                print(type)
+    			        splitString= type.split("_*_")
+                                value = splitString[1]
+                             elif type in self.type_dictionary.keys():
+                                value = self.type_dictionary[type]
+                             else:
+                                value =''
                         yield name, value
-                elif filter_type == "hidden":
-                    if type != "" and type !="hidden":
-                        if type in self.type_dictionary.keys():
-                            value = self.type_dictionary[type]
-                        else: 
-                            value =''
-                        yield name, value
+                    elif filter_type == "hidden":
+                        if type != "" and type !="hidden":
+                            if type.startswith("hidden_*_"):
+                                splitString= type.split("_*_")
+                                value = splitString[1]
+                            elif type in self.type_dictionary.keys():
+                                value = self.type_dictionary[type]
+                            else:
+                                value =''
+                            yield name, value
 
     def send(self,url,data,method):
         if method == "get":
