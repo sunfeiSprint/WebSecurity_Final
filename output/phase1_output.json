@@ -1,154 +1,41 @@
 [
     {
-<<<<<<< HEAD
-        "url": "https://app4.com/query.php?order=bug_id&sort=asc&page=1&page=1&op=mybugs&assignedto=1&open=1", 
+        "url": "https://app4.com/bug.php?op=add&project=1", 
         "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden_*_show"
-        }, 
-        "method": "get"
-    }, 
-    {
-        "url": "https://app4.com/admin/user.php?order=last_name&sort=asc&page=1&userfilter=0&groupfilter=0", 
-        "action": "https://app4.com/admin/None", 
-        "parameter": {
-            "null": "submit"
-        }, 
-        "method": "get"
-    }, 
-    {
-        "url": "https://app4.com/query.php?order=priority_name&sort=asc&page=1&page=1&op=mybugs&bookmarked=1&open=0", 
-        "action": "https://app4.com/query.php", 
         "parameter": {}, 
         "method": "post"
     }, 
     {
-        "url": "https://app4.com/admin/severity.php?order=severity_desc&sort=asc", 
-        "action": "https://app4.com/admin/../bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden_*_show"
-        }, 
-        "method": "get"
-    }, 
-    {
-        "url": "https://app4.com/admin/../report.php", 
-        "action": "https://app4.com/report.php", 
-        "parameter": {
-            "null": "submit"
-        }, 
-        "method": "get"
-    }, 
-    {
-        "url": "https://app4.com/admin/user.php?op=edit&user_id=4&userfilter=0&groupfilter=0", 
-        "action": "https://app4.com/admin/user.php", 
-        "parameter": {
-            "first_name": "text", 
-            "last_name": "text", 
-            "user_id": "hidden_*_4", 
-            "submit": "submit", 
-            "use_js": "hidden_*_", 
-            "filter": "hidden_*_", 
-            "fe_notice": "checkbox", 
-            "active": "checkbox", 
-            "password": "text", 
-            "email": "text", 
-            "op": "hidden_*_save"
-=======
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=6", 
+        "url": "https://app4.com/query.php?op=query&form=advanced", 
         "action": "https://app4.com/query.php", 
         "parameter": {
-            "username": "text", 
             "null": "submit", 
-            "password": "password", 
-            "dologin": "hidden_*_1", 
-            "sendpass": "submit"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=3", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "last_modified_date": "hidden_*_1429691499", 
-            "op": "hidden_*_mass_update"
-        }, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/index.php", 
-        "action": "https://app4.com/index.php", 
-        "parameter": {
-            "username": "text", 
-            "null": "submit", 
-            "password": "password", 
-            "dologin": "hidden_*_1", 
-            "sendpass": "submit"
->>>>>>> c7323f7be1f72460d1447cd189d68e18ef083a9c
-        }, 
-        "method": "post"
-    }, 
-    {
-<<<<<<< HEAD
-        "url": "https://app4.com/index.php", 
-        "action": "https://app4.com/index.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/admin/../user.php", 
-        "action": "https://app4.com/user.php", 
-        "parameter": {}, 
-        "method": "post"
-    }, 
-    {
-        "url": "https://app4.com/admin/../query.php?op=query", 
-        "action": "https://app4.com/admin/../query.php", 
-=======
-        "url": "https://app4.com/report.php", 
-        "action": "https://app4.com/report.php", 
->>>>>>> c7323f7be1f72460d1447cd189d68e18ef083a9c
-        "parameter": {
-            "null": "submit", 
+            "form": "hidden_*_advanced", 
             "op": "hidden_*_query"
         }, 
         "method": "get"
     }, 
     {
-<<<<<<< HEAD
-        "url": "https://app4.com/admin/../admin/project.php", 
-        "action": "https://app4.com/admin/../admin/../bug.php", 
+        "url": "https://app4.com/user.php", 
+        "action": "https://app4.com/user.php", 
         "parameter": {
-            "bugid": "text", 
-            "op": "hidden_*_show"
+            "do": "hidden_*_changeprefs", 
+            "preferences[]": "checkbox", 
+            "null": "submit", 
+            "def_results": "text"
         }, 
-        "method": "get"
+        "method": "post"
     }, 
     {
-        "url": "https://app4.com/admin/project.php?op=add", 
-        "action": "https://app4.com/admin/project.php", 
-        "parameter": {
-            "project_name": "text", 
-            "submit": "submit", 
-            "op": "hidden_*_save_project", 
-            "active": "checkbox", 
-            "version_name": "text", 
-            "component_name": "text", 
-            "version_sortorder": "text", 
-            "id": "hidden_*_0", 
-            "component_sortorder": "text"
-=======
-        "url": "https://app4.com/newaccount.php", 
-        "action": "https://app4.com/newaccount.php", 
-        "parameter": {
-            "lastname": "text", 
-            "createaccount": "hidden_*_1", 
-            "email": "text", 
-            "firstname": "text", 
-            "null": "submit"
->>>>>>> c7323f7be1f72460d1447cd189d68e18ef083a9c
-        }, 
+        "url": "https://app4.com/index.php", 
+        "action": "https://app4.com/index.php", 
+        "parameter": {}, 
+        "method": "post"
+    }, 
+    {
+        "url": "https://app4.com/report.php", 
+        "action": "https://app4.com/report.php", 
+        "parameter": {}, 
         "method": "post"
     }
 ]

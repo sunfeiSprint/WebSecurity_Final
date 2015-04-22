@@ -14,8 +14,5 @@ HTTPCACHE_ENABLED = False
 SPIDER_MODULES = ['crawler.spiders']
 NEWSPIDER_MODULE = 'crawler.spiders'
 USER_AGENT = '%s/%s' % (BOT_NAME, BOT_VERSION)
-<<<<<<< HEAD
 DEPTH_LIMIT= 5
-=======
-DEPTH_LIMIT= 3
->>>>>>> c7323f7be1f72460d1447cd189d68e18ef083a9c
+

@@ -67,6 +67,7 @@ with open('../output/phase1_output.json') as data_file:
                 elif formDetails["method"].lower() == "post":# form is a post form, check for CSRF
                     csrfForm = Form(url,formDetails)
                     #we send a request with randomly filled in token
+                    pprint(formDetails["parameter"])
                     valid_parameters = dict(csrfForm.fill_entries())
 
                     try:

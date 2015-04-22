@@ -1,48 +1,44 @@
-<<<<<<< HEAD
-[]
-=======
 [
   {
-    "url": "https://app4.com/query.php?op=doquery&status%5B%5D=6", 
-    "action": "https://app4.com/query.php", 
+    "url": "http://app10.com/detail.php?item_id=13/1/4/1", 
+    "action": "http://app10.com/cart.php", 
     "parameter": {
-      "username": "abcdefgh", 
-      "password": "abcd1234", 
-      "dologin": "1", 
-      "sendpass": ""
+      "qty[]": "1", 
+      "prod_opt_12": "abcdefgh", 
+      "cmd": "add", 
+      "item_id[0]": "13", 
+      "AXSRF_token": "", 
+      "qty[0]": "abcdefgh"
     }, 
     "method": "post"
   }, 
   {
-    "url": "https://app4.com/query.php?op=doquery&status%5B%5D=3", 
-    "action": "https://app4.com/bug.php", 
+    "url": "http://app10.com/contact.php?", 
+    "action": "http://app10.com/contact.php", 
     "parameter": {
-      "last_modified_date": "1429691499", 
-      "op": "mass_update"
+      "name": "abcdefgh", 
+      "cmd": "send", 
+      "visual": "abcdefgh", 
+      "AXSRF_token": "", 
+      "email": "ex@amp.le", 
+      "subject": "abcdefgh"
     }, 
     "method": "post"
   }, 
   {
-    "url": "https://app4.com/index.php", 
-    "action": "https://app4.com/index.php", 
+    "url": "http://app10.com/tell.php?item_id=13", 
+    "action": "http://app10.com/tell.php", 
     "parameter": {
-      "username": "abcdefgh", 
-      "password": "abcd1234", 
-      "dologin": "1", 
-      "sendpass": ""
-    }, 
-    "method": "post"
-  }, 
-  {
-    "url": "https://app4.com/newaccount.php", 
-    "action": "https://app4.com/newaccount.php", 
-    "parameter": {
-      "lastname": "abcdefgh", 
-      "createaccount": "1", 
-      "email": "abcdefgh", 
-      "firstname": "abcdefgh"
+      "name": "abcdefgh", 
+      "friend_name": "abcdefgh", 
+      "cmd": "send", 
+      "contact_us": "0", 
+      "friend_email": "abcdefgh", 
+      "visual": "abcdefgh", 
+      "item_id": "13", 
+      "AXSRF_token": "", 
+      "email": "abcdefgh"
     }, 
     "method": "post"
   }
 ]
->>>>>>> c7323f7be1f72460d1447cd189d68e18ef083a9c

@@ -1,0 +1,3 @@
+../config/configForEachApp/config4admin.json
+[]
+[('username', 'admin@admin.com'), ('password', 'admin'), ('dologin', '1')] https://app4.com/index.php POST

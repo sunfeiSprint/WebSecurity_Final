@@ -83,11 +83,53 @@ class ExampleSpider(CrawlSpider):
         # #this may lead to infinite crawling...
         #print response.headers['Location']
         for link in links:
-            if link.find('contextid=2&roleid=3&capability=mod%2Fglossary%3Aapprove')>-1:
-                continue
-            if link.find('status.php?op=del&status_id')>-1:
+            if link.find('status.php?op=del&status_id=')>-1:
                 ip=link.split('status.php?op=del&status_id=')[1]
                 delform="<form action='status.php'> <input name='op' type='hidden' value='del'/><input name='status_id' type='hidden' value='"+id+"'/></form>"
+                formsfile=open('formslist','a')
+                linksfile=open('linkslist','a')
+                formsfile.write(form)
+                formsfile.write('\n')
+                linksfile.write(response.url)
+                linksfile.write('\n')
+                formsfile.close()
+                linksfile.close()
+                continue
+            elif link.find('resolution.php?op=del&resolution_id=')>-1:
+                ip=link.split('resolution.php?op=del&resolution_id=')[1]
+                delform="<form action='resolution.php'> <input name='op' type='hidden' value='del'/><input name='resolution_id' type='hidden' value='"+id+"'/></form>"
+                formsfile=open('formslist','a')
+                linksfile=open('linkslist','a')
+                formsfile.write(form)
+                formsfile.write('\n')
+                linksfile.write(response.url)
+                linksfile.write('\n')
+                formsfile.close()
+                linksfile.close()
+                continue
+            elif link.find('severity.php?op=del&severity_id=')>-1:
+                ip=link.split('severity.php?op=del&severity_id=')[1]
+                delform="<form action='severity.php'> <input name='op' type='hidden' value='del'/><input name='severity_id' type='hidden' value='"+id+"'/></form>"
+                formsfile=open('formslist','a')
+                linksfile=open('linkslist','a')
+                formsfile.write(form)
+                formsfile.write('\n')
+                linksfile.write(response.url)
+                linksfile.write('\n')
+                formsfile.close()
+                linksfile.close()
+                continue
+            elif link.find('os.php?op=del&os_id=')>-1:
+                ip=link.split('os.php?op=del&os_id=')[1]
+                delform="<form action='os.php'> <input name='op' type='hidden' value='del'/><input name='os_id' type='hidden' value='"+id+"'/></form>"
+                formsfile=open('formslist','a')
+                linksfile=open('linkslist','a')
+                formsfile.write(form)
+                formsfile.write('\n')
+                linksfile.write(response.url)
+                linksfile.write('\n')
+                formsfile.close()
+                linksfile.close()
                 continue
             #print "THIS IS A LINK" + link
             #only process external/full link
@@ -136,12 +178,7 @@ class ExampleSpider(CrawlSpider):
         return item
 
     def extract_forms(self,hxs,response):
-        #print response
         forms = hxs.xpath('//form').extract()
-        #formsaction = hxs.select('//form/@action').extract()
-        #print formsaction
-#        formsname = hxs.select('//form/@name').extract()
-#        formmethod = hxs.select('//form/@method').extract()
         formsfile=open('formslist','a')
         linksfile=open('linkslist','a')
         for form in forms:

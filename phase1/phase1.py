@@ -42,7 +42,7 @@ for linkform in linkforms:
 	if formmethod==None:
 		formmethod='get'
 	formdict['method']=formmethod
-	print url
+	#print url
 	#print formaction
 	if str(formaction).find("http") < 0:
 		if len(str(formaction))>0 and str(formaction)[0]=='#':
@@ -69,7 +69,10 @@ for linkform in linkforms:
 	for inputitem in linkform[1].find_all('input'):
 		#print inputitem
 		if inputitem.get('type')=='hidden':
-			parameterdict[inputitem.get('name')]=inputitem.get('type')+'_*_'+inputitem.get('value')
+			if inputitem.get('value') is not None:
+				parameterdict[inputitem.get('name')]=inputitem.get('type')+'_*_'+inputitem.get('value')
+			else:
+				parameterdict[inputitem.get('name')]=inputitem.get('type')+'_*_'+''
 		else:
 			parameterdict[inputitem.get('name')]=inputitem.get('type')
 	formdict['parameter']=parameterdict
