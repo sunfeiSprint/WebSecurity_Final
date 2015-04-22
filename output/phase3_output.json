@@ -1,1 +1,48 @@
+<<<<<<< HEAD
 []
+=======
+[
+  {
+    "url": "https://app4.com/query.php?op=doquery&status%5B%5D=6", 
+    "action": "https://app4.com/query.php", 
+    "parameter": {
+      "username": "abcdefgh", 
+      "password": "abcd1234", 
+      "dologin": "1", 
+      "sendpass": ""
+    }, 
+    "method": "post"
+  }, 
+  {
+    "url": "https://app4.com/query.php?op=doquery&status%5B%5D=3", 
+    "action": "https://app4.com/bug.php", 
+    "parameter": {
+      "last_modified_date": "1429691499", 
+      "op": "mass_update"
+    }, 
+    "method": "post"
+  }, 
+  {
+    "url": "https://app4.com/index.php", 
+    "action": "https://app4.com/index.php", 
+    "parameter": {
+      "username": "abcdefgh", 
+      "password": "abcd1234", 
+      "dologin": "1", 
+      "sendpass": ""
+    }, 
+    "method": "post"
+  }, 
+  {
+    "url": "https://app4.com/newaccount.php", 
+    "action": "https://app4.com/newaccount.php", 
+    "parameter": {
+      "lastname": "abcdefgh", 
+      "createaccount": "1", 
+      "email": "abcdefgh", 
+      "firstname": "abcdefgh"
+    }, 
+    "method": "post"
+  }
+]
+>>>>>>> c7323f7be1f72460d1447cd189d68e18ef083a9c

@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "url": "https://app4.com/query.php?order=bug_id&sort=asc&page=1&page=1&op=mybugs&assignedto=1&open=1", 
         "action": "https://app4.com/bug.php", 
         "parameter": {
@@ -54,10 +55,42 @@
             "password": "text", 
             "email": "text", 
             "op": "hidden_*_save"
+=======
+        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=6", 
+        "action": "https://app4.com/query.php", 
+        "parameter": {
+            "username": "text", 
+            "null": "submit", 
+            "password": "password", 
+            "dologin": "hidden_*_1", 
+            "sendpass": "submit"
         }, 
         "method": "post"
     }, 
     {
+        "url": "https://app4.com/query.php?op=doquery&status%5B%5D=3", 
+        "action": "https://app4.com/bug.php", 
+        "parameter": {
+            "last_modified_date": "hidden_*_1429691499", 
+            "op": "hidden_*_mass_update"
+        }, 
+        "method": "post"
+    }, 
+    {
+        "url": "https://app4.com/index.php", 
+        "action": "https://app4.com/index.php", 
+        "parameter": {
+            "username": "text", 
+            "null": "submit", 
+            "password": "password", 
+            "dologin": "hidden_*_1", 
+            "sendpass": "submit"
+>>>>>>> c7323f7be1f72460d1447cd189d68e18ef083a9c
+        }, 
+        "method": "post"
+    }, 
+    {
+<<<<<<< HEAD
         "url": "https://app4.com/index.php", 
         "action": "https://app4.com/index.php", 
         "parameter": {}, 
@@ -72,6 +105,10 @@
     {
         "url": "https://app4.com/admin/../query.php?op=query", 
         "action": "https://app4.com/admin/../query.php", 
+=======
+        "url": "https://app4.com/report.php", 
+        "action": "https://app4.com/report.php", 
+>>>>>>> c7323f7be1f72460d1447cd189d68e18ef083a9c
         "parameter": {
             "null": "submit", 
             "op": "hidden_*_query"
@@ -79,6 +116,7 @@
         "method": "get"
     }, 
     {
+<<<<<<< HEAD
         "url": "https://app4.com/admin/../admin/project.php", 
         "action": "https://app4.com/admin/../admin/../bug.php", 
         "parameter": {
@@ -100,6 +138,16 @@
             "version_sortorder": "text", 
             "id": "hidden_*_0", 
             "component_sortorder": "text"
+=======
+        "url": "https://app4.com/newaccount.php", 
+        "action": "https://app4.com/newaccount.php", 
+        "parameter": {
+            "lastname": "text", 
+            "createaccount": "hidden_*_1", 
+            "email": "text", 
+            "firstname": "text", 
+            "null": "submit"
+>>>>>>> c7323f7be1f72460d1447cd189d68e18ef083a9c
         }, 
         "method": "post"
     }

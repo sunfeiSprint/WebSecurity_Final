@@ -1,5 +1,6 @@
 https://app4.com/index.php
 https://app4.com/index.php
+<<<<<<< HEAD
 https://app4.com/query.php?op=doquery&projects=3&open=1&order=priority_name&sort=desc
 https://app4.com/query.php?op=doquery&projects=3&open=1&order=priority_name&sort=desc
 https://app4.com/query.php?op=doquery&projects=3&open=1&order=priority_name&sort=desc
@@ -1003,10 +1004,41 @@ https://app4.com/query.php?op=query&form=advanced
 https://app4.com/query.php?op=query&form=advanced
 https://app4.com/query.php?op=query
 https://app4.com/query.php?op=query
+=======
+https://app4.com/query.php?op=doquery&status%5B%5D=7
+https://app4.com/query.php?op=doquery&status%5B%5D=7
+https://app4.com/query.php?op=doquery&status%5B%5D=7
+https://app4.com/query.php?op=doquery&status%5B%5D=4
+https://app4.com/query.php?op=doquery&status%5B%5D=4
+https://app4.com/query.php?op=doquery&status%5B%5D=4
+https://app4.com/report.php
+https://app4.com/report.php
+https://app4.com/report.php
+https://app4.com/newaccount.php
+https://app4.com/newaccount.php
+https://app4.com/query.php?op=doquery&status%5B%5D=3
+https://app4.com/query.php?op=doquery&status%5B%5D=3
+https://app4.com/query.php?op=doquery&status%5B%5D=3
+https://app4.com/query.php?op=doquery&status%5B%5D=1
+https://app4.com/query.php?op=doquery&status%5B%5D=1
+https://app4.com/query.php?op=doquery&status%5B%5D=1
+https://app4.com/query.php?op=doquery&status%5B%5D=2
+https://app4.com/query.php?op=doquery&status%5B%5D=2
+https://app4.com/query.php?op=doquery&status%5B%5D=2
+https://app4.com/query.php?op=doquery&status%5B%5D=5
+https://app4.com/query.php?op=doquery&status%5B%5D=5
+https://app4.com/query.php?op=doquery&status%5B%5D=5
+https://app4.com/query.php?op=doquery&status%5B%5D=6
+https://app4.com/query.php?op=doquery&status%5B%5D=6
+https://app4.com/query.php?op=doquery&status%5B%5D=6
+https://app4.com/query.php?op=query&form=advanced
+https://app4.com/query.php?op=query&form=advanced
+>>>>>>> c7323f7be1f72460d1447cd189d68e18ef083a9c
 https://app4.com/query.php?op=query
 https://app4.com/query.php?op=query
 https://app4.com/bug.php?op=add
 https://app4.com/bug.php?op=add
+<<<<<<< HEAD
 https://app4.com/query.php?order=reporter&sort=desc&page=1&page=1&op=doquery&projects=1&open=1
 https://app4.com/query.php?order=reporter&sort=desc&page=1&page=1&op=doquery&projects=1&open=1
 https://app4.com/query.php?order=reporter&sort=desc&page=1&page=1&op=doquery&projects=1&open=1
@@ -1040,3 +1072,7 @@ https://app4.com/query.php?order=priority_name&sort=desc&page=1&page=1&op=doquer
 https://app4.com/query.php?order=bug_id&sort=desc&page=1&page=1&op=doquery&projects=3&open=1
 https://app4.com/query.php?order=bug_id&sort=desc&page=1&page=1&op=doquery&projects=3&open=1
 https://app4.com/query.php?order=bug_id&sort=desc&page=1&page=1&op=doquery&projects=3&open=1
+=======
+https://app4.com/index.php
+https://app4.com/index.php
+>>>>>>> c7323f7be1f72460d1447cd189d68e18ef083a9c

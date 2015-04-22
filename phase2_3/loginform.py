@@ -62,8 +62,10 @@ def _pick_fields(form):
 
 def submit_value(form):
     """Returns the value for the submit input, if any"""
-    for x in form.inputs:
-        if x.type == "submit" and x.name:
+
+    #print form.xpath('//input')
+    for x in form.xpath('//input'):
+        if x.type == "submit" and x.name and x.name!='sendpass':
             return [(x.name, x.value)]
     else:
         return []
@@ -72,9 +74,11 @@ def submit_value(form):
 def fill_login_form(url, body, username, password):
     doc = html.document_fromstring(body, base_url=url)
     form = _pick_form(doc.xpath('//form'))
+
     userfield, passfield = _pick_fields(form)
     form.fields[userfield] = username
     form.fields[passfield] = password
+    print submit_value(form)
     form_values = form.form_values() + submit_value(form)
     return form_values, form.action or form.base_url, form.method
 
