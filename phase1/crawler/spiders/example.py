@@ -21,6 +21,7 @@ class ExampleSpider(CrawlSpider):
     allowed_dommains= parameter.domain
     login_user = parameter.username
     login_pass = parameter.password
+    oldurl=[]
     #cookie= Cookie.SimpleCookie()
     #rules = (Rule(LinkExtractor(deny=('logout\.php', ))),)
     # 'log' and 'pwd' are names of the username and password fields
@@ -55,7 +56,7 @@ class ExampleSpider(CrawlSpider):
         else:
             self.log("Login succeed!", level=log.DEBUG)
             #print response.body
-            return Request(url=response.url,dont_filter=True)
+            return Request(url=response.url)
             
             #return Request(url="https://app1.com/cart/review.php",
             #               callback=self.parse)
@@ -82,6 +83,12 @@ class ExampleSpider(CrawlSpider):
         # #this may lead to infinite crawling...
         #print response.headers['Location']
         for link in links:
+            if link.find('contextid=2&roleid=3&capability=mod%2Fglossary%3Aapprove')>-1:
+                continue
+            if link.find('status.php?op=del&status_id')>-1:
+                ip=link.split('status.php?op=del&status_id=')[1]
+                delform="<form action='status.php'> <input name='op' type='hidden' value='del'/><input name='status_id' type='hidden' value='"+id+"'/></form>"
+                continue
             #print "THIS IS A LINK" + link
             #only process external/full link
 #            cookie.load(response.headers['Set-Cookie'])

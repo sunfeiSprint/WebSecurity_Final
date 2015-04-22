@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+[]
+=======
 [
   {
     "url": "https://app4.com/query.php?op=doquery&status%5B%5D=6", 
@@ -42,3 +45,4 @@
     "method": "post"
   }
 ]
+>>>>>>> c7323f7be1f72460d1447cd189d68e18ef083a9c
