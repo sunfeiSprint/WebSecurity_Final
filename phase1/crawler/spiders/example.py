@@ -14,14 +14,14 @@ import Cookie
 from scrapy.contrib.linkextractors import LinkExtractor
 #from scrapy.http.cookies import CookieJar
 class ExampleSpider(CrawlSpider):
-    handle_httpstatus_list = [404]
+    #handle_httpstatus_list = [404]
     name = 'example.com'
     start_urls = parameter.login_urls
     startCrawlingURL = parameter.start_urls
     allowed_dommains= parameter.domain
     login_user = parameter.username
     login_pass = parameter.password
-    cookie= Cookie.SimpleCookie()
+    #cookie= Cookie.SimpleCookie()
     #rules = (Rule(LinkExtractor(deny=('logout\.php', ))),)
     # 'log' and 'pwd' are names of the username and password fields
     # depends on each website, you'll have to change those fields properly
@@ -30,37 +30,25 @@ class ExampleSpider(CrawlSpider):
     def start_requests(self):
         if parameter.login==True:
             return [Request(url=self.start_urls[0],method='get', dont_filter=True,callback=self.login)]
-    def login(self,response):  
+        else:
+            return [Request(url=self.startCrawlingURL[0],method='get', dont_filter=True,callback=self.parse)]
+    def login(self,response):
+            print response.body
             args, url, method = fill_login_form(response.url, response.body, self.login_user, self.login_pass)
             print args,url,method
-            print args
+            #print args
             argsdict={}
             for i in args:
                 argsdict[i[0]]=i[1]
-            print argsdict
-            #args={'username':'scanner1', 'password':'scanner1'}
+            #print argsdict
             return FormRequest(url,formdata=args, dont_filter=True,callback=self.after_login)
-            #print args
-            #print response.request
-            #print response.request
-            #return FormRequest.from_response(
-            #    response,
-            #    formdata=argsdict,
-            #    dont_filter=True,
-            #    callback=self.after_login
-            #)
-        #else:
-        #    return Request(
-        #        response.url,
-        #        callback=self.parse_page
-        #    )
 
     def after_login(self, response):
         # check login succeed before going on
         #print response.body
         if "No match"  in response.body:
             self.log("Login fail", level=log.ERROR)
-            return
+            return []
 
 
         # continue scraping with authenticated session...
@@ -76,7 +64,7 @@ class ExampleSpider(CrawlSpider):
     # authenticated session.
     '''def parse(self,response):
         print "aaaaa"
-        print response.url'''
+        print response.body'''
 
   
     def parse(self, response):
@@ -90,8 +78,6 @@ class ExampleSpider(CrawlSpider):
         links = hxs.xpath('//a/@href').extract()
         #forms = hxs.select('//form').extract()
         self.extract_forms(hxs,response)
-        for link in links:
-            print link
         # Yield a new request for each link we found
         # #this may lead to infinite crawling...
         #print response.headers['Location']
@@ -104,17 +90,17 @@ class ExampleSpider(CrawlSpider):
             if link.find("http") > -1:
                 if link.find(parameter.domain[0])>-1:
                     print link
-                    yield Request(url=link ,callback=self.parse)
+                    yield Request(url=link)
                 else:
                     continue
             elif len(link)>0 and link[0]=='#':
                 direct=response.url.split('/')
                 if  (len(link)>1 and link[1]=='/') or len(link)==1:
                     print response.url+link[1:]
-                    yield Request(url=response.url+link[1:], callback=self.parse)
+                    yield Request(url=response.url+link[1:])
                 else:
                     print response.url+'/'+link[1:]
-                    yield Request(url=response.url+'/'+link[1:], callback=self.parse)
+                    yield Request(url=response.url+'/'+link[1:])
             else:
                 if (len(link)>0 and link[0]!='/') or len(link)==0:
                     direct=response.url.split('/')
@@ -122,10 +108,10 @@ class ExampleSpider(CrawlSpider):
                     for i in range(len(direct)-1):
                         path=path+direct[i]+'/'
                     print path+link
-                    yield Request(url=path+link,callback=self.parse)
+                    yield Request(url=path+link)
                 else:
                     print parameter.domain[0]+link 
-                    yield Request(url=parameter.domain[0]+link,callback=self.parse)
+                    yield Request(url=parameter.domain[0]+link)
         item = LinkItem()
         #if len(hxs.xpath('//title/text()').extract())>0:
         item["title"] = hxs.xpath('//title/text()').extract()[0]

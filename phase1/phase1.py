@@ -28,6 +28,8 @@ for linkform in linkforms:
 	formtype=linkform[1].get('type')
 	formdict=dict([])
 	formdict['url']=url
+	if formmethod==None:
+		formmethod='get'
 	formdict['method']=formmethod
 	formdict['action']=parameter.domain[0]+'/'+str(formaction)
 	parameterdict=dict([])

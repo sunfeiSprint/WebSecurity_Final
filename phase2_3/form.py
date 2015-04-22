@@ -38,11 +38,17 @@ class Form(object):
                 type = params[name]
                 if filter_type is None:
                     if type != "":
-                         value = self.type_dictionary[type]
-                         yield name, value
+                        if  type in self.type_dictionary.keys():
+                            value = self.type_dictionary[type]
+                        else:
+                            value =''
+                        yield name, value
                 elif filter_type == "hidden":
                     if type != "" and type !="hidden":
-                        value = self.type_dictionary[type]
+                        if type in self.type_dictionary.keys():
+                            value = self.type_dictionary[type]
+                        else: 
+                            value =''
                         yield name, value
 
     def send(self,url,data,method):
