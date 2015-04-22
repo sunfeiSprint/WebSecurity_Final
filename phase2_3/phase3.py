@@ -61,16 +61,19 @@ with open('../output/phase1_output.json') as data_file:
                         ''
                 elif formDetails["method"].lower() == "post":# form is a post form, check for CSRF
                     csrfForm = Form(url,formDetails)
+
                     #we send a request with randomly filled in token
                     valid_parameters = dict(csrfForm.fill_entries())
                     try:
                         r = client.post(action,valid_parameters)
                         if r != None:#sometimes the request can not be processed
+                            #pprint(r.status_code)
                             if r.status_code == 200:#  reponse 200 means the CSRF is successful
                                 formDetails["parameter"] = valid_parameters
                                 jsonform.append(formDetails)
                         continue
                     except :
                         ''
+                        #pprint('response is null')
 with open("../output/phase3_output.json",'w') as outfile:
     json.dump(jsonform,outfile,indent=2)

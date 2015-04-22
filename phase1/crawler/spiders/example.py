@@ -33,7 +33,7 @@ class ExampleSpider(CrawlSpider):
         else:
             return [Request(url=self.startCrawlingURL[0],method='get', dont_filter=True,callback=self.parse)]
     def login(self,response):
-            print response.body
+            
             args, url, method = fill_login_form(response.url, response.body, self.login_user, self.login_pass)
             print args,url,method
             #print args
@@ -89,28 +89,35 @@ class ExampleSpider(CrawlSpider):
                 continue
             if link.find("http") > -1:
                 if link.find(parameter.domain[0])>-1:
-                    print link
+                    #print link
                     yield Request(url=link)
                 else:
                     continue
+
+
             elif len(link)>0 and link[0]=='#':
                 direct=response.url.split('/')
                 if  (len(link)>1 and link[1]=='/') or len(link)==1:
-                    print response.url+link[1:]
+                    #print response.url+link[1:]
                     yield Request(url=response.url+link[1:])
                 else:
-                    print response.url+'/'+link[1:]
-                    yield Request(url=response.url+'/'+link[1:])
+                    if response.url[-1:]!='/':
+                        #print response.url+'/'+link[1:]
+                        yield Request(url=response.url+'/'+link[1:])
+                    else:
+                        #print response.url+link[1:]
+                        yield Request(url=response.url+link[1:])
+
             else:
                 if (len(link)>0 and link[0]!='/') or len(link)==0:
                     direct=response.url.split('/')
                     path=''
                     for i in range(len(direct)-1):
                         path=path+direct[i]+'/'
-                    print path+link
+                    #print path+link
                     yield Request(url=path+link)
                 else:
-                    print parameter.domain[0]+link 
+                    #print parameter.domain[0]+link 
                     yield Request(url=parameter.domain[0]+link)
         item = LinkItem()
         #if len(hxs.xpath('//title/text()').extract())>0:
@@ -124,7 +131,8 @@ class ExampleSpider(CrawlSpider):
     def extract_forms(self,hxs,response):
         #print response
         forms = hxs.xpath('//form').extract()
-#        formsaction = hxs.select('//form/@action').extract()
+        #formsaction = hxs.select('//form/@action').extract()
+        #print formsaction
 #        formsname = hxs.select('//form/@name').extract()
 #        formmethod = hxs.select('//form/@method').extract()
         formsfile=open('formslist','a')

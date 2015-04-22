@@ -1,1 +1,82 @@
-[]
+[
+    {
+        "url": "https://app1.com/pictures/purchased.php", 
+        "action": "https://app1.com/pictures/search.php", 
+        "parameter": {
+            "query": "text", 
+            "null": "image"
+        }, 
+        "method": "get"
+    }, 
+    {
+        "url": "https://app1.com/pictures/view.php?picid=15", 
+        "action": "https://app1.com/comments/preview_comment.php", 
+        "parameter": {
+            "null": "submit", 
+            "picid": "hidden_*_15"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/cart/review.php", 
+        "action": "https://app1.com/cart/action.php?action=delete", 
+        "parameter": {
+            "null": "submit", 
+            "pics[]": "checkbox"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/pictures/upload.php", 
+        "action": "https://app1.com/pictures/upload.php", 
+        "parameter": {
+            "MAX_FILE_SIZE": "hidden_*_10485760", 
+            "name": "text", 
+            "title": "text", 
+            "price": "text", 
+            "pic": "file", 
+            "tag": "text", 
+            "null": "submit"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/cart/review.php", 
+        "action": "https://app1.com/cart/action.php?action=addcoupon", 
+        "parameter": {
+            "null": "submit", 
+            "couponcode": "text"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/cart/confirm.php", 
+        "action": "https://app1.com/cart/action.php?action=purchase", 
+        "parameter": {
+            "null": "submit"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/users/register.php", 
+        "action": "https://app1.com/users/register.php", 
+        "parameter": {
+            "username": "text", 
+            "firstname": "text", 
+            "lastname": "text", 
+            "null": "submit", 
+            "password": "password", 
+            "againpass": "password"
+        }, 
+        "method": "POST"
+    }, 
+    {
+        "url": "https://app1.com/guestbook.php", 
+        "action": "https://app1.com/guestbook.php", 
+        "parameter": {
+            "null": "submit", 
+            "name": "text"
+        }, 
+        "method": "POST"
+    }
+]

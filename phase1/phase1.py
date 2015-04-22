@@ -3,6 +3,17 @@ from bs4 import BeautifulSoup
 import json
 from crawler.spiders import parameter
 
+def isin(formdict,jsonform):
+	for i in jsonform:
+		if formdict['action'] != i['action'] or formdict['parameter'] == i['action']:
+			continue
+		else:
+			return True
+	return False
+
+
+
+
 try:
 	formsfile=open('formslist','r')
 except:
@@ -31,15 +42,45 @@ for linkform in linkforms:
 	if formmethod==None:
 		formmethod='get'
 	formdict['method']=formmethod
-	formdict['action']=parameter.domain[0]+'/'+str(formaction)
+	print url
+	#print formaction
+	if str(formaction).find("http") < 0:
+		if len(str(formaction))>0 and str(formaction)[0]=='#':
+			if  (len(str(formaction))>1 and str(formaction)[1]=='/') or len(str(formaction))==1:
+				formdict['action']=url+str(formaction)[1:]
+			else:
+				if url[-1:]!='/':
+					formdict['action']=url+'/'+str(formaction)[1:]
+				else:
+					formdict['action']=url+str(formaction)[1:]
+		else:
+			if (len(str(formaction))>0 and str(formaction)[0]!='/') or len(str(formaction))==0:
+				direct=url.split('/')
+				path=''
+				for i in range(len(direct)-1):
+					path=path+direct[i]+'/'
+				formdict['action']=path+str(formaction)
+			else:
+				formdict['action']=parameter.domain[0]+str(formaction)
+	else:
+		formdict['action']=str(formaction)
+
 	parameterdict=dict([])
 	for inputitem in linkform[1].find_all('input'):
 		#print inputitem
-		parameterdict[inputitem.get('name')]=inputitem.get('type')
+		if inputitem.get('type')=='hidden':
+			parameterdict[inputitem.get('name')]=inputitem.get('type')+'_*_'+inputitem.get('value')
+		else:
+			parameterdict[inputitem.get('name')]=inputitem.get('type')
 	formdict['parameter']=parameterdict
-	jsonform.append(formdict)
+	if isin(formdict,jsonform):
+			continue
+	else:
+		jsonform.append(formdict)
 	#print formdict
 
 #print jsonform
 with open("../output/phase1_output.json",'w') as outfile:
 	json.dump(jsonform,outfile,indent=4)
+
+
