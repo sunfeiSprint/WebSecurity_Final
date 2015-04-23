@@ -5,7 +5,7 @@ from crawler.spiders import parameter
 
 def isin(formdict,jsonform):
 	for i in jsonform:
-		if formdict['action'] != i['action'] or formdict['parameter'] == i['action']:
+		if formdict['action'] != i['action'] or formdict['parameter'] != i['parameter']:
 			continue
 		else:
 			return True

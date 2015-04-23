@@ -77,12 +77,12 @@ class ExampleSpider(CrawlSpider):
         # find all the link in the <a href> tag
 
         links = hxs.xpath('//a/@href').extract()
-        #forms = hxs.select('//form').extract()
         self.extract_forms(hxs,response)
         # Yield a new request for each link we found
         # #this may lead to infinite crawling...
         #print response.headers['Location']
         for link in links:
+            print link
             if link.find('status.php?op=del&status_id=')>-1:
                 ip=link.split('status.php?op=del&status_id=')[1]
                 delform="<form action='status.php'> <input name='op' type='hidden' value='del'/><input name='status_id' type='hidden' value='"+id+"'/></form>"

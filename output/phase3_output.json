@@ -1,43 +1,75 @@
 [
   {
-    "url": "http://app10.com/detail.php?item_id=13/1/4/1", 
-    "action": "http://app10.com/cart.php", 
+    "url": "https://app4.com/bug.php?op=add&project=2", 
+    "action": "https://app4.com/bug.php", 
     "parameter": {
-      "qty[]": "1", 
-      "prod_opt_12": "abcdefgh", 
-      "cmd": "add", 
-      "item_id[0]": "13", 
-      "AXSRF_token": "", 
-      "qty[0]": "abcdefgh"
+      "title": "abcdefgh", 
+      "url": "abcdefgh", 
+      "submit": "", 
+      "project": "2", 
+      "attachment": "asdfaf", 
+      "bugid": "0", 
+      "at_description": "abcdefgh", 
+      "op": "do"
     }, 
     "method": "post"
   }, 
   {
-    "url": "http://app10.com/contact.php?", 
-    "action": "http://app10.com/contact.php", 
+    "url": "https://app4.com/bug.php?op=add&project=1", 
+    "action": "https://app4.com/bug.php", 
     "parameter": {
-      "name": "abcdefgh", 
-      "cmd": "send", 
-      "visual": "abcdefgh", 
-      "AXSRF_token": "", 
-      "email": "ex@amp.le", 
-      "subject": "abcdefgh"
+      "title": "abcdefgh", 
+      "url": "abcdefgh", 
+      "submit": "", 
+      "project": "1", 
+      "attachment": "asdfaf", 
+      "bugid": "0", 
+      "at_description": "abcdefgh", 
+      "op": "do"
     }, 
     "method": "post"
   }, 
   {
-    "url": "http://app10.com/tell.php?item_id=13", 
-    "action": "http://app10.com/tell.php", 
+    "url": "https://app4.com/user.php", 
+    "action": "https://app4.com/user.php", 
     "parameter": {
-      "name": "abcdefgh", 
-      "friend_name": "abcdefgh", 
-      "cmd": "send", 
-      "contact_us": "0", 
-      "friend_email": "abcdefgh", 
-      "visual": "abcdefgh", 
-      "item_id": "13", 
-      "AXSRF_token": "", 
-      "email": "abcdefgh"
+      "do": "changeprefs", 
+      "preferences[]": "true", 
+      "def_results": "abcdefgh"
+    }, 
+    "method": "post"
+  }, 
+  {
+    "url": "https://app4.com/user.php", 
+    "action": "https://app4.com/user.php", 
+    "parameter": {
+      "do": "changepassword", 
+      "pass1": "abcd1234", 
+      "pass2": "abcd1234"
+    }, 
+    "method": "post"
+  }, 
+  {
+    "url": "https://app4.com/bug.php?op=add&project=3", 
+    "action": "https://app4.com/bug.php", 
+    "parameter": {
+      "title": "abcdefgh", 
+      "url": "abcdefgh", 
+      "submit": "", 
+      "project": "3", 
+      "attachment": "asdfaf", 
+      "bugid": "0", 
+      "at_description": "abcdefgh", 
+      "op": "do"
+    }, 
+    "method": "post"
+  }, 
+  {
+    "url": "https://app4.com/user.php", 
+    "action": "https://app4.com/user.php", 
+    "parameter": {
+      "do": "changecolumnlist", 
+      "column_list[]": "true"
     }, 
     "method": "post"
   }
