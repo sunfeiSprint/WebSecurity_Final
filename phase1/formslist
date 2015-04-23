@@ -190,7 +190,7 @@
 						Project:
 					</td>
 					<td>
-						1					</td>
+						2					</td>
 				</tr>
 				<tr>
 					<td align="right" valign="top">
@@ -330,7 +330,7 @@
 			</table>
 			<input type="submit" name="submit" value="Submit"> 
 			<input type="hidden" name="bugid" value="0"> 
-			<input type="hidden" name="project" value="3">
+			<input type="hidden" name="project" value="2">
 			<input type="hidden" name="op" value="do">
 		</form>
 <form action="bug.php">
@@ -518,7 +518,7 @@
 						Project:
 					</td>
 					<td>
-						2					</td>
+						1					</td>
 				</tr>
 				<tr>
 					<td align="right" valign="top">
@@ -658,7 +658,7 @@
 			</table>
 			<input type="submit" name="submit" value="Submit"> 
 			<input type="hidden" name="bugid" value="0"> 
-			<input type="hidden" name="project" value="2">
+			<input type="hidden" name="project" value="3">
 			<input type="hidden" name="op" value="do">
 		</form>
 <form action="bug.php">
