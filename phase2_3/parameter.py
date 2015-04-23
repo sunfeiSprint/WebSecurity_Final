@@ -1,6 +1,6 @@
-login_urls=['https://app4.com/index.php']
-start_urls=['https://app4.com/index.php']
-domain=['https://app4.com']
-username='admin@admin.com'
-password='admin'
-login=True
+login_urls=['https://app10.com/index.php']
+start_urls=['https://app10.com/index.php']
+domain=['https://app10.com']
+username='user'
+password='user'
+login=False

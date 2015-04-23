@@ -38,18 +38,18 @@ class Form(object):
                 if name != "null":
                     type = params[name]
                     if filter_type is None:
-                        if type != "" and type is not None:
-    			     if type.startswith("hidden_*_"):
+                        if type != "":
+                            if type.startswith("hidden_*_"):
                                 print(type)
-    			        splitString= type.split("_*_")
+                                splitString= type.split("_*_")
                                 value = splitString[1]
-                             elif type in self.type_dictionary.keys():
+                            elif type in self.type_dictionary.keys():
                                 value = self.type_dictionary[type]
-                             else:
+                            else:
                                 value =''
-                             yield name, value
+                        yield name, value
                     elif filter_type == "hidden":
-                        if type != "" and type !="hidden" and type is not None:
+                        if type != "" and type !="hidden":
                             if type.startswith("hidden_*_"):
                                 splitString= type.split("_*_")
                                 value = splitString[1]

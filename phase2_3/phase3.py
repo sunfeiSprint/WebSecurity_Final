@@ -27,24 +27,22 @@ with open('../output/phase1_output.json') as data_file:
     start_urls = parameter.login_urls
     login_user = parameter.username
     login_pass = parameter.password
+    login_flag = parameter.login
 
     response = client.get(start_urls[0],verify=False)
-    args, url, method = fill_login_form(response.url, response.content, login_user, login_pass)
-
-    pprint(args)
-    pprint(url)
-    pprint(method) 
-
-    loginResponse = client.post(url, data=args, headers=dict(Referer=start_urls))
+    if login_flag == False:
+        loginResponse = client.get(start_urls[0],verify=False)
+    else:        
+        args, url, method = fill_login_form(response.url, response.content, login_user, login_pass)
+        loginResponse = client.post(url, data=args, headers=dict(Referer=start_urls))
+    
     pprint(loginResponse)
     jsonform = []
     if "Invalid" in response.content:
         pprint("Login failed")
     else: 
         pprint("login successful")
-
         for formDetails in data:
-
             url = formDetails["url"]
             action = formDetails["action"]
             if checkStringContainKey(action,negKeywords)==False:#check the Negative keywords to filter out non-sensitive data
@@ -67,7 +65,6 @@ with open('../output/phase1_output.json') as data_file:
                 elif formDetails["method"].lower() == "post":# form is a post form, check for CSRF
                     csrfForm = Form(url,formDetails)
                     #we send a request with randomly filled in token
-                    pprint(formDetails["parameter"])
                     valid_parameters = dict(csrfForm.fill_entries())
 
                     try:
