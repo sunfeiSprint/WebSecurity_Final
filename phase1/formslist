@@ -190,7 +190,7 @@
 						Project:
 					</td>
 					<td>
-						2					</td>
+						1					</td>
 				</tr>
 				<tr>
 					<td align="right" valign="top">
@@ -330,7 +330,7 @@
 			</table>
 			<input type="submit" name="submit" value="Submit"> 
 			<input type="hidden" name="bugid" value="0"> 
-			<input type="hidden" name="project" value="2">
+			<input type="hidden" name="project" value="3">
 			<input type="hidden" name="op" value="do">
 		</form>
 <form action="bug.php">
@@ -518,7 +518,7 @@
 						Project:
 					</td>
 					<td>
-						1					</td>
+						2					</td>
 				</tr>
 				<tr>
 					<td align="right" valign="top">
@@ -658,7 +658,7 @@
 			</table>
 			<input type="submit" name="submit" value="Submit"> 
 			<input type="hidden" name="bugid" value="0"> 
-			<input type="hidden" name="project" value="3">
+			<input type="hidden" name="project" value="2">
 			<input type="hidden" name="op" value="do">
 		</form>
 <form action="bug.php">
@@ -884,6 +884,20 @@ Show bug statistics for the selected project:
                             Find Bug                            <input name="bugid" type="text" id="bugid" size="5">
                              
                         </form>
+<form method="post" action="/bug.php">
+                         
+                                                                                    Bugs assigned to me: <a href="query.php?op=mybugs&amp;assignedto=1&amp;open=1" title="Open">0</a> / <a href="query.php?op=mybugs&amp;assignedto=1&amp;open=0" title="Closed">0</a> |
+                                                        Reported by me: <a href="query.php?op=mybugs&amp;reportedby=1&amp;open=1" title="Open">0</a> / <a href="query.php?op=mybugs&amp;reportedby=1&amp;open=0" title="Closed">0</a>
+                            | Bookmarks: <a href="query.php?op=mybugs&amp;bookmarked=1&amp;open=1" title="Open">0</a> / <a href="query.php?op=mybugs&amp;bookmarked=1&amp;open=0" title="Closed">0</a>
+                            | <a href="user.php">Personal Page</a>
+                            | <a href="logout.php">Logout admin@admin.com</a>
+                                                 
+                    </form>
+<form action="bug.php">
+                            <input type="hidden" name="op" value="show">
+                            Find Bug                            <input name="bugid" type="text" id="bugid" size="5">
+                             
+                        </form>
 <form method="post" action="/query.php">
                          
                                                                                     Bugs assigned to me: <a href="query.php?op=mybugs&amp;assignedto=1&amp;open=1" title="Open">0</a> / <a href="query.php?op=mybugs&amp;assignedto=1&amp;open=0" title="Closed">0</a> |
@@ -964,17 +978,3 @@ Show bug statistics for the selected project:
     <input type="hidden" name="op" value="query">
     <input type="submit" value="Clear All Fields">
 </form>
-<form action="bug.php">
-                            <input type="hidden" name="op" value="show">
-                            Find Bug                            <input name="bugid" type="text" id="bugid" size="5">
-                             
-                        </form>
-<form method="post" action="/bug.php">
-                         
-                                                                                    Bugs assigned to me: <a href="query.php?op=mybugs&amp;assignedto=1&amp;open=1" title="Open">0</a> / <a href="query.php?op=mybugs&amp;assignedto=1&amp;open=0" title="Closed">0</a> |
-                                                        Reported by me: <a href="query.php?op=mybugs&amp;reportedby=1&amp;open=1" title="Open">0</a> / <a href="query.php?op=mybugs&amp;reportedby=1&amp;open=0" title="Closed">0</a>
-                            | Bookmarks: <a href="query.php?op=mybugs&amp;bookmarked=1&amp;open=1" title="Open">0</a> / <a href="query.php?op=mybugs&amp;bookmarked=1&amp;open=0" title="Closed">0</a>
-                            | <a href="user.php">Personal Page</a>
-                            | <a href="logout.php">Logout admin@admin.com</a>
-                                                 
-                    </form>

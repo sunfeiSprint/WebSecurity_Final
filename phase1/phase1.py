@@ -12,8 +12,6 @@ def isin(formdict,jsonform):
 	return False
 
 
-
-
 try:
 	formsfile=open('formslist','r')
 except:
@@ -21,16 +19,33 @@ except:
 	exit()
 formsstr=formsfile.read()
 formsfile.close()
-#os.remove('formslist')
 linksfile=open('linkslist','r')
 linksstr=linksfile.read()
 linksfile.close()
-#os.remove('linkslist')
 links=linksstr.split('\n')
 bfforms=BeautifulSoup(formsstr)
 forms=bfforms.find_all('form')
 linkforms=zip(links,forms)
 linkforms=list(set(linkforms))
+
+try:
+	formsfile=open('../crawlernologin/formslist','r')
+except:
+	print 'No form!'
+	exit()
+formsstr=formsfile.read()
+formsfile.close()
+linksfile=open('../crawlernologin/linkslist','r')
+linksstr=linksfile.read()
+linksfile.close()
+links=linksstr.split('\n')
+bfforms=BeautifulSoup(formsstr)
+forms=bfforms.find_all('form')
+nologinlinkforms=zip(links,forms)
+nologinlinkforms=list(set(nologinlinkforms))
+ret = [ i for i in linkforms if i not in nologinlinkforms ]
+linkforms=ret
+print ret
 jsonform=[]
 for linkform in linkforms:
 	url=linkform[0]

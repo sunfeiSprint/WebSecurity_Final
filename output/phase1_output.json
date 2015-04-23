@@ -85,15 +85,6 @@
         "method": "post"
     }, 
     {
-        "url": "https://app4.com/query.php?op=query&form=advanced", 
-        "action": "https://app4.com/bug.php", 
-        "parameter": {
-            "bugid": "text", 
-            "op": "hidden_*_show"
-        }, 
-        "method": "get"
-    }, 
-    {
         "url": "https://app4.com/user.php", 
         "action": "https://app4.com/user.php", 
         "parameter": {
@@ -124,6 +115,15 @@
             "op": "hidden_*_do"
         }, 
         "method": "post"
+    }, 
+    {
+        "url": "https://app4.com/bug.php?op=add&project=3", 
+        "action": "https://app4.com/bug.php", 
+        "parameter": {
+            "bugid": "text", 
+            "op": "hidden_*_show"
+        }, 
+        "method": "get"
     }, 
     {
         "url": "https://app4.com/query.php?op=query", 
