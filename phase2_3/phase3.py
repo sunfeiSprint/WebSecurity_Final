@@ -74,7 +74,12 @@ with open('../output/phase1_output.json') as data_file:
                             if r.status_code == 200:#  reponse 200 means the CSRF is successful
                                 formDetails["parameter"] = valid_parameters
                                 if len(valid_parameters) != 0:
-                                    jsonform.append(formDetails)
+                                    csrfTemp = False
+                                    for temp in valid_parameters:
+                                        if temp.lower().find("csrf") > -1 or temp.lower().find("token")>-1:
+                                            csrfTemp = True
+                                    if csrfTemp == False :
+                                        jsonform.append(formDetails)
                         continue
                     except :
                         ''
